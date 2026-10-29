@@ -122,4 +122,11 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    import sys
+
+    if any(a == "--mode" or a.startswith("--mode=") for a in sys.argv[1:]):
+        from fingerly.twohand.train_cli import main as twohand_main  # Part C (README §C.13)
+
+        twohand_main()
+    else:
+        main()

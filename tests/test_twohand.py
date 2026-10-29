@@ -175,3 +175,128 @@ def test_part_a_regression_random_monophonic():
         ps = [rng.randint(55, 80) for _ in range(25)]
         fs = [rng.randint(1, 5) for _ in ps]
         assert m.sequence("R", [((p,), (f,)) for p, f in zip(ps, fs)]).sum() == difficulty(ps, fs)
+
+
+# ================================================================ phase 2: env, masks, search
+from fingerly.twohand.actions import N_SETS as _NS  # noqa: E402
+from fingerly.twohand.env import EnvConfig, Episode, SegInfo, SegmentPool  # noqa: E402
+from fingerly.twohand.prepare import Segment  # noqa: E402
+from fingerly.twohand.search import beam_search, dp_segment, enumerate_segment, search_segment  # noqa: E402
+
+
+def make_segment(notes, n_ann=1):
+    ev = piece_events([notes] * n_ann, PrepConfig())
+    return Segment("t", 0, ev)
+
+
+def two_hand_notes(rng, n=10):
+    """Random two-hand material: mostly single notes, some chords, alternating hands."""
+    notes, t, i = [], 0.0, 0
+    for _ in range(n):
+        hand = rng.choice("LR")
+        base = 48 if hand == "L" else 67
+        size = rng.choice([1, 1, 1, 2])
+        ps = sorted({base + rng.randint(-5, 7) for _ in range(size)})
+        for p in ps:
+            notes.append(note(i, t, t + 0.2, p, hand, rng.randint(1, 5)))
+            i += 1
+        t += rng.choice([0.25, 0.5])
+    return notes
+
+
+def test_mask_only_chord_size():
+    notes = [note(0, 0, 0.5, C4), note(1, 0, 0.5, E4), note(2, 0, 0.5, G4), note(3, 0.5, 1.0, A4)]
+    info = SegInfo(make_segment(notes), EnvConfig(mode="given"), Parncutt12(), bonus=False)
+    ep = Episode(EnvConfig(mode="given"))
+    ep.reset(info)
+    m = ep.mask()
+    assert m.any() and all(len(FINGER_SETS[s]) == 3 for s in np.flatnonzero(m))
+
+
+def test_occupied_finger_masked():
+    # C4 held for 1 s under D4, E4: whatever finger holds C4 is not available for D4
+    notes = [note(0, 0.0, 1.0, C4), note(1, 0.25, 0.5, D4), note(2, 0.5, 0.75, E4)]
+    cfg = EnvConfig(mode="given")
+    info = SegInfo(make_segment(notes), cfg, Parncutt12(), bonus=False)
+    ep = Episode(cfg)
+    ep.reset(info)
+    ep.step(SET_INDEX[(1,)])  # thumb on C4, held
+    assert not ep.mask()[SET_INDEX[(1,)]]
+
+
+def test_assign_simultaneous_events_take_different_hands():
+    notes = [note(0, 0.0, 0.5, C4, "L"), note(1, 0.0, 0.5, C5, "R"), note(2, 0.5, 1.0, D4, "L")]
+    cfg = EnvConfig(mode="assign")
+    info = SegInfo(make_segment(notes), cfg, Parncutt12(), bonus=False)
+    ep = Episode(cfg)
+    ep.reset(info)
+    ep.step(SET_INDEX[(2,)] + _NS)  # first event to the right hand
+    m = ep.mask()
+    assert not m[_NS:].any() and m[:_NS].any()  # the simultaneous one must take the left hand
+
+
+def test_assign_chords_keep_annotated_hand():
+    notes = [note(0, 0.0, 0.5, C4, "L"), note(1, 0.0, 0.5, E4, "L"), note(2, 0.5, 1.0, D4, "R")]
+    cfg = EnvConfig(mode="assign")
+    info = SegInfo(make_segment(notes), cfg, Parncutt12(), bonus=False)
+    ep = Episode(cfg)
+    ep.reset(info)
+    m = ep.mask()
+    assert m[:_NS].any() and not m[_NS:].any()
+
+
+@pytest.mark.parametrize("seed", range(4))
+def test_decomposition_dp_equals_unpruned_search(seed):
+    """2b without inter-hand terms: the per-hand DPs equal the full two-hand search."""
+    seg = make_segment(two_hand_notes(random.Random(seed), 10))
+    cfg = EnvConfig(mode="given", occupied=False)
+    info = SegInfo(seg, cfg, Parncutt12(), bonus=False)
+    assert dp_segment(info).cost == pytest.approx(beam_search(info, cfg, None).cost)
+
+
+@pytest.mark.parametrize("mode", ["given", "assign"])
+def test_search_equals_enumeration(mode):
+    for seed in range(3):
+        seg = make_segment(two_hand_notes(random.Random(10 + seed), 4))
+        cfg = EnvConfig(mode=mode, cross=True, occupied=False)
+        info = SegInfo(seg, cfg, Parncutt12(), bonus=False)
+        assert beam_search(info, cfg, None).cost == pytest.approx(enumerate_segment(info, cfg))
+
+
+def test_beam_matches_unpruned_on_10_events():
+    agree = 0
+    for seed in range(10):
+        seg = make_segment(two_hand_notes(random.Random(100 + seed), 10))
+        cfg = EnvConfig(mode="assign", occupied=False)
+        info = SegInfo(seg, cfg, Parncutt12(), bonus=False)
+        agree += beam_search(info, cfg, 10_000).cost == pytest.approx(beam_search(info, cfg, None).cost)
+    assert agree >= 10 * 0.99
+
+
+@pytest.mark.parametrize("mode", ["given", "assign"])
+def test_m0_replays_at_the_same_cost(mode):
+    seg = make_segment(two_hand_notes(random.Random(7), 12))
+    cfg = EnvConfig(mode=mode, occupied=False)
+    info = SegInfo(seg, cfg, Parncutt12(), bonus=False)
+    r = search_segment(info, cfg, 10_000)
+    ep = Episode(cfg)
+    ep.reset(info)
+    for h, s in r.fingering:
+        ep.step(s + (_NS if mode == "assign" and h == "R" else 0))
+    assert sum(x.rules + x.extra for x in ep.records) == pytest.approx(r.cost)
+
+
+def test_hand_mismatch_is_a_miss():
+    from fingerly.twohand.metrics import piece_match, rollout
+
+    notes = [note(0, 0.0, 0.5, C4, "L", 1), note(1, 0.5, 1.0, D4, "L", 2)]
+    seg = make_segment(notes)
+    cfg = EnvConfig(mode="assign")
+    pool = SegmentPool([seg], cfg, bonus=False)
+    # always the right hand, with the annotator's fingers 1 then 2
+    acts = iter([SET_INDEX[(1,)] + _NS, SET_INDEX[(2,)] + _NS])
+    eps = rollout(pool, lambda o, m: [next(acts)])
+    assert piece_match(eps)["t"]["Mgen"] == 0.0
+    acts = iter([SET_INDEX[(1,)], SET_INDEX[(2,)]])
+    eps = rollout(pool, lambda o, m: [next(acts)])
+    assert piece_match(eps)["t"]["Mgen"] == 1.0

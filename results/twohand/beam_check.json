@@ -1,0 +1,3220 @@
+{
+ "given": {
+  "windows": 200,
+  "beam": 10000,
+  "agreement": 1.0,
+  "passed": true,
+  "max_states_unpruned": 10000,
+  "rows": [
+   {
+    "piece": "107",
+    "events": 11,
+    "beam": 2.0,
+    "exact": 2.0,
+    "states_exact": 324,
+    "match": true
+   },
+   {
+    "piece": "025",
+    "events": 9,
+    "beam": 2.0,
+    "exact": 2.0,
+    "states_exact": 1800,
+    "match": true
+   },
+   {
+    "piece": "058",
+    "events": 8,
+    "beam": 2.0,
+    "exact": 2.0,
+    "states_exact": 1800,
+    "match": true
+   },
+   {
+    "piece": "101",
+    "events": 11,
+    "beam": 364.2663136583087,
+    "exact": 364.2663136583087,
+    "states_exact": 162,
+    "match": true
+   },
+   {
+    "piece": "034",
+    "events": 11,
+    "beam": 32.60831646161072,
+    "exact": 32.60831646161072,
+    "states_exact": 280,
+    "match": true
+   },
+   {
+    "piece": "077",
+    "events": 11,
+    "beam": 163.0,
+    "exact": 163.0,
+    "states_exact": 450,
+    "match": true
+   },
+   {
+    "piece": "042",
+    "events": 12,
+    "beam": 4.0,
+    "exact": 4.0,
+    "states_exact": 324,
+    "match": true
+   },
+   {
+    "piece": "101",
+    "events": 11,
+    "beam": 12.0,
+    "exact": 12.0,
+    "states_exact": 18,
+    "match": true
+   },
+   {
+    "piece": "033",
+    "events": 12,
+    "beam": 38.0,
+    "exact": 38.0,
+    "states_exact": 270,
+    "match": true
+   },
+   {
+    "piece": "026",
+    "events": 11,
+    "beam": 728.0,
+    "exact": 728.0,
+    "states_exact": 54,
+    "match": true
+   },
+   {
+    "piece": "107",
+    "events": 8,
+    "beam": 1.0,
+    "exact": 1.0,
+    "states_exact": 324,
+    "match": true
+   },
+   {
+    "piece": "110",
+    "events": 8,
+    "beam": 51.0,
+    "exact": 51.0,
+    "states_exact": 1750,
+    "match": true
+   },
+   {
+    "piece": "058",
+    "events": 9,
+    "beam": 76.0,
+    "exact": 76.0,
+    "states_exact": 5000,
+    "match": true
+   },
+   {
+    "piece": "034",
+    "events": 10,
+    "beam": 24.0,
+    "exact": 24.0,
+    "states_exact": 1800,
+    "match": true
+   },
+   {
+    "piece": "005",
+    "events": 8,
+    "beam": 5.0,
+    "exact": 5.0,
+    "states_exact": 18,
+    "match": true
+   },
+   {
+    "piece": "069",
+    "events": 10,
+    "beam": 19.0,
+    "exact": 19.0,
+    "states_exact": 162,
+    "match": true
+   },
+   {
+    "piece": "025",
+    "events": 11,
+    "beam": 168.0,
+    "exact": 168.0,
+    "states_exact": 360,
+    "match": true
+   },
+   {
+    "piece": "033",
+    "events": 10,
+    "beam": 5.0,
+    "exact": 5.0,
+    "states_exact": 180,
+    "match": true
+   },
+   {
+    "piece": "101",
+    "events": 12,
+    "beam": 100.0,
+    "exact": 100.0,
+    "states_exact": 315,
+    "match": true
+   },
+   {
+    "piece": "074",
+    "events": 12,
+    "beam": 13.0,
+    "exact": 13.0,
+    "states_exact": 324,
+    "match": true
+   },
+   {
+    "piece": "107",
+    "events": 11,
+    "beam": 4.0,
+    "exact": 4.0,
+    "states_exact": 90,
+    "match": true
+   },
+   {
+    "piece": "033",
+    "events": 12,
+    "beam": 12.0,
+    "exact": 12.0,
+    "states_exact": 324,
+    "match": true
+   },
+   {
+    "piece": "052",
+    "events": 11,
+    "beam": 10.0,
+    "exact": 10.0,
+    "states_exact": 324,
+    "match": true
+   },
+   {
+    "piece": "038",
+    "events": 9,
+    "beam": 33.0,
+    "exact": 33.0,
+    "states_exact": 1400,
+    "match": true
+   },
+   {
+    "piece": "034",
+    "events": 10,
+    "beam": 50.0,
+    "exact": 50.0,
+    "states_exact": 729,
+    "match": true
+   },
+   {
+    "piece": "112",
+    "events": 8,
+    "beam": 4.0,
+    "exact": 4.0,
+    "states_exact": 75,
+    "match": true
+   },
+   {
+    "piece": "038",
+    "events": 9,
+    "beam": 9.0,
+    "exact": 9.0,
+    "states_exact": 1800,
+    "match": true
+   },
+   {
+    "piece": "042",
+    "events": 9,
+    "beam": 4.0,
+    "exact": 4.0,
+    "states_exact": 324,
+    "match": true
+   },
+   {
+    "piece": "077",
+    "events": 10,
+    "beam": 37.0,
+    "exact": 37.0,
+    "states_exact": 450,
+    "match": true
+   },
+   {
+    "piece": "031",
+    "events": 11,
+    "beam": 527.4617660800503,
+    "exact": 527.4617660800503,
+    "states_exact": 324,
+    "match": true
+   },
+   {
+    "piece": "031",
+    "events": 12,
+    "beam": 365.2982401495094,
+    "exact": 365.2982401495094,
+    "states_exact": 54,
+    "match": true
+   },
+   {
+    "piece": "002",
+    "events": 11,
+    "beam": 5.0,
+    "exact": 5.0,
+    "states_exact": 324,
+    "match": true
+   },
+   {
+    "piece": "029",
+    "events": 8,
+    "beam": 15.0,
+    "exact": 15.0,
+    "states_exact": 1260,
+    "match": true
+   },
+   {
+    "piece": "107",
+    "events": 10,
+    "beam": 5.0,
+    "exact": 5.0,
+    "states_exact": 324,
+    "match": true
+   },
+   {
+    "piece": "031",
+    "events": 9,
+    "beam": 16.0,
+    "exact": 16.0,
+    "states_exact": 18,
+    "match": true
+   },
+   {
+    "piece": "110",
+    "events": 8,
+    "beam": 30.0,
+    "exact": 30.0,
+    "states_exact": 450,
+    "match": true
+   },
+   {
+    "piece": "069",
+    "events": 9,
+    "beam": 16.0,
+    "exact": 16.0,
+    "states_exact": 162,
+    "match": true
+   },
+   {
+    "piece": "091",
+    "events": 12,
+    "beam": 53.133156829154345,
+    "exact": 53.133156829154345,
+    "states_exact": 375,
+    "match": true
+   },
+   {
+    "piece": "112",
+    "events": 11,
+    "beam": 127.0,
+    "exact": 127.0,
+    "states_exact": 810,
+    "match": true
+   },
+   {
+    "piece": "002",
+    "events": 11,
+    "beam": 4.0,
+    "exact": 4.0,
+    "states_exact": 306,
+    "match": true
+   },
+   {
+    "piece": "042",
+    "events": 10,
+    "beam": 0.0,
+    "exact": 0.0,
+    "states_exact": 324,
+    "match": true
+   },
+   {
+    "piece": "002",
+    "events": 12,
+    "beam": 6.0,
+    "exact": 6.0,
+    "states_exact": 324,
+    "match": true
+   },
+   {
+    "piece": "067",
+    "events": 10,
+    "beam": 341.2663136583087,
+    "exact": 341.2663136583087,
+    "states_exact": 378,
+    "match": true
+   },
+   {
+    "piece": "031",
+    "events": 12,
+    "beam": 43.02024606759058,
+    "exact": 43.02024606759058,
+    "states_exact": 162,
+    "match": true
+   },
+   {
+    "piece": "112",
+    "events": 8,
+    "beam": 14.0,
+    "exact": 14.0,
+    "states_exact": 90,
+    "match": true
+   },
+   {
+    "piece": "123",
+    "events": 8,
+    "beam": 178.2663136583087,
+    "exact": 178.2663136583087,
+    "states_exact": 270,
+    "match": true
+   },
+   {
+    "piece": "067",
+    "events": 8,
+    "beam": 127.26631365830869,
+    "exact": 127.26631365830869,
+    "states_exact": 3150,
+    "match": true
+   },
+   {
+    "piece": "067",
+    "events": 11,
+    "beam": 137.0,
+    "exact": 137.0,
+    "states_exact": 63,
+    "match": true
+   },
+   {
+    "piece": "033",
+    "events": 10,
+    "beam": 6.0,
+    "exact": 6.0,
+    "states_exact": 324,
+    "match": true
+   },
+   {
+    "piece": "136",
+    "events": 8,
+    "beam": 23.382339199501615,
+    "exact": 23.382339199501615,
+    "states_exact": 306,
+    "match": true
+   },
+   {
+    "piece": "029",
+    "events": 10,
+    "beam": 285.0,
+    "exact": 285.0,
+    "states_exact": 81,
+    "match": true
+   },
+   {
+    "piece": "067",
+    "events": 9,
+    "beam": 161.0,
+    "exact": 161.0,
+    "states_exact": 25,
+    "match": true
+   },
+   {
+    "piece": "053",
+    "events": 12,
+    "beam": 2.0,
+    "exact": 2.0,
+    "states_exact": 1800,
+    "match": true
+   },
+   {
+    "piece": "034",
+    "events": 12,
+    "beam": 167.7335306027099,
+    "exact": 167.7335306027099,
+    "states_exact": 1800,
+    "match": true
+   },
+   {
+    "piece": "033",
+    "events": 10,
+    "beam": 3.0,
+    "exact": 3.0,
+    "states_exact": 324,
+    "match": true
+   },
+   {
+    "piece": "038",
+    "events": 9,
+    "beam": 8.0,
+    "exact": 8.0,
+    "states_exact": 1800,
+    "match": true
+   },
+   {
+    "piece": "058",
+    "events": 10,
+    "beam": 10.0,
+    "exact": 10.0,
+    "states_exact": 1800,
+    "match": true
+   },
+   {
+    "piece": "081",
+    "events": 11,
+    "beam": 61.384208067279275,
+    "exact": 61.384208067279275,
+    "states_exact": 630,
+    "match": true
+   },
+   {
+    "piece": "119",
+    "events": 12,
+    "beam": 130.0,
+    "exact": 130.0,
+    "states_exact": 378,
+    "match": true
+   },
+   {
+    "piece": "073",
+    "events": 8,
+    "beam": 134.0,
+    "exact": 134.0,
+    "states_exact": 1350,
+    "match": true
+   },
+   {
+    "piece": "136",
+    "events": 12,
+    "beam": 32.098115558324196,
+    "exact": 32.098115558324196,
+    "states_exact": 270,
+    "match": true
+   },
+   {
+    "piece": "136",
+    "events": 12,
+    "beam": 32.5024139542127,
+    "exact": 32.5024139542127,
+    "states_exact": 54,
+    "match": true
+   },
+   {
+    "piece": "073",
+    "events": 12,
+    "beam": 162.0,
+    "exact": 162.0,
+    "states_exact": 1260,
+    "match": true
+   },
+   {
+    "piece": "141",
+    "events": 12,
+    "beam": 47.56657841457717,
+    "exact": 47.56657841457717,
+    "states_exact": 18,
+    "match": true
+   },
+   {
+    "piece": "031",
+    "events": 8,
+    "beam": 17.940507709079842,
+    "exact": 17.940507709079842,
+    "states_exact": 108,
+    "match": true
+   },
+   {
+    "piece": "141",
+    "events": 9,
+    "beam": 79.13315682915436,
+    "exact": 79.13315682915436,
+    "states_exact": 900,
+    "match": true
+   },
+   {
+    "piece": "033",
+    "events": 12,
+    "beam": 17.0,
+    "exact": 17.0,
+    "states_exact": 234,
+    "match": true
+   },
+   {
+    "piece": "034",
+    "events": 9,
+    "beam": 5.0,
+    "exact": 5.0,
+    "states_exact": 306,
+    "match": true
+   },
+   {
+    "piece": "112",
+    "events": 12,
+    "beam": 11.0,
+    "exact": 11.0,
+    "states_exact": 18,
+    "match": true
+   },
+   {
+    "piece": "119",
+    "events": 12,
+    "beam": 227.0,
+    "exact": 227.0,
+    "states_exact": 189,
+    "match": true
+   },
+   {
+    "piece": "034",
+    "events": 10,
+    "beam": 226.0,
+    "exact": 226.0,
+    "states_exact": 144,
+    "match": true
+   },
+   {
+    "piece": "034",
+    "events": 8,
+    "beam": 26.5653325027254,
+    "exact": 26.5653325027254,
+    "states_exact": 18,
+    "match": true
+   },
+   {
+    "piece": "074",
+    "events": 8,
+    "beam": 13.133156829154345,
+    "exact": 13.133156829154345,
+    "states_exact": 324,
+    "match": true
+   },
+   {
+    "piece": "077",
+    "events": 8,
+    "beam": 102.0,
+    "exact": 102.0,
+    "states_exact": 1152,
+    "match": true
+   },
+   {
+    "piece": "034",
+    "events": 8,
+    "beam": 20.28469085812133,
+    "exact": 20.28469085812133,
+    "states_exact": 800,
+    "match": true
+   },
+   {
+    "piece": "077",
+    "events": 9,
+    "beam": 26.0,
+    "exact": 26.0,
+    "states_exact": 1458,
+    "match": true
+   },
+   {
+    "piece": "058",
+    "events": 11,
+    "beam": 33.0,
+    "exact": 33.0,
+    "states_exact": 5000,
+    "match": true
+   },
+   {
+    "piece": "034",
+    "events": 12,
+    "beam": 108.60831646161071,
+    "exact": 108.60831646161071,
+    "states_exact": 1500,
+    "match": true
+   },
+   {
+    "piece": "025",
+    "events": 8,
+    "beam": 45.0,
+    "exact": 45.0,
+    "states_exact": 630,
+    "match": true
+   },
+   {
+    "piece": "107",
+    "events": 11,
+    "beam": 21.356875876031772,
+    "exact": 21.356875876031772,
+    "states_exact": 18,
+    "match": true
+   },
+   {
+    "piece": "069",
+    "events": 9,
+    "beam": 4.0,
+    "exact": 4.0,
+    "states_exact": 1800,
+    "match": true
+   },
+   {
+    "piece": "034",
+    "events": 12,
+    "beam": 25.0,
+    "exact": 25.0,
+    "states_exact": 1134,
+    "match": true
+   },
+   {
+    "piece": "091",
+    "events": 10,
+    "beam": 20.0,
+    "exact": 20.0,
+    "states_exact": 810,
+    "match": true
+   },
+   {
+    "piece": "025",
+    "events": 9,
+    "beam": 215.0,
+    "exact": 215.0,
+    "states_exact": 882,
+    "match": true
+   },
+   {
+    "piece": "002",
+    "events": 12,
+    "beam": 2.0,
+    "exact": 2.0,
+    "states_exact": 324,
+    "match": true
+   },
+   {
+    "piece": "002",
+    "events": 8,
+    "beam": 5.0,
+    "exact": 5.0,
+    "states_exact": 270,
+    "match": true
+   },
+   {
+    "piece": "092",
+    "events": 9,
+    "beam": 215.2663136583087,
+    "exact": 215.2663136583087,
+    "states_exact": 1750,
+    "match": true
+   },
+   {
+    "piece": "052",
+    "events": 12,
+    "beam": 19.190001557389884,
+    "exact": 19.190001557389884,
+    "states_exact": 90,
+    "match": true
+   },
+   {
+    "piece": "085",
+    "events": 12,
+    "beam": 58.4902663136583,
+    "exact": 58.4902663136583,
+    "states_exact": 324,
+    "match": true
+   },
+   {
+    "piece": "042",
+    "events": 10,
+    "beam": 12.0,
+    "exact": 12.0,
+    "states_exact": 324,
+    "match": true
+   },
+   {
+    "piece": "034",
+    "events": 10,
+    "beam": 37.446503659866025,
+    "exact": 37.446503659866025,
+    "states_exact": 560,
+    "match": true
+   },
+   {
+    "piece": "102",
+    "events": 12,
+    "beam": 153.0,
+    "exact": 153.0,
+    "states_exact": 432,
+    "match": true
+   },
+   {
+    "piece": "074",
+    "events": 12,
+    "beam": 10.26631365830869,
+    "exact": 10.26631365830869,
+    "states_exact": 324,
+    "match": true
+   },
+   {
+    "piece": "031",
+    "events": 8,
+    "beam": 2.0,
+    "exact": 2.0,
+    "states_exact": 324,
+    "match": true
+   },
+   {
+    "piece": "002",
+    "events": 10,
+    "beam": 6.0,
+    "exact": 6.0,
+    "states_exact": 306,
+    "match": true
+   },
+   {
+    "piece": "107",
+    "events": 12,
+    "beam": 3.0,
+    "exact": 3.0,
+    "states_exact": 324,
+    "match": true
+   },
+   {
+    "piece": "102",
+    "events": 10,
+    "beam": 118.0,
+    "exact": 118.0,
+    "states_exact": 432,
+    "match": true
+   },
+   {
+    "piece": "114",
+    "events": 12,
+    "beam": 0.0,
+    "exact": 0.0,
+    "states_exact": 750,
+    "match": true
+   },
+   {
+    "piece": "053",
+    "events": 12,
+    "beam": 137.13315682915436,
+    "exact": 137.13315682915436,
+    "states_exact": 156,
+    "match": true
+   },
+   {
+    "piece": "033",
+    "events": 12,
+    "beam": 7.0,
+    "exact": 7.0,
+    "states_exact": 324,
+    "match": true
+   },
+   {
+    "piece": "073",
+    "events": 8,
+    "beam": 158.0,
+    "exact": 158.0,
+    "states_exact": 630,
+    "match": true
+   },
+   {
+    "piece": "031",
+    "events": 8,
+    "beam": 18.223329699424,
+    "exact": 18.223329699424,
+    "states_exact": 18,
+    "match": true
+   },
+   {
+    "piece": "025",
+    "events": 11,
+    "beam": 223.0,
+    "exact": 223.0,
+    "states_exact": 882,
+    "match": true
+   },
+   {
+    "piece": "025",
+    "events": 12,
+    "beam": 133.0,
+    "exact": 133.0,
+    "states_exact": 810,
+    "match": true
+   },
+   {
+    "piece": "067",
+    "events": 12,
+    "beam": 150.2663136583087,
+    "exact": 150.2663136583087,
+    "states_exact": 2250,
+    "match": true
+   },
+   {
+    "piece": "087",
+    "events": 8,
+    "beam": 28.0,
+    "exact": 28.0,
+    "states_exact": 3500,
+    "match": true
+   },
+   {
+    "piece": "033",
+    "events": 8,
+    "beam": 4.0,
+    "exact": 4.0,
+    "states_exact": 18,
+    "match": true
+   },
+   {
+    "piece": "033",
+    "events": 10,
+    "beam": 12.0,
+    "exact": 12.0,
+    "states_exact": 90,
+    "match": true
+   },
+   {
+    "piece": "031",
+    "events": 10,
+    "beam": 21.604267248092075,
+    "exact": 21.604267248092075,
+    "states_exact": 54,
+    "match": true
+   },
+   {
+    "piece": "141",
+    "events": 11,
+    "beam": 83.56657841457718,
+    "exact": 83.56657841457718,
+    "states_exact": 6300,
+    "match": true
+   },
+   {
+    "piece": "005",
+    "events": 9,
+    "beam": 14.428437938015875,
+    "exact": 14.428437938015875,
+    "states_exact": 270,
+    "match": true
+   },
+   {
+    "piece": "025",
+    "events": 10,
+    "beam": 20.0,
+    "exact": 20.0,
+    "states_exact": 1500,
+    "match": true
+   },
+   {
+    "piece": "067",
+    "events": 12,
+    "beam": 55.0,
+    "exact": 55.0,
+    "states_exact": 10000,
+    "match": true
+   },
+   {
+    "piece": "034",
+    "events": 11,
+    "beam": 52.169755489799314,
+    "exact": 52.169755489799314,
+    "states_exact": 40,
+    "match": true
+   },
+   {
+    "piece": "042",
+    "events": 12,
+    "beam": 4.0,
+    "exact": 4.0,
+    "states_exact": 324,
+    "match": true
+   },
+   {
+    "piece": "031",
+    "events": 8,
+    "beam": 35.2228624824796,
+    "exact": 35.2228624824796,
+    "states_exact": 720,
+    "match": true
+   },
+   {
+    "piece": "025",
+    "events": 12,
+    "beam": 34.0,
+    "exact": 34.0,
+    "states_exact": 900,
+    "match": true
+   },
+   {
+    "piece": "101",
+    "events": 9,
+    "beam": 314.0,
+    "exact": 314.0,
+    "states_exact": 108,
+    "match": true
+   },
+   {
+    "piece": "038",
+    "events": 12,
+    "beam": 388.0,
+    "exact": 388.0,
+    "states_exact": 1400,
+    "match": true
+   },
+   {
+    "piece": "119",
+    "events": 12,
+    "beam": 314.0,
+    "exact": 314.0,
+    "states_exact": 4410,
+    "match": true
+   },
+   {
+    "piece": "067",
+    "events": 12,
+    "beam": 200.0,
+    "exact": 200.0,
+    "states_exact": 35,
+    "match": true
+   },
+   {
+    "piece": "017",
+    "events": 10,
+    "beam": 4.0,
+    "exact": 4.0,
+    "states_exact": 324,
+    "match": true
+   },
+   {
+    "piece": "071",
+    "events": 11,
+    "beam": 61.0,
+    "exact": 61.0,
+    "states_exact": 1300,
+    "match": true
+   },
+   {
+    "piece": "074",
+    "events": 12,
+    "beam": 17.133156829154345,
+    "exact": 17.133156829154345,
+    "states_exact": 324,
+    "match": true
+   },
+   {
+    "piece": "074",
+    "events": 9,
+    "beam": 15.133156829154345,
+    "exact": 15.133156829154345,
+    "states_exact": 324,
+    "match": true
+   },
+   {
+    "piece": "114",
+    "events": 10,
+    "beam": 2.0,
+    "exact": 2.0,
+    "states_exact": 1800,
+    "match": true
+   },
+   {
+    "piece": "074",
+    "events": 10,
+    "beam": 7.133156829154345,
+    "exact": 7.133156829154345,
+    "states_exact": 324,
+    "match": true
+   },
+   {
+    "piece": "140",
+    "events": 11,
+    "beam": 28.133156829154345,
+    "exact": 28.133156829154345,
+    "states_exact": 630,
+    "match": true
+   },
+   {
+    "piece": "085",
+    "events": 10,
+    "beam": 2.0,
+    "exact": 2.0,
+    "states_exact": 810,
+    "match": true
+   },
+   {
+    "piece": "058",
+    "events": 10,
+    "beam": 13.0,
+    "exact": 13.0,
+    "states_exact": 1800,
+    "match": true
+   },
+   {
+    "piece": "026",
+    "events": 10,
+    "beam": 164.0,
+    "exact": 164.0,
+    "states_exact": 2916,
+    "match": true
+   },
+   {
+    "piece": "005",
+    "events": 10,
+    "beam": 5.0,
+    "exact": 5.0,
+    "states_exact": 900,
+    "match": true
+   },
+   {
+    "piece": "081",
+    "events": 12,
+    "beam": 9.0,
+    "exact": 9.0,
+    "states_exact": 900,
+    "match": true
+   },
+   {
+    "piece": "052",
+    "events": 12,
+    "beam": 8.0,
+    "exact": 8.0,
+    "states_exact": 324,
+    "match": true
+   },
+   {
+    "piece": "094",
+    "events": 8,
+    "beam": 8.0,
+    "exact": 8.0,
+    "states_exact": 126,
+    "match": true
+   },
+   {
+    "piece": "069",
+    "events": 10,
+    "beam": 47.0,
+    "exact": 47.0,
+    "states_exact": 162,
+    "match": true
+   },
+   {
+    "piece": "069",
+    "events": 10,
+    "beam": 70.0,
+    "exact": 70.0,
+    "states_exact": 162,
+    "match": true
+   },
+   {
+    "piece": "053",
+    "events": 12,
+    "beam": 3.0,
+    "exact": 3.0,
+    "states_exact": 324,
+    "match": true
+   },
+   {
+    "piece": "058",
+    "events": 8,
+    "beam": 13.0,
+    "exact": 13.0,
+    "states_exact": 5000,
+    "match": true
+   },
+   {
+    "piece": "034",
+    "events": 10,
+    "beam": 12.0,
+    "exact": 12.0,
+    "states_exact": 1458,
+    "match": true
+   },
+   {
+    "piece": "031",
+    "events": 8,
+    "beam": 13.0,
+    "exact": 13.0,
+    "states_exact": 72,
+    "match": true
+   },
+   {
+    "piece": "033",
+    "events": 12,
+    "beam": 11.0,
+    "exact": 11.0,
+    "states_exact": 324,
+    "match": true
+   },
+   {
+    "piece": "074",
+    "events": 11,
+    "beam": 17.26631365830869,
+    "exact": 17.26631365830869,
+    "states_exact": 324,
+    "match": true
+   },
+   {
+    "piece": "058",
+    "events": 9,
+    "beam": 26.0,
+    "exact": 26.0,
+    "states_exact": 5000,
+    "match": true
+   },
+   {
+    "piece": "141",
+    "events": 12,
+    "beam": 254.0,
+    "exact": 254.0,
+    "states_exact": 540,
+    "match": true
+   },
+   {
+    "piece": "034",
+    "events": 10,
+    "beam": 3.0,
+    "exact": 3.0,
+    "states_exact": 1800,
+    "match": true
+   },
+   {
+    "piece": "087",
+    "events": 11,
+    "beam": 94.41956081607226,
+    "exact": 94.41956081607226,
+    "states_exact": 1500,
+    "match": true
+   },
+   {
+    "piece": "114",
+    "events": 9,
+    "beam": 357.0479676062919,
+    "exact": 357.0479676062919,
+    "states_exact": 1800,
+    "match": true
+   },
+   {
+    "piece": "053",
+    "events": 8,
+    "beam": 0.0,
+    "exact": 0.0,
+    "states_exact": 1458,
+    "match": true
+   },
+   {
+    "piece": "037",
+    "events": 9,
+    "beam": 8.0,
+    "exact": 8.0,
+    "states_exact": 900,
+    "match": true
+   },
+   {
+    "piece": "069",
+    "events": 11,
+    "beam": 57.0,
+    "exact": 57.0,
+    "states_exact": 162,
+    "match": true
+   },
+   {
+    "piece": "034",
+    "events": 8,
+    "beam": 29.233452733218073,
+    "exact": 29.233452733218073,
+    "states_exact": 126,
+    "match": true
+   },
+   {
+    "piece": "025",
+    "events": 11,
+    "beam": 41.0,
+    "exact": 41.0,
+    "states_exact": 882,
+    "match": true
+   },
+   {
+    "piece": "031",
+    "events": 8,
+    "beam": 161.01572963712817,
+    "exact": 161.01572963712817,
+    "states_exact": 288,
+    "match": true
+   },
+   {
+    "piece": "005",
+    "events": 10,
+    "beam": 22.0,
+    "exact": 22.0,
+    "states_exact": 270,
+    "match": true
+   },
+   {
+    "piece": "034",
+    "events": 11,
+    "beam": 38.169755489799314,
+    "exact": 38.169755489799314,
+    "states_exact": 80,
+    "match": true
+   },
+   {
+    "piece": "002",
+    "events": 8,
+    "beam": 21.0,
+    "exact": 21.0,
+    "states_exact": 324,
+    "match": true
+   },
+   {
+    "piece": "052",
+    "events": 9,
+    "beam": 5.0,
+    "exact": 5.0,
+    "states_exact": 270,
+    "match": true
+   },
+   {
+    "piece": "081",
+    "events": 12,
+    "beam": 2.0,
+    "exact": 2.0,
+    "states_exact": 900,
+    "match": true
+   },
+   {
+    "piece": "034",
+    "events": 10,
+    "beam": 26.122878056378298,
+    "exact": 26.122878056378298,
+    "states_exact": 306,
+    "match": true
+   },
+   {
+    "piece": "034",
+    "events": 8,
+    "beam": 38.245756112756595,
+    "exact": 38.245756112756595,
+    "states_exact": 255,
+    "match": true
+   },
+   {
+    "piece": "136",
+    "events": 8,
+    "beam": 11.0,
+    "exact": 11.0,
+    "states_exact": 270,
+    "match": true
+   },
+   {
+    "piece": "067",
+    "events": 10,
+    "beam": 66.0,
+    "exact": 66.0,
+    "states_exact": 1750,
+    "match": true
+   },
+   {
+    "piece": "101",
+    "events": 10,
+    "beam": 146.0,
+    "exact": 146.0,
+    "states_exact": 162,
+    "match": true
+   },
+   {
+    "piece": "085",
+    "events": 11,
+    "beam": 40.28967450552883,
+    "exact": 40.28967450552883,
+    "states_exact": 1458,
+    "match": true
+   },
+   {
+    "piece": "114",
+    "events": 12,
+    "beam": 4.0,
+    "exact": 4.0,
+    "states_exact": 1350,
+    "match": true
+   },
+   {
+    "piece": "042",
+    "events": 12,
+    "beam": 0.0,
+    "exact": 0.0,
+    "states_exact": 324,
+    "match": true
+   },
+   {
+    "piece": "033",
+    "events": 10,
+    "beam": 5.0,
+    "exact": 5.0,
+    "states_exact": 324,
+    "match": true
+   },
+   {
+    "piece": "074",
+    "events": 12,
+    "beam": 17.270207132845357,
+    "exact": 17.270207132845357,
+    "states_exact": 324,
+    "match": true
+   },
+   {
+    "piece": "092",
+    "events": 8,
+    "beam": 79.26631365830869,
+    "exact": 79.26631365830869,
+    "states_exact": 1575,
+    "match": true
+   },
+   {
+    "piece": "005",
+    "events": 10,
+    "beam": 12.0,
+    "exact": 12.0,
+    "states_exact": 18,
+    "match": true
+   },
+   {
+    "piece": "110",
+    "events": 12,
+    "beam": 58.0,
+    "exact": 58.0,
+    "states_exact": 600,
+    "match": true
+   },
+   {
+    "piece": "102",
+    "events": 11,
+    "beam": 319.0,
+    "exact": 319.0,
+    "states_exact": 648,
+    "match": true
+   },
+   {
+    "piece": "094",
+    "events": 12,
+    "beam": 80.90686808908268,
+    "exact": 80.90686808908268,
+    "states_exact": 600,
+    "match": true
+   },
+   {
+    "piece": "074",
+    "events": 9,
+    "beam": 12.133156829154345,
+    "exact": 12.133156829154345,
+    "states_exact": 324,
+    "match": true
+   },
+   {
+    "piece": "094",
+    "events": 11,
+    "beam": 90.0,
+    "exact": 90.0,
+    "states_exact": 192,
+    "match": true
+   },
+   {
+    "piece": "033",
+    "events": 9,
+    "beam": 5.0,
+    "exact": 5.0,
+    "states_exact": 324,
+    "match": true
+   },
+   {
+    "piece": "033",
+    "events": 10,
+    "beam": 6.0,
+    "exact": 6.0,
+    "states_exact": 324,
+    "match": true
+   },
+   {
+    "piece": "052",
+    "events": 8,
+    "beam": 2.0,
+    "exact": 2.0,
+    "states_exact": 195,
+    "match": true
+   },
+   {
+    "piece": "033",
+    "events": 8,
+    "beam": 4.0,
+    "exact": 4.0,
+    "states_exact": 18,
+    "match": true
+   },
+   {
+    "piece": "034",
+    "events": 11,
+    "beam": 28.72496495872918,
+    "exact": 28.72496495872918,
+    "states_exact": 18,
+    "match": true
+   },
+   {
+    "piece": "107",
+    "events": 8,
+    "beam": 1.0,
+    "exact": 1.0,
+    "states_exact": 324,
+    "match": true
+   },
+   {
+    "piece": "033",
+    "events": 11,
+    "beam": 8.0,
+    "exact": 8.0,
+    "states_exact": 324,
+    "match": true
+   },
+   {
+    "piece": "102",
+    "events": 8,
+    "beam": 220.0,
+    "exact": 220.0,
+    "states_exact": 432,
+    "match": true
+   },
+   {
+    "piece": "029",
+    "events": 12,
+    "beam": 30.0,
+    "exact": 30.0,
+    "states_exact": 300,
+    "match": true
+   },
+   {
+    "piece": "034",
+    "events": 9,
+    "beam": 7.0,
+    "exact": 7.0,
+    "states_exact": 1715,
+    "match": true
+   },
+   {
+    "piece": "069",
+    "events": 12,
+    "beam": 84.74894876187507,
+    "exact": 84.74894876187507,
+    "states_exact": 162,
+    "match": true
+   },
+   {
+    "piece": "034",
+    "events": 10,
+    "beam": 83.31755178321194,
+    "exact": 83.31755178321194,
+    "states_exact": 1458,
+    "match": true
+   },
+   {
+    "piece": "034",
+    "events": 12,
+    "beam": 47.77012926335486,
+    "exact": 47.77012926335486,
+    "states_exact": 40,
+    "match": true
+   },
+   {
+    "piece": "034",
+    "events": 9,
+    "beam": 21.0,
+    "exact": 21.0,
+    "states_exact": 900,
+    "match": true
+   },
+   {
+    "piece": "087",
+    "events": 11,
+    "beam": 136.41956081607225,
+    "exact": 136.41956081607225,
+    "states_exact": 1500,
+    "match": true
+   },
+   {
+    "piece": "031",
+    "events": 9,
+    "beam": 15.0,
+    "exact": 15.0,
+    "states_exact": 324,
+    "match": true
+   },
+   {
+    "piece": "052",
+    "events": 10,
+    "beam": 8.0,
+    "exact": 8.0,
+    "states_exact": 234,
+    "match": true
+   },
+   {
+    "piece": "058",
+    "events": 9,
+    "beam": 26.0,
+    "exact": 26.0,
+    "states_exact": 5000,
+    "match": true
+   },
+   {
+    "piece": "119",
+    "events": 8,
+    "beam": 43.916446036442935,
+    "exact": 43.916446036442935,
+    "states_exact": 144,
+    "match": true
+   },
+   {
+    "piece": "034",
+    "events": 8,
+    "beam": 6.0,
+    "exact": 6.0,
+    "states_exact": 1800,
+    "match": true
+   },
+   {
+    "piece": "069",
+    "events": 10,
+    "beam": 51.0,
+    "exact": 51.0,
+    "states_exact": 162,
+    "match": true
+   },
+   {
+    "piece": "052",
+    "events": 12,
+    "beam": 12.0,
+    "exact": 12.0,
+    "states_exact": 306,
+    "match": true
+   },
+   {
+    "piece": "031",
+    "events": 12,
+    "beam": 7.0,
+    "exact": 7.0,
+    "states_exact": 324,
+    "match": true
+   },
+   {
+    "piece": "074",
+    "events": 9,
+    "beam": 17.0,
+    "exact": 17.0,
+    "states_exact": 255,
+    "match": true
+   }
+  ]
+ },
+ "assign": {
+  "windows": 200,
+  "beam": 10000,
+  "agreement": 1.0,
+  "passed": true,
+  "max_states_unpruned": 30556,
+  "rows": [
+   {
+    "piece": "107",
+    "events": 11,
+    "beam": 2.0,
+    "exact": 2.0,
+    "states_exact": 1336,
+    "match": true
+   },
+   {
+    "piece": "025",
+    "events": 9,
+    "beam": 2.0,
+    "exact": 2.0,
+    "states_exact": 1800,
+    "match": true
+   },
+   {
+    "piece": "058",
+    "events": 8,
+    "beam": 2.0,
+    "exact": 2.0,
+    "states_exact": 2300,
+    "match": true
+   },
+   {
+    "piece": "101",
+    "events": 11,
+    "beam": 364.2663136583087,
+    "exact": 364.2663136583087,
+    "states_exact": 162,
+    "match": true
+   },
+   {
+    "piece": "034",
+    "events": 11,
+    "beam": 32.60831646161072,
+    "exact": 32.60831646161072,
+    "states_exact": 1469,
+    "match": true
+   },
+   {
+    "piece": "077",
+    "events": 11,
+    "beam": 163.0,
+    "exact": 163.0,
+    "states_exact": 1090,
+    "match": true
+   },
+   {
+    "piece": "042",
+    "events": 12,
+    "beam": 4.0,
+    "exact": 4.0,
+    "states_exact": 1250,
+    "match": true
+   },
+   {
+    "piece": "101",
+    "events": 11,
+    "beam": 2.0,
+    "exact": 2.0,
+    "states_exact": 29272,
+    "match": true
+   },
+   {
+    "piece": "033",
+    "events": 12,
+    "beam": 38.0,
+    "exact": 38.0,
+    "states_exact": 10152,
+    "match": true
+   },
+   {
+    "piece": "026",
+    "events": 11,
+    "beam": 728.0,
+    "exact": 728.0,
+    "states_exact": 54,
+    "match": true
+   },
+   {
+    "piece": "107",
+    "events": 8,
+    "beam": 1.0,
+    "exact": 1.0,
+    "states_exact": 1344,
+    "match": true
+   },
+   {
+    "piece": "110",
+    "events": 8,
+    "beam": 8.0,
+    "exact": 8.0,
+    "states_exact": 2296,
+    "match": true
+   },
+   {
+    "piece": "058",
+    "events": 9,
+    "beam": 73.0,
+    "exact": 73.0,
+    "states_exact": 5500,
+    "match": true
+   },
+   {
+    "piece": "034",
+    "events": 10,
+    "beam": 10.0,
+    "exact": 10.0,
+    "states_exact": 8250,
+    "match": true
+   },
+   {
+    "piece": "005",
+    "events": 8,
+    "beam": 1.0,
+    "exact": 1.0,
+    "states_exact": 16308,
+    "match": true
+   },
+   {
+    "piece": "069",
+    "events": 10,
+    "beam": 19.0,
+    "exact": 19.0,
+    "states_exact": 1209,
+    "match": true
+   },
+   {
+    "piece": "025",
+    "events": 11,
+    "beam": 168.0,
+    "exact": 168.0,
+    "states_exact": 720,
+    "match": true
+   },
+   {
+    "piece": "033",
+    "events": 10,
+    "beam": 5.0,
+    "exact": 5.0,
+    "states_exact": 5564,
+    "match": true
+   },
+   {
+    "piece": "101",
+    "events": 12,
+    "beam": 100.0,
+    "exact": 100.0,
+    "states_exact": 540,
+    "match": true
+   },
+   {
+    "piece": "074",
+    "events": 12,
+    "beam": 13.0,
+    "exact": 13.0,
+    "states_exact": 1150,
+    "match": true
+   },
+   {
+    "piece": "107",
+    "events": 11,
+    "beam": 0.0,
+    "exact": 0.0,
+    "states_exact": 26856,
+    "match": true
+   },
+   {
+    "piece": "033",
+    "events": 12,
+    "beam": 12.0,
+    "exact": 12.0,
+    "states_exact": 1140,
+    "match": true
+   },
+   {
+    "piece": "052",
+    "events": 11,
+    "beam": 10.0,
+    "exact": 10.0,
+    "states_exact": 6486,
+    "match": true
+   },
+   {
+    "piece": "038",
+    "events": 9,
+    "beam": 33.0,
+    "exact": 33.0,
+    "states_exact": 14700,
+    "match": true
+   },
+   {
+    "piece": "034",
+    "events": 10,
+    "beam": 50.0,
+    "exact": 50.0,
+    "states_exact": 729,
+    "match": true
+   },
+   {
+    "piece": "112",
+    "events": 8,
+    "beam": 4.0,
+    "exact": 4.0,
+    "states_exact": 2532,
+    "match": true
+   },
+   {
+    "piece": "038",
+    "events": 9,
+    "beam": 9.0,
+    "exact": 9.0,
+    "states_exact": 1870,
+    "match": true
+   },
+   {
+    "piece": "042",
+    "events": 9,
+    "beam": 4.0,
+    "exact": 4.0,
+    "states_exact": 1800,
+    "match": true
+   },
+   {
+    "piece": "077",
+    "events": 10,
+    "beam": 37.0,
+    "exact": 37.0,
+    "states_exact": 1025,
+    "match": true
+   },
+   {
+    "piece": "031",
+    "events": 11,
+    "beam": 527.4617660800503,
+    "exact": 527.4617660800503,
+    "states_exact": 1286,
+    "match": true
+   },
+   {
+    "piece": "031",
+    "events": 12,
+    "beam": 365.2982401495094,
+    "exact": 365.2982401495094,
+    "states_exact": 1477,
+    "match": true
+   },
+   {
+    "piece": "002",
+    "events": 11,
+    "beam": 3.0,
+    "exact": 3.0,
+    "states_exact": 2286,
+    "match": true
+   },
+   {
+    "piece": "029",
+    "events": 8,
+    "beam": 15.0,
+    "exact": 15.0,
+    "states_exact": 9000,
+    "match": true
+   },
+   {
+    "piece": "107",
+    "events": 10,
+    "beam": 5.0,
+    "exact": 5.0,
+    "states_exact": 1384,
+    "match": true
+   },
+   {
+    "piece": "031",
+    "events": 9,
+    "beam": 5.0,
+    "exact": 5.0,
+    "states_exact": 19836,
+    "match": true
+   },
+   {
+    "piece": "110",
+    "events": 8,
+    "beam": 30.0,
+    "exact": 30.0,
+    "states_exact": 2475,
+    "match": true
+   },
+   {
+    "piece": "069",
+    "events": 9,
+    "beam": 16.0,
+    "exact": 16.0,
+    "states_exact": 594,
+    "match": true
+   },
+   {
+    "piece": "091",
+    "events": 12,
+    "beam": 53.133156829154345,
+    "exact": 53.133156829154345,
+    "states_exact": 1650,
+    "match": true
+   },
+   {
+    "piece": "112",
+    "events": 11,
+    "beam": 127.0,
+    "exact": 127.0,
+    "states_exact": 1080,
+    "match": true
+   },
+   {
+    "piece": "002",
+    "events": 11,
+    "beam": 4.0,
+    "exact": 4.0,
+    "states_exact": 792,
+    "match": true
+   },
+   {
+    "piece": "042",
+    "events": 10,
+    "beam": 0.0,
+    "exact": 0.0,
+    "states_exact": 2172,
+    "match": true
+   },
+   {
+    "piece": "002",
+    "events": 12,
+    "beam": 6.0,
+    "exact": 6.0,
+    "states_exact": 1368,
+    "match": true
+   },
+   {
+    "piece": "067",
+    "events": 10,
+    "beam": 341.2663136583087,
+    "exact": 341.2663136583087,
+    "states_exact": 378,
+    "match": true
+   },
+   {
+    "piece": "031",
+    "events": 12,
+    "beam": 43.02024606759058,
+    "exact": 43.02024606759058,
+    "states_exact": 1221,
+    "match": true
+   },
+   {
+    "piece": "112",
+    "events": 8,
+    "beam": 14.0,
+    "exact": 14.0,
+    "states_exact": 2046,
+    "match": true
+   },
+   {
+    "piece": "123",
+    "events": 8,
+    "beam": 178.2663136583087,
+    "exact": 178.2663136583087,
+    "states_exact": 540,
+    "match": true
+   },
+   {
+    "piece": "067",
+    "events": 8,
+    "beam": 127.26631365830869,
+    "exact": 127.26631365830869,
+    "states_exact": 4900,
+    "match": true
+   },
+   {
+    "piece": "067",
+    "events": 11,
+    "beam": 137.0,
+    "exact": 137.0,
+    "states_exact": 63,
+    "match": true
+   },
+   {
+    "piece": "033",
+    "events": 10,
+    "beam": 6.0,
+    "exact": 6.0,
+    "states_exact": 1058,
+    "match": true
+   },
+   {
+    "piece": "136",
+    "events": 8,
+    "beam": 23.382339199501615,
+    "exact": 23.382339199501615,
+    "states_exact": 952,
+    "match": true
+   },
+   {
+    "piece": "029",
+    "events": 10,
+    "beam": 285.0,
+    "exact": 285.0,
+    "states_exact": 81,
+    "match": true
+   },
+   {
+    "piece": "067",
+    "events": 9,
+    "beam": 161.0,
+    "exact": 161.0,
+    "states_exact": 25,
+    "match": true
+   },
+   {
+    "piece": "053",
+    "events": 12,
+    "beam": 2.0,
+    "exact": 2.0,
+    "states_exact": 1800,
+    "match": true
+   },
+   {
+    "piece": "034",
+    "events": 12,
+    "beam": 141.0,
+    "exact": 141.0,
+    "states_exact": 2400,
+    "match": true
+   },
+   {
+    "piece": "033",
+    "events": 10,
+    "beam": 3.0,
+    "exact": 3.0,
+    "states_exact": 1058,
+    "match": true
+   },
+   {
+    "piece": "038",
+    "events": 9,
+    "beam": 8.0,
+    "exact": 8.0,
+    "states_exact": 3320,
+    "match": true
+   },
+   {
+    "piece": "058",
+    "events": 10,
+    "beam": 10.0,
+    "exact": 10.0,
+    "states_exact": 1800,
+    "match": true
+   },
+   {
+    "piece": "081",
+    "events": 11,
+    "beam": 61.384208067279275,
+    "exact": 61.384208067279275,
+    "states_exact": 2205,
+    "match": true
+   },
+   {
+    "piece": "119",
+    "events": 12,
+    "beam": 130.0,
+    "exact": 130.0,
+    "states_exact": 720,
+    "match": true
+   },
+   {
+    "piece": "073",
+    "events": 8,
+    "beam": 134.0,
+    "exact": 134.0,
+    "states_exact": 2970,
+    "match": true
+   },
+   {
+    "piece": "136",
+    "events": 12,
+    "beam": 32.098115558324196,
+    "exact": 32.098115558324196,
+    "states_exact": 2952,
+    "match": true
+   },
+   {
+    "piece": "136",
+    "events": 12,
+    "beam": 32.5024139542127,
+    "exact": 32.5024139542127,
+    "states_exact": 9044,
+    "match": true
+   },
+   {
+    "piece": "073",
+    "events": 12,
+    "beam": 162.0,
+    "exact": 162.0,
+    "states_exact": 1610,
+    "match": true
+   },
+   {
+    "piece": "141",
+    "events": 12,
+    "beam": 4.0,
+    "exact": 4.0,
+    "states_exact": 30556,
+    "match": true
+   },
+   {
+    "piece": "031",
+    "events": 8,
+    "beam": 17.940507709079842,
+    "exact": 17.940507709079842,
+    "states_exact": 108,
+    "match": true
+   },
+   {
+    "piece": "141",
+    "events": 9,
+    "beam": 79.13315682915436,
+    "exact": 79.13315682915436,
+    "states_exact": 1000,
+    "match": true
+   },
+   {
+    "piece": "033",
+    "events": 12,
+    "beam": 17.0,
+    "exact": 17.0,
+    "states_exact": 756,
+    "match": true
+   },
+   {
+    "piece": "034",
+    "events": 9,
+    "beam": 5.0,
+    "exact": 5.0,
+    "states_exact": 1532,
+    "match": true
+   },
+   {
+    "piece": "112",
+    "events": 12,
+    "beam": 5.0,
+    "exact": 5.0,
+    "states_exact": 29544,
+    "match": true
+   },
+   {
+    "piece": "119",
+    "events": 12,
+    "beam": 227.0,
+    "exact": 227.0,
+    "states_exact": 189,
+    "match": true
+   },
+   {
+    "piece": "034",
+    "events": 10,
+    "beam": 226.0,
+    "exact": 226.0,
+    "states_exact": 144,
+    "match": true
+   },
+   {
+    "piece": "034",
+    "events": 8,
+    "beam": 3.0,
+    "exact": 3.0,
+    "states_exact": 11556,
+    "match": true
+   },
+   {
+    "piece": "074",
+    "events": 8,
+    "beam": 13.133156829154345,
+    "exact": 13.133156829154345,
+    "states_exact": 1012,
+    "match": true
+   },
+   {
+    "piece": "077",
+    "events": 8,
+    "beam": 102.0,
+    "exact": 102.0,
+    "states_exact": 2112,
+    "match": true
+   },
+   {
+    "piece": "034",
+    "events": 8,
+    "beam": 20.28469085812133,
+    "exact": 20.28469085812133,
+    "states_exact": 7100,
+    "match": true
+   },
+   {
+    "piece": "077",
+    "events": 9,
+    "beam": 26.0,
+    "exact": 26.0,
+    "states_exact": 1863,
+    "match": true
+   },
+   {
+    "piece": "058",
+    "events": 11,
+    "beam": 33.0,
+    "exact": 33.0,
+    "states_exact": 15000,
+    "match": true
+   },
+   {
+    "piece": "034",
+    "events": 12,
+    "beam": 108.60831646161071,
+    "exact": 108.60831646161071,
+    "states_exact": 1650,
+    "match": true
+   },
+   {
+    "piece": "025",
+    "events": 8,
+    "beam": 45.0,
+    "exact": 45.0,
+    "states_exact": 2809,
+    "match": true
+   },
+   {
+    "piece": "107",
+    "events": 11,
+    "beam": 1.0,
+    "exact": 1.0,
+    "states_exact": 17558,
+    "match": true
+   },
+   {
+    "piece": "069",
+    "events": 9,
+    "beam": 4.0,
+    "exact": 4.0,
+    "states_exact": 5600,
+    "match": true
+   },
+   {
+    "piece": "034",
+    "events": 12,
+    "beam": 25.0,
+    "exact": 25.0,
+    "states_exact": 19222,
+    "match": true
+   },
+   {
+    "piece": "091",
+    "events": 10,
+    "beam": 9.0,
+    "exact": 9.0,
+    "states_exact": 3150,
+    "match": true
+   },
+   {
+    "piece": "025",
+    "events": 9,
+    "beam": 215.0,
+    "exact": 215.0,
+    "states_exact": 1127,
+    "match": true
+   },
+   {
+    "piece": "002",
+    "events": 12,
+    "beam": 2.0,
+    "exact": 2.0,
+    "states_exact": 1704,
+    "match": true
+   },
+   {
+    "piece": "002",
+    "events": 8,
+    "beam": 5.0,
+    "exact": 5.0,
+    "states_exact": 760,
+    "match": true
+   },
+   {
+    "piece": "092",
+    "events": 9,
+    "beam": 215.2663136583087,
+    "exact": 215.2663136583087,
+    "states_exact": 3000,
+    "match": true
+   },
+   {
+    "piece": "052",
+    "events": 12,
+    "beam": 19.190001557389884,
+    "exact": 19.190001557389884,
+    "states_exact": 6952,
+    "match": true
+   },
+   {
+    "piece": "085",
+    "events": 12,
+    "beam": 58.4902663136583,
+    "exact": 58.4902663136583,
+    "states_exact": 2244,
+    "match": true
+   },
+   {
+    "piece": "042",
+    "events": 10,
+    "beam": 12.0,
+    "exact": 12.0,
+    "states_exact": 1222,
+    "match": true
+   },
+   {
+    "piece": "034",
+    "events": 10,
+    "beam": 37.446503659866025,
+    "exact": 37.446503659866025,
+    "states_exact": 9610,
+    "match": true
+   },
+   {
+    "piece": "102",
+    "events": 12,
+    "beam": 153.0,
+    "exact": 153.0,
+    "states_exact": 552,
+    "match": true
+   },
+   {
+    "piece": "074",
+    "events": 12,
+    "beam": 10.26631365830869,
+    "exact": 10.26631365830869,
+    "states_exact": 1058,
+    "match": true
+   },
+   {
+    "piece": "031",
+    "events": 8,
+    "beam": 2.0,
+    "exact": 2.0,
+    "states_exact": 1324,
+    "match": true
+   },
+   {
+    "piece": "002",
+    "events": 10,
+    "beam": 6.0,
+    "exact": 6.0,
+    "states_exact": 792,
+    "match": true
+   },
+   {
+    "piece": "107",
+    "events": 12,
+    "beam": 3.0,
+    "exact": 3.0,
+    "states_exact": 1344,
+    "match": true
+   },
+   {
+    "piece": "102",
+    "events": 10,
+    "beam": 118.0,
+    "exact": 118.0,
+    "states_exact": 432,
+    "match": true
+   },
+   {
+    "piece": "114",
+    "events": 12,
+    "beam": 0.0,
+    "exact": 0.0,
+    "states_exact": 5650,
+    "match": true
+   },
+   {
+    "piece": "053",
+    "events": 12,
+    "beam": 137.13315682915436,
+    "exact": 137.13315682915436,
+    "states_exact": 8060,
+    "match": true
+   },
+   {
+    "piece": "033",
+    "events": 12,
+    "beam": 7.0,
+    "exact": 7.0,
+    "states_exact": 1058,
+    "match": true
+   },
+   {
+    "piece": "073",
+    "events": 8,
+    "beam": 156.0,
+    "exact": 156.0,
+    "states_exact": 720,
+    "match": true
+   },
+   {
+    "piece": "031",
+    "events": 8,
+    "beam": 1.0,
+    "exact": 1.0,
+    "states_exact": 8160,
+    "match": true
+   },
+   {
+    "piece": "025",
+    "events": 11,
+    "beam": 223.0,
+    "exact": 223.0,
+    "states_exact": 1744,
+    "match": true
+   },
+   {
+    "piece": "025",
+    "events": 12,
+    "beam": 133.0,
+    "exact": 133.0,
+    "states_exact": 3519,
+    "match": true
+   },
+   {
+    "piece": "067",
+    "events": 12,
+    "beam": 150.2663136583087,
+    "exact": 150.2663136583087,
+    "states_exact": 4050,
+    "match": true
+   },
+   {
+    "piece": "087",
+    "events": 8,
+    "beam": 28.0,
+    "exact": 28.0,
+    "states_exact": 5250,
+    "match": true
+   },
+   {
+    "piece": "033",
+    "events": 8,
+    "beam": 1.0,
+    "exact": 1.0,
+    "states_exact": 16278,
+    "match": true
+   },
+   {
+    "piece": "033",
+    "events": 10,
+    "beam": 2.0,
+    "exact": 2.0,
+    "states_exact": 9756,
+    "match": true
+   },
+   {
+    "piece": "031",
+    "events": 10,
+    "beam": 21.604267248092075,
+    "exact": 21.604267248092075,
+    "states_exact": 54,
+    "match": true
+   },
+   {
+    "piece": "141",
+    "events": 11,
+    "beam": 83.56657841457718,
+    "exact": 83.56657841457718,
+    "states_exact": 10080,
+    "match": true
+   },
+   {
+    "piece": "005",
+    "events": 9,
+    "beam": 14.428437938015875,
+    "exact": 14.428437938015875,
+    "states_exact": 940,
+    "match": true
+   },
+   {
+    "piece": "025",
+    "events": 10,
+    "beam": 20.0,
+    "exact": 20.0,
+    "states_exact": 1900,
+    "match": true
+   },
+   {
+    "piece": "067",
+    "events": 12,
+    "beam": 55.0,
+    "exact": 55.0,
+    "states_exact": 15000,
+    "match": true
+   },
+   {
+    "piece": "034",
+    "events": 11,
+    "beam": 52.169755489799314,
+    "exact": 52.169755489799314,
+    "states_exact": 815,
+    "match": true
+   },
+   {
+    "piece": "042",
+    "events": 12,
+    "beam": 4.0,
+    "exact": 4.0,
+    "states_exact": 1672,
+    "match": true
+   },
+   {
+    "piece": "031",
+    "events": 8,
+    "beam": 35.2228624824796,
+    "exact": 35.2228624824796,
+    "states_exact": 6354,
+    "match": true
+   },
+   {
+    "piece": "025",
+    "events": 12,
+    "beam": 34.0,
+    "exact": 34.0,
+    "states_exact": 2700,
+    "match": true
+   },
+   {
+    "piece": "101",
+    "events": 9,
+    "beam": 314.0,
+    "exact": 314.0,
+    "states_exact": 108,
+    "match": true
+   },
+   {
+    "piece": "038",
+    "events": 12,
+    "beam": 388.0,
+    "exact": 388.0,
+    "states_exact": 6300,
+    "match": true
+   },
+   {
+    "piece": "119",
+    "events": 12,
+    "beam": 314.0,
+    "exact": 314.0,
+    "states_exact": 4410,
+    "match": true
+   },
+   {
+    "piece": "067",
+    "events": 12,
+    "beam": 200.0,
+    "exact": 200.0,
+    "states_exact": 35,
+    "match": true
+   },
+   {
+    "piece": "017",
+    "events": 10,
+    "beam": 4.0,
+    "exact": 4.0,
+    "states_exact": 1152,
+    "match": true
+   },
+   {
+    "piece": "071",
+    "events": 11,
+    "beam": 61.0,
+    "exact": 61.0,
+    "states_exact": 6687,
+    "match": true
+   },
+   {
+    "piece": "074",
+    "events": 12,
+    "beam": 17.133156829154345,
+    "exact": 17.133156829154345,
+    "states_exact": 1012,
+    "match": true
+   },
+   {
+    "piece": "074",
+    "events": 9,
+    "beam": 15.133156829154345,
+    "exact": 15.133156829154345,
+    "states_exact": 1028,
+    "match": true
+   },
+   {
+    "piece": "114",
+    "events": 10,
+    "beam": 2.0,
+    "exact": 2.0,
+    "states_exact": 3600,
+    "match": true
+   },
+   {
+    "piece": "074",
+    "events": 10,
+    "beam": 7.133156829154345,
+    "exact": 7.133156829154345,
+    "states_exact": 1058,
+    "match": true
+   },
+   {
+    "piece": "140",
+    "events": 11,
+    "beam": 28.133156829154345,
+    "exact": 28.133156829154345,
+    "states_exact": 2305,
+    "match": true
+   },
+   {
+    "piece": "085",
+    "events": 10,
+    "beam": 2.0,
+    "exact": 2.0,
+    "states_exact": 1575,
+    "match": true
+   },
+   {
+    "piece": "058",
+    "events": 10,
+    "beam": 8.0,
+    "exact": 8.0,
+    "states_exact": 7200,
+    "match": true
+   },
+   {
+    "piece": "026",
+    "events": 10,
+    "beam": 164.0,
+    "exact": 164.0,
+    "states_exact": 2916,
+    "match": true
+   },
+   {
+    "piece": "005",
+    "events": 10,
+    "beam": 5.0,
+    "exact": 5.0,
+    "states_exact": 3150,
+    "match": true
+   },
+   {
+    "piece": "081",
+    "events": 12,
+    "beam": 9.0,
+    "exact": 9.0,
+    "states_exact": 3870,
+    "match": true
+   },
+   {
+    "piece": "052",
+    "events": 12,
+    "beam": 8.0,
+    "exact": 8.0,
+    "states_exact": 884,
+    "match": true
+   },
+   {
+    "piece": "094",
+    "events": 8,
+    "beam": 8.0,
+    "exact": 8.0,
+    "states_exact": 5730,
+    "match": true
+   },
+   {
+    "piece": "069",
+    "events": 10,
+    "beam": 47.0,
+    "exact": 47.0,
+    "states_exact": 162,
+    "match": true
+   },
+   {
+    "piece": "069",
+    "events": 10,
+    "beam": 70.0,
+    "exact": 70.0,
+    "states_exact": 324,
+    "match": true
+   },
+   {
+    "piece": "053",
+    "events": 12,
+    "beam": 3.0,
+    "exact": 3.0,
+    "states_exact": 998,
+    "match": true
+   },
+   {
+    "piece": "058",
+    "events": 8,
+    "beam": 13.0,
+    "exact": 13.0,
+    "states_exact": 12300,
+    "match": true
+   },
+   {
+    "piece": "034",
+    "events": 10,
+    "beam": 12.0,
+    "exact": 12.0,
+    "states_exact": 1620,
+    "match": true
+   },
+   {
+    "piece": "031",
+    "events": 8,
+    "beam": 13.0,
+    "exact": 13.0,
+    "states_exact": 2812,
+    "match": true
+   },
+   {
+    "piece": "033",
+    "events": 12,
+    "beam": 5.0,
+    "exact": 5.0,
+    "states_exact": 1008,
+    "match": true
+   },
+   {
+    "piece": "074",
+    "events": 11,
+    "beam": 17.26631365830869,
+    "exact": 17.26631365830869,
+    "states_exact": 1012,
+    "match": true
+   },
+   {
+    "piece": "058",
+    "events": 9,
+    "beam": 26.0,
+    "exact": 26.0,
+    "states_exact": 15000,
+    "match": true
+   },
+   {
+    "piece": "141",
+    "events": 12,
+    "beam": 254.0,
+    "exact": 254.0,
+    "states_exact": 1946,
+    "match": true
+   },
+   {
+    "piece": "034",
+    "events": 10,
+    "beam": 3.0,
+    "exact": 3.0,
+    "states_exact": 2400,
+    "match": true
+   },
+   {
+    "piece": "087",
+    "events": 11,
+    "beam": 30.0,
+    "exact": 30.0,
+    "states_exact": 5400,
+    "match": true
+   },
+   {
+    "piece": "114",
+    "events": 9,
+    "beam": 357.0479676062919,
+    "exact": 357.0479676062919,
+    "states_exact": 2160,
+    "match": true
+   },
+   {
+    "piece": "053",
+    "events": 8,
+    "beam": 0.0,
+    "exact": 0.0,
+    "states_exact": 1458,
+    "match": true
+   },
+   {
+    "piece": "037",
+    "events": 9,
+    "beam": 7.0,
+    "exact": 7.0,
+    "states_exact": 2200,
+    "match": true
+   },
+   {
+    "piece": "069",
+    "events": 11,
+    "beam": 57.0,
+    "exact": 57.0,
+    "states_exact": 324,
+    "match": true
+   },
+   {
+    "piece": "034",
+    "events": 8,
+    "beam": 29.233452733218073,
+    "exact": 29.233452733218073,
+    "states_exact": 422,
+    "match": true
+   },
+   {
+    "piece": "025",
+    "events": 11,
+    "beam": 41.0,
+    "exact": 41.0,
+    "states_exact": 4921,
+    "match": true
+   },
+   {
+    "piece": "031",
+    "events": 8,
+    "beam": 161.01572963712817,
+    "exact": 161.01572963712817,
+    "states_exact": 2448,
+    "match": true
+   },
+   {
+    "piece": "005",
+    "events": 10,
+    "beam": 22.0,
+    "exact": 22.0,
+    "states_exact": 920,
+    "match": true
+   },
+   {
+    "piece": "034",
+    "events": 11,
+    "beam": 38.169755489799314,
+    "exact": 38.169755489799314,
+    "states_exact": 7470,
+    "match": true
+   },
+   {
+    "piece": "002",
+    "events": 8,
+    "beam": 21.0,
+    "exact": 21.0,
+    "states_exact": 778,
+    "match": true
+   },
+   {
+    "piece": "052",
+    "events": 9,
+    "beam": 5.0,
+    "exact": 5.0,
+    "states_exact": 2790,
+    "match": true
+   },
+   {
+    "piece": "081",
+    "events": 12,
+    "beam": 2.0,
+    "exact": 2.0,
+    "states_exact": 2700,
+    "match": true
+   },
+   {
+    "piece": "034",
+    "events": 10,
+    "beam": 26.122878056378298,
+    "exact": 26.122878056378298,
+    "states_exact": 1532,
+    "match": true
+   },
+   {
+    "piece": "034",
+    "events": 8,
+    "beam": 38.245756112756595,
+    "exact": 38.245756112756595,
+    "states_exact": 560,
+    "match": true
+   },
+   {
+    "piece": "136",
+    "events": 8,
+    "beam": 11.0,
+    "exact": 11.0,
+    "states_exact": 1872,
+    "match": true
+   },
+   {
+    "piece": "067",
+    "events": 10,
+    "beam": 66.0,
+    "exact": 66.0,
+    "states_exact": 2625,
+    "match": true
+   },
+   {
+    "piece": "101",
+    "events": 10,
+    "beam": 146.0,
+    "exact": 146.0,
+    "states_exact": 324,
+    "match": true
+   },
+   {
+    "piece": "085",
+    "events": 11,
+    "beam": 24.447282354773463,
+    "exact": 24.447282354773463,
+    "states_exact": 2592,
+    "match": true
+   },
+   {
+    "piece": "114",
+    "events": 12,
+    "beam": 4.0,
+    "exact": 4.0,
+    "states_exact": 9220,
+    "match": true
+   },
+   {
+    "piece": "042",
+    "events": 12,
+    "beam": 0.0,
+    "exact": 0.0,
+    "states_exact": 1872,
+    "match": true
+   },
+   {
+    "piece": "033",
+    "events": 10,
+    "beam": 5.0,
+    "exact": 5.0,
+    "states_exact": 1272,
+    "match": true
+   },
+   {
+    "piece": "074",
+    "events": 12,
+    "beam": 17.270207132845357,
+    "exact": 17.270207132845357,
+    "states_exact": 1028,
+    "match": true
+   },
+   {
+    "piece": "092",
+    "events": 8,
+    "beam": 79.26631365830869,
+    "exact": 79.26631365830869,
+    "states_exact": 2450,
+    "match": true
+   },
+   {
+    "piece": "005",
+    "events": 10,
+    "beam": 2.0,
+    "exact": 2.0,
+    "states_exact": 25980,
+    "match": true
+   },
+   {
+    "piece": "110",
+    "events": 12,
+    "beam": 58.0,
+    "exact": 58.0,
+    "states_exact": 7050,
+    "match": true
+   },
+   {
+    "piece": "102",
+    "events": 11,
+    "beam": 319.0,
+    "exact": 319.0,
+    "states_exact": 648,
+    "match": true
+   },
+   {
+    "piece": "094",
+    "events": 12,
+    "beam": 80.90686808908268,
+    "exact": 80.90686808908268,
+    "states_exact": 8250,
+    "match": true
+   },
+   {
+    "piece": "074",
+    "events": 9,
+    "beam": 12.133156829154345,
+    "exact": 12.133156829154345,
+    "states_exact": 698,
+    "match": true
+   },
+   {
+    "piece": "094",
+    "events": 11,
+    "beam": 90.0,
+    "exact": 90.0,
+    "states_exact": 2952,
+    "match": true
+   },
+   {
+    "piece": "033",
+    "events": 9,
+    "beam": 5.0,
+    "exact": 5.0,
+    "states_exact": 950,
+    "match": true
+   },
+   {
+    "piece": "033",
+    "events": 10,
+    "beam": 6.0,
+    "exact": 6.0,
+    "states_exact": 1058,
+    "match": true
+   },
+   {
+    "piece": "052",
+    "events": 8,
+    "beam": 2.0,
+    "exact": 2.0,
+    "states_exact": 2222,
+    "match": true
+   },
+   {
+    "piece": "033",
+    "events": 8,
+    "beam": 0.0,
+    "exact": 0.0,
+    "states_exact": 13152,
+    "match": true
+   },
+   {
+    "piece": "034",
+    "events": 11,
+    "beam": 9.0,
+    "exact": 9.0,
+    "states_exact": 27778,
+    "match": true
+   },
+   {
+    "piece": "107",
+    "events": 8,
+    "beam": 1.0,
+    "exact": 1.0,
+    "states_exact": 1344,
+    "match": true
+   },
+   {
+    "piece": "033",
+    "events": 11,
+    "beam": 8.0,
+    "exact": 8.0,
+    "states_exact": 1064,
+    "match": true
+   },
+   {
+    "piece": "102",
+    "events": 8,
+    "beam": 220.0,
+    "exact": 220.0,
+    "states_exact": 432,
+    "match": true
+   },
+   {
+    "piece": "029",
+    "events": 12,
+    "beam": 30.0,
+    "exact": 30.0,
+    "states_exact": 13638,
+    "match": true
+   },
+   {
+    "piece": "034",
+    "events": 9,
+    "beam": 7.0,
+    "exact": 7.0,
+    "states_exact": 12740,
+    "match": true
+   },
+   {
+    "piece": "069",
+    "events": 12,
+    "beam": 84.74894876187507,
+    "exact": 84.74894876187507,
+    "states_exact": 864,
+    "match": true
+   },
+   {
+    "piece": "034",
+    "events": 10,
+    "beam": 83.31755178321194,
+    "exact": 83.31755178321194,
+    "states_exact": 1458,
+    "match": true
+   },
+   {
+    "piece": "034",
+    "events": 12,
+    "beam": 47.77012926335486,
+    "exact": 47.77012926335486,
+    "states_exact": 7260,
+    "match": true
+   },
+   {
+    "piece": "034",
+    "events": 9,
+    "beam": 21.0,
+    "exact": 21.0,
+    "states_exact": 1450,
+    "match": true
+   },
+   {
+    "piece": "087",
+    "events": 11,
+    "beam": 83.0,
+    "exact": 83.0,
+    "states_exact": 5150,
+    "match": true
+   },
+   {
+    "piece": "031",
+    "events": 9,
+    "beam": 1.0,
+    "exact": 1.0,
+    "states_exact": 4536,
+    "match": true
+   },
+   {
+    "piece": "052",
+    "events": 10,
+    "beam": 8.0,
+    "exact": 8.0,
+    "states_exact": 4392,
+    "match": true
+   },
+   {
+    "piece": "058",
+    "events": 9,
+    "beam": 26.0,
+    "exact": 26.0,
+    "states_exact": 15000,
+    "match": true
+   },
+   {
+    "piece": "119",
+    "events": 8,
+    "beam": 43.916446036442935,
+    "exact": 43.916446036442935,
+    "states_exact": 2124,
+    "match": true
+   },
+   {
+    "piece": "034",
+    "events": 8,
+    "beam": 6.0,
+    "exact": 6.0,
+    "states_exact": 2300,
+    "match": true
+   },
+   {
+    "piece": "069",
+    "events": 10,
+    "beam": 51.0,
+    "exact": 51.0,
+    "states_exact": 864,
+    "match": true
+   },
+   {
+    "piece": "052",
+    "events": 12,
+    "beam": 12.0,
+    "exact": 12.0,
+    "states_exact": 2930,
+    "match": true
+   },
+   {
+    "piece": "031",
+    "events": 12,
+    "beam": 7.0,
+    "exact": 7.0,
+    "states_exact": 1392,
+    "match": true
+   },
+   {
+    "piece": "074",
+    "events": 9,
+    "beam": 17.0,
+    "exact": 17.0,
+    "states_exact": 940,
+    "match": true
+   }
+  ]
+ }
+}

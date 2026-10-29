@@ -1,0 +1,42 @@
+{
+ "assign_cpu": {
+  "env_only": 9061.670789707758,
+  "act": 8690.356489208632,
+  "train": 881.6013218624014,
+  "device": "cpu",
+  "mode": "assign",
+  "steps": 1000,
+  "piece": "033",
+  "threads": 1
+ },
+ "assign_cuda": {
+  "env_only": 8455.919806075346,
+  "act": 5744.8646174876385,
+  "train": 2946.3434166044694,
+  "device": "cuda",
+  "mode": "assign",
+  "steps": 1000,
+  "piece": "033",
+  "threads": 1
+ },
+ "given_cpu": {
+  "env_only": 13210.653968015898,
+  "act": 11673.265813138662,
+  "train": 1023.910226125116,
+  "device": "cpu",
+  "mode": "given",
+  "steps": 1000,
+  "piece": "033",
+  "threads": 1
+ },
+ "given_cuda": {
+  "env_only": 13364.961108178251,
+  "act": 9402.88864276278,
+  "train": 3514.1868283401895,
+  "device": "cuda",
+  "mode": "given",
+  "steps": 1000,
+  "piece": "033",
+  "threads": 1
+ }
+}

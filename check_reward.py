@@ -30,6 +30,7 @@ import numpy as np
 
 from fingerly.pig import LEFT, RIGHT, Note, load_pig
 from fingerly.twohand.actions import canonical
+from fingerly.twohand.human import annotator_streams, hand_speeds
 from fingerly.twohand.prepare import Event, PrepConfig, piece_events, TEST_IDS_2025
 from fingerly.twohand.rules import (Balliauw15, Parncutt12, balliauw15_swap_pair, make_model, thumb_position,
                                     time_leap)
@@ -40,17 +41,6 @@ MIRROR_AXIS = 124  # p -> 124 - p reflects the keyboard around D4 (62): colours 
 # --------------------------------------------------------------------------------------
 # Human fingerings as hand streams
 # --------------------------------------------------------------------------------------
-def annotator_streams(notes: Sequence[Note], cfg: PrepConfig) -> Dict[str, List[Tuple[Event, Tuple[int, ...]]]]:
-    """One annotator's own hands and fingers: {hand: [(event, fingers aligned with event.pitches)]}.
-    Events are built from this annotator's hand assignment; unfingered notes are dropped."""
-    evs = piece_events([[n for n in notes if n.finger]], cfg)
-    out: Dict[str, list] = {LEFT: [], RIGHT: []}
-    for e in evs:
-        fingers = tuple(f for (_, f) in e.labels[0])
-        out[e.hand].append((e, fingers))
-    return out
-
-
 def stream_cost(model, hand: str, stream) -> np.ndarray:
     return model.sequence(hand, [(e.pitches, f) for e, f in stream])
 
@@ -217,26 +207,6 @@ def check_chords(pig, piece_ids, cfg: PrepConfig, model_name: str) -> dict:
 # --------------------------------------------------------------------------------------
 # 4. v_max
 # --------------------------------------------------------------------------------------
-def hand_speeds(pig, piece_ids, cfg: PrepConfig):
-    """|thumb shift| and onset gap between consecutive events of each hand, every annotator."""
-    shifts, dts = [], []
-    for k in piece_ids:
-        for ann in pig[k]:
-            st = annotator_streams(ann, cfg)
-            for hand in (LEFT, RIGHT):
-                prev = None
-                for e, fs in st[hand]:
-                    if len(set(fs)) != len(fs):
-                        prev = None
-                        continue
-                    th = thumb_position(hand, e.pitches, fs)
-                    if prev is not None:
-                        shifts.append(abs(th - prev[0]))
-                        dts.append(e.onset - prev[1])
-                    prev = (th, e.onset)
-    return np.array(shifts), np.array(dts)
-
-
 def check_vmax(pig, train_ids, eval_ids, cfg: PrepConfig, pct: float = 95.0) -> dict:
     s, dt = hand_speeds(pig, train_ids, cfg)
     ok = dt > 0

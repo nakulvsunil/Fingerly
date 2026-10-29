@@ -52,3 +52,35 @@ Each entry says what the README leaves open, what we chose (the simplest option)
     annotator on the training pieces, including events with no shift: 38.9 semitones/s. Excluding
     zero-shift transitions would give 44.1. The README's wording ("human hand speed") does not
     say which; the first is used.
+
+## Phase 2: state, environments, cost tables, search, speed
+
+17. **Mode 2a** (`--mode lh`) is the left hand's events of each segment, played alone: Part B
+    covered the right hand, and the README names the flag `lh`.
+18. **"A hand whose key is still sounding"** (2c hand mask) uses the note's offset *after* the
+    overlap processing of §C.4.2. Held notes are clipped at the hand's next onset, so a hand
+    holding a bass note can still play. With the original offsets, a hand holding a long note
+    could not play until the note ended, and the other hand had to take every one of its notes.
+    On validation that pushed 2c's optimum far above 2b's (411 vs 109 on one segment).
+19. **M0 ignores occupied fingers.** They depend on choices further back than the DP/beam state
+    holds. M0 is therefore a lower bound on what the environment allows; the gap to it is never
+    negative in 2a/2b.
+20. **Forced fallbacks.** Shift (no set reachable from the hand's fingers): all reachable sets of
+    the right size, cost 2. Unreachable chord (no set passes the reach mask): all sets of the size,
+    also cost 2, logged as forced. Occupied fingers that block every set are released without a
+    cost, logged as forced. All three count as infeasible transitions in the metrics.
+21. **Features: 67 numbers with K = 4**
+    (6 current + 7 per look-ahead event + 16 per hand + 1 mode; `features.py` lists them).
+    "Key" is the thumb-side note: right lowest, left highest. In 2c the current event's register
+    uses its lowest note. Time features are clipped at 2 s and scaled to [0, 1].
+22. **`--no-mask`** removes the feasibility masks (reach, transition, occupied, 2c hand masks)
+    and charges 10 per infeasible choice. The chord-size mask stays: a set of the wrong size has
+    no meaning. Chord events also keep their annotated hand.
+23. **Step counting.** Steps are environment steps: one vector step of 16 environments = 16
+    steps. "Update every 4 environment steps" = 4 updates of batch 256 per vector step.
+24. **GPU updates use a CUDA graph.** On the GPU the whole update (forward, Double DQN target,
+    Huber loss, optional DQfD margin, gradient clipping, Adam, soft target update) is captured
+    once and replayed: 0.6 ms instead of 3.6 ms. The environments always run on the CPU.
+25. **"Brute force"** for the beam check = the same search with no pruning. States are merged
+    only when their futures are identical, so this is exact. It is checked against plain
+    enumeration of every action sequence on segments of 4 events (unit tests).

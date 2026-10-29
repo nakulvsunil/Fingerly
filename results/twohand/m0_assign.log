@@ -1,0 +1,26 @@
+{
+ "segments": 14,
+ "events": 1972,
+ "notes": 2981,
+ "cost": 27521.859873851427,
+ "rules": 27299.0,
+ "cost_per_event": 13.956318394447985,
+ "seconds_total": 256.82470750808716,
+ "wall_seconds": 73.09957575798035,
+ "seconds_per_piece": 21.402058959007263,
+ "exact": false
+}
+wrote results\twohand\m0_assign_val.json
+{
+ "segments": 57,
+ "events": 10299,
+ "notes": 13212,
+ "cost": 85297.59676101853,
+ "rules": 81681.0,
+ "cost_per_event": 8.282124163609916,
+ "seconds_total": 2115.606081724167,
+ "wall_seconds": 546.7254121303558,
+ "seconds_per_piece": 70.5202027241389,
+ "exact": false
+}
+wrote results\twohand\m0_assign_test.json
