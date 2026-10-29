@@ -267,7 +267,7 @@ def replay(pool: SegmentPool, fingerings, infos: Optional[Sequence[SegInfo]] = N
     as infeasible. Used for S2, Q-learning, M0 and the pianists."""
     import dataclasses
 
-    from .actions import N_SETS
+    from .twohand.actions import N_SETS
 
     cfg = dataclasses.replace(pool.cfg, use_mask=False, lam=0.0)
     out = []

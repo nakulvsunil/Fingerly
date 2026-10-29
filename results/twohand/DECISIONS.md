@@ -84,3 +84,81 @@ Each entry says what the README leaves open, what we chose (the simplest option)
 25. **"Brute force"** for the beam check = the same search with no pruning. States are merged
     only when their futures are identical, so this is exact. It is checked against plain
     enumeration of every action sequence on segments of 4 events (unit tests).
+
+## Phase 3: methods
+
+26. **Synthetic exercises** (§C.4.7): 200 two-hand segments are added to every training pool
+    (`--synthetic 200`): contrary-motion scales, Alberti bass under a melody, arpeggios over 4
+    octaves split between the hands, melodies passed between the hands, block chords. They get no
+    imitation bonus and are not used in any metric.
+27. **2c curriculum:** short synthetic segments (≤ 32 events) for the first 10% of steps, all
+    synthetic exercises until 25%, then PIG plus synthetic.
+28. **S1** samples come from playing every annotator's fingering of every training segment
+    through the environment. An event whose annotated choice is unavailable (other hand, a chord
+    not in pitch order, or masked) gets the first allowed action and is not used as a sample:
+    2,496 of 53,839 events. S1 is the agent's network (dueling 256-256) with cross-entropy on the
+    masked logits: Adam, lr 1e-3, batch 256, 20 epochs, best validation Mgen.
+29. **S2** is deterministic (an HMM fit by counting), so it is run once, not with 3 seeds. Its
+    emission is the mirrored interval between consecutive thumb-side notes of a hand; the
+    transition is renormalised over the sets of the next event's size. Like Part B's HMM, it is
+    unmasked: its infeasible moves are counted, not prevented.
+30. **A2 demonstrations** play annotator 1's fingering of each training segment and stop (with a
+    bootstrapped n-step target) at the first annotated choice that is unavailable.
+31. **A3** seeds the elite memory with M0's optimal episode for every training segment (exact DP
+    in 2b). These seeded entries are never replaced.
+32. **2c initialisation:** only the shared trunk (`body.*`) is copied from the 2b checkpoint. The
+    heads have 31 vs 62 outputs and start fresh.
+33. **R4 and tabular Q-learning use the test pieces' scores** (rule reward only, no labels, no
+    bonus), because the README defines them per test piece (§C.9.2, §C.9.5). Every other method
+    sees no test piece. In R4 and Q-learning, one episode is one pass through all of the piece's
+    segments.
+34. **Benchmarks** (DQN, MaskablePPO) use λ = 0.5, the README's default example. Round 1 runs before
+    the best λ is known. Q-learning uses the rule reward only.
+35. **Model selection:** best validation Mgen when λ > 0 (R2–R4, A1–A3, 2c, DQN, PPO); lowest
+    validation difficulty per note when λ = 0 (R1, the λ = 0 ablation).
+
+## Phase 4: evaluation
+
+36. **Human difficulty** (the d_rel denominator) = the mean over a piece's annotators of the rule
+    points of each annotator's own fingering of the same segments, under each annotator's own
+    hands. Chords an annotator split across hands are split. The 2025 paper uses the
+    lowest-difficulty annotator for Table A1; the lowest is also stored (`difficulty_min`).
+    d_rel = Σ agent ÷ Σ human over the pieces; the mean of per-piece ratios is also reported.
+37. **Success rate** = segments with no infeasible or forced transition and gap ≤ 10%, pooled
+    over seeds, with a Wilson interval. In 2c, M0 is the beam search, so a few regrets can be
+    negative; the count is reported.
+38. **AUC** of the validation return curve up to 1M steps, rescaled so a random-valid policy is
+    0 and M0 is 1 on validation, clipped to [0, 1].
+39. **"Very hard" transition** (sequence breakdowns) = rule points at the event above the 95th
+    percentile of annotator 1's per-event points on the same split.
+40. **Crossing rate** = events after which the left thumb is above the right thumb (both hands
+    placed). **Hand-switch rate** = consecutive single-note events played by different hands.
+    **Large-stretch rate** uses the evaluated method's own cost model.
+41. **Composer eras** come from PIG's List.csv: Baroque (Bach, Scarlatti); Classical (Mozart,
+    Beethoven); Romantic (Chopin, Schumann, Schubert, Mendelssohn, Liszt, Brahms, Grieg,
+    Tchaikovsky, Dvořák, Saint-Saëns, Mussorgsky); late Romantic / 20th century (Debussy, Ravel,
+    Rachmaninoff, Scriabin, Satie, Fauré, Joplin, Bartók, Albéniz).
+42. **Robustness:** tempo, transposition and onset jitter change the raw PIG notes; events, chords,
+    held notes and segments are then rebuilt. Each note gets the same change for every annotator,
+    so the labels still match. The stress set has 40 synthetic segments (20 with 2–3-octave leaps,
+    20 with hands alternating every 80 ms); it has no labels, so only difficulty, infeasible rate
+    and SR are reported for it.
+43. **Energy** is an estimate: training hours × 45 W (the i7-12650H's base power). No power meter
+    is read.
+
+## Phase 5: experiment runner
+
+44. **Choosing λ** (after round 1) and the best R configuration (after round 2) uses validation
+    only: the distance of each configuration's validation result to the target region,
+    max(0, d_rel − 0.81) + max(0, 0.62 − Mgen), ties broken by the higher Mgen. The best two λ go to
+    R3 (E4).
+45. **E5 accelerators** use the R3 configuration at the best λ (A3 needs the elite memory, and R3
+    is the full method).
+46. **E6 R4** fine-tunes each seed's checkpoint of the best R configuration, so 3 runs of 30
+    pieces × 50 episodes. **E7 2c** initialises each seed from the same seed's 2b checkpoint.
+47. **E10, the "− crossing term" ablation,** is run in 2c, the mode where the crossing term exists,
+    and compared with 2c. The other ablations are compared with the full method (R3, best λ, 2b).
+48. **E12** runs every listed value, including the defaults, so each setting's plot has all its
+    points (19 runs of 500k steps, 1 seed).
+49. **Concurrency:** 6 jobs at once, at most 4 on the GPU; a job starts only when at least 2.5 GB of
+    RAM is free.
