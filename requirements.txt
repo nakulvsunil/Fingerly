@@ -1,0 +1,6 @@
+torch>=2.1
+gymnasium>=0.29
+numpy>=1.24
+matplotlib>=3.7
+pytest>=7.0
+pygame>=2.5  # visualize.py only
