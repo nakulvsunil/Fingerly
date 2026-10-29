@@ -88,3 +88,106 @@ def synthetic_passages(n: int, hand: str = "R", seed: int = 0) -> List[Passage]:
     rng = random.Random(seed)
     makers = [scale, scale, arpeggio, broken_thirds, melody, melody, melody]
     return [rng.choice(makers)(rng, hand) for _ in range(n)]
+
+
+# --------------------------------------------------------------------------------------
+# Two-hand exercises (README §C.4.7): label-free, each event's hand set by the generator
+# --------------------------------------------------------------------------------------
+def _tn(notes, i, t, dur, pitch, hand):
+    from .pig import Note
+
+    notes.append(Note(i, round(t, 4), round(t + dur, 4), int(pitch), 0 if hand == "R" else 1, hand, None))
+
+
+def contrary_scales(rng: random.Random):
+    tonic = rng.randrange(12)
+    steps = rng.choice([MAJOR, MINOR_HARMONIC])
+    octs = rng.choice([1, 2])
+    deg = [12 * o + s for o in range(octs) for s in steps] + [12 * octs]
+    dur = rng.choice([0.125, 0.25])
+    notes, t = [], 0.0
+    for k, d in enumerate(deg + deg[-2::-1]):
+        _tn(notes, 2 * k, t, dur, 60 + tonic + d, "R")
+        _tn(notes, 2 * k + 1, t, dur, 48 + tonic - d + 12 * octs, "L")
+        t += dur
+    return notes
+
+
+def alberti(rng: random.Random):
+    """Left-hand Alberti bass or broken chords under a right-hand melody."""
+    root = 48 + rng.randrange(12)
+    chords = [[0, 4, 7], [5, 9, 12], [7, 11, 14], [0, 4, 7]]
+    notes, t, i = [], 0.0, 0
+    mel = 72 + rng.randrange(-3, 4)
+    for c in chords * rng.choice([1, 2]):
+        pattern = [c[0], c[2], c[1], c[2]] if rng.random() < 0.6 else [c[0], c[1], c[2], c[1]]
+        for k, iv in enumerate(pattern):
+            _tn(notes, i, t + 0.25 * k, 0.25, root + iv, "L")
+            i += 1
+        for k in range(2):
+            mel = max(65, min(84, mel + rng.choice([-2, -1, 1, 2, 3, -3])))
+            _tn(notes, i, t + 0.5 * k, 0.5, mel, "R")
+            i += 1
+        t += 1.0
+    return notes
+
+
+def split_arpeggio(rng: random.Random):
+    """An arpeggio over more than 2 octaves, left hand low half, right hand high half."""
+    root = 36 + rng.randrange(12)
+    chord = rng.choice([[0, 4, 7], [0, 3, 7], [0, 4, 7, 10]])
+    up = [root + 12 * o + c for o in range(4) for c in chord] + [root + 48]
+    seq = up + up[-2::-1] if rng.random() < 0.6 else up
+    mid = root + 24
+    notes = []
+    for k, p in enumerate(seq):
+        _tn(notes, k, 0.125 * k, 0.125, p, "L" if p < mid else "R")
+    return notes
+
+
+def passed_melody(rng: random.Random, length: int = 32):
+    """A melody passed between the hands: low phrases left, high phrases right."""
+    p = 60 + rng.randrange(-4, 5)
+    notes = []
+    for k in range(length):
+        p = max(43, min(84, p + rng.choice([-2, -1, 1, 2, -4, 4, -7, 7])))
+        _tn(notes, k, 0.25 * k, 0.25, p, "L" if p < 60 else "R")
+    return notes
+
+
+def block_chords(rng: random.Random, length: int = 16):
+    notes, i = [], 0
+    for k in range(length):
+        hand = rng.choice("LR")
+        base = (48 if hand == "L" else 67) + rng.randrange(-5, 6)
+        size = rng.choice([2, 3, 3, 4])
+        ivs = sorted(rng.sample([0, 3, 4, 5, 7, 8, 9, 12], size - 1))
+        for iv in [0] + ivs:
+            _tn(notes, i, 0.5 * k, 0.45, base + iv, hand)
+            i += 1
+        other = "R" if hand == "L" else "L"
+        _tn(notes, i, 0.5 * k + 0.25, 0.2, (72 if other == "R" else 45) + rng.randrange(-4, 5), other)
+        i += 1
+    return notes
+
+
+TWOHAND_MAKERS = [contrary_scales, alberti, split_arpeggio, passed_melody, block_chords]
+
+
+def twohand_segments(n: int, seed: int = 0, max_len: int = 0, prep=None):
+    """n synthetic two-hand segments (README §C.4.7). No labels: no imitation bonus, no metrics.
+    max_len > 0 keeps only the first max_len events (2c curriculum: short, easy segments)."""
+    from .twohand.prepare import PrepConfig, Segment, piece_events
+
+    prep = prep or PrepConfig()
+    rng = random.Random(seed)
+    out = []
+    for k in range(n):
+        maker = rng.choice(TWOHAND_MAKERS)
+        ev = piece_events([maker(rng)], prep)
+        for e in ev:
+            e.labels = []
+        if max_len:
+            ev = ev[:max_len]
+        out.append(Segment(f"synth:{maker.__name__}", k, ev, synthetic=True))
+    return out

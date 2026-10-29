@@ -378,6 +378,31 @@ class Episode:
         self._mask_cache = None
         return reward, self.done
 
+    def action_cost(self, action: int) -> float:
+        """Immediate cost (rules + time-leap + shift) of an action, without taking it (greedy baseline)."""
+        a = int(action)
+        hand, s = (("L" if a < N_SETS else "R"), a % N_SETS) if self.cfg.mode == "assign" else (self.event.hand, a)
+        i = self.event_index
+        e = self.info.seg.events[i]
+        loc = int(np.flatnonzero(SETS_OF_SIZE[e.size] == s)[0])
+        hs = self.hands[hand]
+        if self.info.tables is not None:
+            T = self.info.tables.hands[hand].tables[hs.played]
+            s1 = hs.local[-1] if hs.local else 0
+            s2 = hs.local[-2] if (len(hs.local) == 2 and T.C.shape[0] > 1) else 0
+            return float(T.C[s2, s1, loc])
+        h0 = self.info.hand_events(i, hand)[loc]
+        ev1 = hs.hev[-1] if hs.hev else None
+        ev2 = hs.hev[-2] if len(hs.hev) == 2 else None
+        c = self._rules(ev2, ev1, h0)
+        if hs.thumb is not None:
+            c += time_leap(thumb_position(hand, e.pitches, fingers_of(s, hand)) - hs.thumb, e.onset - hs.last_onset,
+                           self.cfg.v_max, self.cfg.w_time)
+        self.mask()
+        if self._mask_cache[1].get(hand, {}).get("shift"):
+            c += SHIFT_COST
+        return c
+
     # ------------------------------------------------------------------ observation
     def obs(self) -> np.ndarray:
         cfg = self.cfg

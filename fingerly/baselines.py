@@ -142,3 +142,91 @@ class HMM1:
             f = int(back[t, f])
             out.append(f + 1)
         return out[::-1]
+
+
+class HMMSets:
+    """S2 (README §C.9.1): Part B's first-order HMM extended to finger sets, one hand stream at a
+    time. Hidden state = the finger set (31); P(s_t | s_{t-1}) renormalised over the sets of the
+    current chord size; emission P(interval | s_{t-1}, s_t), the mirrored interval between the
+    events' thumb-side notes, clipped to +-24. Trained on the pianists' fingerings of the training
+    pieces (each annotator's own pitch-order chord fingerings); decoded with Viterbi. Unmasked."""
+
+    name = "S2 hmm-sets"
+
+    def __init__(self, max_iv: int = 24, alpha: float = 0.5):
+        from .twohand.actions import N_SETS
+
+        self.n = N_SETS
+        self.max_iv, self.alpha = max_iv, alpha
+
+    def _iv(self, prev_e, e, hand):
+        from .twohand.features import key_of
+
+        d = key_of(e.pitches, hand) - key_of(prev_e.pitches, hand)
+        d = d if hand == "R" else -d
+        return int(np.clip(d, -self.max_iv, self.max_iv)) + self.max_iv
+
+    def fit(self, segments) -> "HMMSets":
+        from .twohand.actions import N_SETS, SETS_OF_SIZE, fingers_of
+
+        n, B = N_SETS, 2 * self.max_iv + 1
+        init = np.full(n, self.alpha)
+        trans = np.full((n, n), self.alpha)
+        emit = np.full((n, n, B), self.alpha)
+        for seg in segments:
+            for hand in ("L", "R"):
+                idx = seg.hand_events(hand)
+                for a in range(seg.n_annotators):
+                    prev = None
+                    for i in idx:
+                        e = seg.events[i]
+                        row = e.labels[a]
+                        s = None
+                        if all(h == hand and f for h, f in row):
+                            fs = tuple(f for _, f in row)
+                            s = next((int(x) for x in SETS_OF_SIZE[e.size] if fingers_of(int(x), hand) == fs), None)
+                        if s is not None:
+                            if prev is None:
+                                init[s] += 1
+                            else:
+                                trans[prev[0], s] += 1
+                                emit[prev[0], s, self._iv(prev[1], e, hand)] += 1
+                        prev = (s, e) if s is not None else None
+        self.log_init = np.log(init / init.sum())
+        self.log_trans = np.log(trans / trans.sum(1, keepdims=True))
+        self.log_emit = np.log(emit / emit.sum(2, keepdims=True))
+        return self
+
+    def predict_hand(self, seg, hand):
+        """[(event index, global set)] for one hand's events of a segment."""
+        from .twohand.actions import SETS_OF_SIZE
+
+        idx = seg.hand_events(hand)
+        if not idx:
+            return []
+        cands = [SETS_OF_SIZE[seg.events[i].size] for i in idx]
+        V = self.log_init[cands[0]] - np.logaddexp.reduce(self.log_init[cands[0]])
+        backs = []
+        for k in range(1, len(idx)):
+            c0, c1 = cands[k], cands[k - 1]
+            lt = self.log_trans[np.ix_(c1, c0)]
+            lt = lt - np.logaddexp.reduce(lt, axis=1, keepdims=True)  # renormalise over this size
+            b = self._iv(seg.events[idx[k - 1]], seg.events[idx[k]], hand)
+            score = V[:, None] + lt + self.log_emit[np.ix_(c1, c0)][:, :, b]
+            backs.append(score.argmax(0))
+            V = score.max(0)
+        j = int(V.argmax())
+        loc = [j]
+        for k in range(len(idx) - 1, 0, -1):
+            j = int(backs[k - 1][j])
+            loc.append(j)
+        loc = loc[::-1]
+        return [(i, int(cands[k][loc[k]])) for k, i in enumerate(idx)]
+
+    def predict_segment(self, seg, order):
+        """Per visited event (in `order`): (hand, global set), hands as annotated."""
+        got = {}
+        for hand in ("L", "R"):
+            for i, s in self.predict_hand(seg, hand):
+                got[i] = (hand, s)
+        return [got[i] for i in order]
