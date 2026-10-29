@@ -6,6 +6,12 @@ note gets a finger 1–5 from a masked DQN / Double DQN agent trained on an ergo
 It is stage 1 of the plan in the proposal ("rebuild the right-hand DQN of Iman & Ahn"); the
 hand choice and the 10-action space come in stage 2.
 
+## Reproducing Iman & Ahn (2024)
+
+`python reproduce_paper.py --pig-dir data/PianoFingeringDataset_v1.2` re-runs the paper's experiment
+(DQN, DDQN, PG, A2C on its four pieces, 10 runs each) with its 12-rule difficulty reward. The comparison with
+the published numbers is in [docs/REPRODUCTION.md](docs/REPRODUCTION.md); code in `fingerly/paper/`.
+
 ## Setup
 
 ```bash
