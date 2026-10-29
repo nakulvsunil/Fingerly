@@ -85,6 +85,41 @@ def evaluate_predictor(
     return out
 
 
+def recombination_match(pred: Sequence[int], labels: Sequence[Sequence[int]]) -> float:
+    """Mrec: match rate against the best fingering stitched together from the annotators.
+
+    DP over which annotator is followed at each note, maximising matches. Following annotator k
+    at note n-1 and k' at note n is allowed only if k and k' gave note n-1 the same finger, so
+    the stitched sequence is locally one annotator's choice at every junction. This is our
+    reading of the switching rule of Nakamura, Saito & Yoshii (2020); check it before citing.
+    """
+    lab = np.asarray(labels)  # K x N
+    pred = np.asarray(pred)
+    K, N = lab.shape
+    hit = (lab == pred[None, :]).astype(float)
+    score = hit[:, 0].copy()
+    for n in range(1, N):
+        new = np.empty(K)
+        for k2 in range(K):
+            ok = [k for k in range(K) if k == k2 or lab[k, n - 1] == lab[k2, n - 1]]
+            new[k2] = max(score[k] for k in ok) + hit[k2, n]
+        score = new
+    return float(score.max() / N)
+
+
+def match_rates(pred: Sequence[int], labels: Sequence[Sequence[int]]) -> Dict[str, float]:
+    """Mgen, Mhigh, Msoft and Mrec of one fingering against K annotator fingerings."""
+    lab = np.asarray(labels)
+    hit = lab == np.asarray(pred)[None, :]
+    rates = hit.mean(1)
+    return {
+        "Mgen": float(rates.mean()),
+        "Mhigh": float(rates.max()),
+        "Msoft": float(hit.any(0).mean()),
+        "Mrec": recombination_match(pred, labels),
+    }
+
+
 def human_agreement(passages: Sequence[Passage]) -> Dict[str, float]:
     """Leave-one-annotator-out ceiling: score each annotator against the others, average.
     Only pieces with >= 2 annotators are used."""

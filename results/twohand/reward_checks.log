@@ -1,0 +1,59 @@
+Table A1: {
+ "all": {
+  "whole piece": 0,
+  "right hand": 0,
+  "left hand": 0,
+  "max(hand)": 0,
+  "whole piece / notes \u00d7 100": 0,
+  "ratio_total_over_paper": [
+   141.66036024774877,
+   24.2990148316553,
+   974.3962091103639
+  ],
+  "diagnostics": {
+   "whole piece": {
+    "corr": 0.33667462743939824,
+    "paper_over_ours_median": 0.0070727254613052485,
+    "cv": 0.8665194937718907,
+    "within5_after_scaling": 2
+   },
+   "per note": {
+    "corr": 0.9527256287331924,
+    "paper_over_ours_median": 2.421095162030766,
+    "cv": 0.3410837734441058,
+    "within5_after_scaling": 4
+   }
+  }
+ },
+ "extremes": {
+  "whole piece": 0,
+  "right hand": 0,
+  "left hand": 0,
+  "max(hand)": 0,
+  "whole piece / notes \u00d7 100": 0,
+  "ratio_total_over_paper": [
+   114.68086979503707,
+   13.451337014182092,
+   650.7511901122418
+  ],
+  "diagnostics": {
+   "whole piece": {
+    "corr": 0.25579735578206564,
+    "paper_over_ours_median": 0.008756703929114207,
+    "cv": 1.046729387092833,
+    "within5_after_scaling": 0
+   },
+   "per note": {
+    "corr": 0.8783229558377456,
+    "paper_over_ours_median": 3.1910819833708324,
+    "cv": 0.525718300313803,
+    "within5_after_scaling": 5
+   }
+  }
+ }
+}
+Mirror: {'parncutt12/all': {'pieces': 20, 'events': 3243, 'mismatches': 0}, 'parncutt12/extremes': {'pieces': 20, 'events': 3243, 'mismatches': 0}, 'balliauw15/all': {'pieces': 20, 'events': 3243, 'mismatches': 0}, 'balliauw15/extremes': {'pieces': 20, 'events': 3243, 'mismatches': 0}, 'balliauw15 swap vs mirror': {'cases': 30625, 'mismatches': 0}, 'parncutt12 deferred vs immediate': {'streams': 40, 'mismatches': 0}, 'balliauw15 deferred vs immediate': {'streams': 40, 'mismatches': 0}}
+Chords: {'events': 75301, 'single occupied': 209, 'chords': 17631, 'rejected': 309, 'reach': 51, 'repeated finger': 88, 'occupied': 166, 'not pitch order': 4} share 0.0175
+v_max: {'percentile': 95.0, 'v_max_all_transitions': 38.93474536676524, 'v_max_moving_only': 44.09769335142437, 'train_transitions': 53566, 'moving_share': 0.6881977373707202, 'pay_rate_train_vmax_all': 0.04999439943247582, 'pay_rate_test_vmax_all': 0.09029402466013278, 'pay_rate_train_vmax_moving': 0.03438748459843931, 'pay_rate_test_vmax_moving': 0.05083781220360417}
+Part A: {'V0': {'annotators': 1, 'part_a': [18.0], 'parncutt12': [np.float64(18.0)], 'deferred': [np.float64(18.0)], 'equal': True}, 'V1': {'annotators': 5, 'part_a': [421.0, 460.0, 416.0, 410.0, 393.0], 'parncutt12': [np.float64(421.0), np.float64(460.0), np.float64(416.0), np.float64(410.0), np.float64(393.0)], 'deferred': [np.float64(421.0), np.float64(460.0), np.float64(416.0), np.float64(410.0), np.float64(393.0)], 'equal': True}, 'V2': {'annotators': 2, 'part_a': [562.0, 570.0], 'parncutt12': [np.float64(562.0), np.float64(570.0)], 'deferred': [np.float64(562.0), np.float64(570.0)], 'equal': True}, 'V3': {'annotators': 2, 'part_a': [213.0, 207.0], 'parncutt12': [np.float64(213.0), np.float64(207.0)], 'deferred': [np.float64(213.0), np.float64(207.0)], 'equal': True}}
+wrote results\twohand\reward_checks.md

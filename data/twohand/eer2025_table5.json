@@ -1,0 +1,13 @@
+{
+  "source": "Iman & Ahn (2025), Mathematics 13:2485, Table 5 (30-piece subset)",
+  "note": "Difficulty values are as printed. They do not match the mean of the paper's own Table A1 for the same pieces (60.5 for Human), so compare d_rel = difficulty / Human difficulty.",
+  "rows": {
+    "Uniform": {"difficulty": 30.34, "Mgen": 0.62, "Mhigh": 0.67, "Msoft": 0.75, "Mrec": 0.70},
+    "EER":     {"difficulty": 30.43, "Mgen": 0.61, "Mhigh": 0.66, "Msoft": 0.75, "Mrec": 0.69},
+    "PER":     {"difficulty": 31.40, "Mgen": 0.59, "Mhigh": 0.67, "Msoft": 0.75, "Mrec": 0.69},
+    "FHMM1":   {"difficulty": 38.72, "Mgen": 0.67, "Mhigh": 0.70, "Msoft": 0.80, "Mrec": 0.75},
+    "FHMM2":   {"difficulty": 36.25, "Mgen": 0.70, "Mhigh": 0.74, "Msoft": 0.85, "Mrec": 0.80},
+    "FHMM3":   {"difficulty": 35.82, "Mgen": 0.68, "Mhigh": 0.76, "Msoft": 0.86, "Mrec": 0.82},
+    "Human":   {"difficulty": 37.47, "Mgen": 0.73, "Mhigh": 0.75, "Msoft": 0.79, "Mrec": 0.77}
+  }
+}
