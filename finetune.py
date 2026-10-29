@@ -11,7 +11,6 @@ the final greedy fingering go to <out>/<piece>.json. Finished pieces are skipped
 from __future__ import annotations
 
 import argparse
-import dataclasses
 import json
 import sys
 import time
@@ -22,12 +21,12 @@ import numpy as np
 import torch
 
 from fingerly.twohand.env import EnvConfig, Episode, SegmentPool
-from fingerly.twohand.human import Context
-from fingerly.twohand.learner import Agent, NStep, Replay, set_seeds
-from fingerly.twohand.metrics import rollout, summarize
+from fingerly.twohand.prepare import Context
+from fingerly.dqn import Agent, NStep, Replay, set_seeds
+from fingerly.metrics import rollout, summarize
 from fingerly.twohand.prepare import PrepConfig
 from fingerly.twohand.rules import make_model
-from fingerly.twohand.score import rule_points
+from fingerly.twohand.rules import rule_points
 
 
 def finetune_piece(ckpt, pool: SegmentPool, episodes: int, lr: float, eps: float, seed: int, device: str,

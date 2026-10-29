@@ -24,15 +24,15 @@ import json
 import sys
 from collections import defaultdict
 from pathlib import Path
-from typing import Dict, List, Sequence, Tuple
+from typing import List, Tuple
 
 import numpy as np
 
-from fingerly.pig import LEFT, RIGHT, Note, load_pig
+from fingerly.pig import LEFT, RIGHT, load_pig
 from fingerly.twohand.actions import canonical
-from fingerly.twohand.human import annotator_streams, hand_speeds
-from fingerly.twohand.prepare import Event, PrepConfig, piece_events, TEST_IDS_2025
-from fingerly.twohand.rules import (Balliauw15, Parncutt12, balliauw15_swap_pair, make_model, thumb_position,
+from fingerly.twohand.prepare import annotator_streams, hand_speeds
+from fingerly.twohand.prepare import PrepConfig
+from fingerly.twohand.rules import (Balliauw15, Parncutt12, balliauw15_swap_pair, make_model,
                                     time_leap)
 
 MIRROR_AXIS = 124  # p -> 124 - p reflects the keyboard around D4 (62): colours and positions map exactly

@@ -18,11 +18,11 @@ from __future__ import annotations
 
 import time
 from dataclasses import dataclass
-from typing import Dict, List, Optional, Sequence, Tuple
+from typing import Dict, List, Optional, Tuple
 
 import numpy as np
 
-from .actions import N_SETS, SETS_OF_SIZE, fingers_of
+from .actions import SETS_OF_SIZE, fingers_of
 from .costs import SHIFT_COST, HandTables
 from .env import EnvConfig, SegInfo
 from .rules import crossing, thumb_position, time_leap
@@ -236,3 +236,8 @@ def enumerate_segment(info: SegInfo, cfg: EnvConfig) -> float:
 
     rec([])
     return best
+
+
+def m0_costs(pool, beam: int) -> Dict[tuple, float]:
+    """M0 cost per (piece, segment index) for the success rate and gap on validation/test."""
+    return {(i.seg.piece, i.seg.index): search_segment(i, pool.cfg, beam).cost for i in pool.infos}

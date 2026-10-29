@@ -72,6 +72,14 @@ class EnvConfig:
         return self.mode == "assign" or (self.mode == "given" and self.cross)
 
 
+def env_config(args, v_max: float) -> EnvConfig:
+    """EnvConfig from the shared command-line flags of train.py, train_bc.py and train_ppo.py."""
+    return EnvConfig(mode=args.mode, cost=args.cost, chord_horizontal=args.chord_horizontal,
+                     span_scale=args.span_scale, v_max=v_max, w_time=args.w_time, w_cross=args.w_cross,
+                     cross=args.cross, lam=args.lam, lookahead=args.lookahead, hand_pos=not args.no_hand_pos,
+                     use_mask=not args.no_mask, chord_tol=args.chord_tol, overlap_tol=args.overlap_tol)
+
+
 # --------------------------------------------------------------------------------------
 # Static per-segment data
 # --------------------------------------------------------------------------------------

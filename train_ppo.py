@@ -22,10 +22,11 @@ import torch
 
 from fingerly.synth import twohand_segments
 from fingerly.twohand.env import SegmentPool, TwoHandEnv
-from fingerly.twohand.human import Context
-from fingerly.twohand.metrics import rollout, summarize
+from fingerly.twohand.prepare import Context
+from fingerly.metrics import rollout, summarize
 from fingerly.twohand.prepare import PrepConfig
-from fingerly.twohand.train_cli import env_config, m0_costs
+from fingerly.twohand.env import env_config
+from fingerly.twohand.search import m0_costs
 
 
 def ppo_policy(model):

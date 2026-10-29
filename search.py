@@ -23,10 +23,10 @@ from pathlib import Path
 import numpy as np
 
 from fingerly.twohand.env import EnvConfig, SegInfo
-from fingerly.twohand.human import Context
+from fingerly.twohand.prepare import Context
 from fingerly.twohand.prepare import PrepConfig, Segment
 from fingerly.twohand.rules import make_model
-from fingerly.twohand.score import rule_points
+from fingerly.twohand.rules import rule_points
 from fingerly.twohand.search import beam_search, search_segment
 
 

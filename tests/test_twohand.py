@@ -7,7 +7,7 @@ import pytest
 
 from fingerly.pig import Note
 from fingerly.twohand.actions import FINGER_SETS, N_SETS, SET_INDEX, SETS_OF_SIZE, fingers_of, set_of, sizes_mask
-from fingerly.twohand.prepare import PrepConfig, merge_streams, piece_events
+from fingerly.twohand.prepare import PrepConfig, piece_events
 from fingerly.twohand.rules import (Balliauw15, Parncutt12, balliauw15_swap_pair, make_model, merged_cost, position,
                                     thumb_position)
 
@@ -287,7 +287,7 @@ def test_m0_replays_at_the_same_cost(mode):
 
 
 def test_hand_mismatch_is_a_miss():
-    from fingerly.twohand.metrics import piece_match, rollout
+    from fingerly.metrics import piece_match, rollout
 
     notes = [note(0, 0.0, 0.5, C4, "L", 1), note(1, 0.5, 1.0, D4, "L", 2)]
     seg = make_segment(notes)

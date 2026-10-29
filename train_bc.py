@@ -24,11 +24,12 @@ import torch
 import torch.nn.functional as F
 
 from fingerly.twohand.env import Episode, SegmentPool
-from fingerly.twohand.human import Context
-from fingerly.twohand.learner import NEG, Agent, TrainConfig, annotator_action, set_seeds
-from fingerly.twohand.metrics import rollout, summarize
+from fingerly.twohand.prepare import Context
+from fingerly.dqn import NEG, Agent, TrainConfig, annotator_action, set_seeds
+from fingerly.metrics import rollout, summarize
 from fingerly.twohand.prepare import PrepConfig
-from fingerly.twohand.train_cli import env_config, m0_costs
+from fingerly.twohand.env import env_config
+from fingerly.twohand.search import m0_costs
 
 
 def collect(pool: SegmentPool):

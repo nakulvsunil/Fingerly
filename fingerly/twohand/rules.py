@@ -16,12 +16,16 @@ note of the hand can be charged immediately (2a, 2b) or when that next event arr
 from __future__ import annotations
 
 from dataclasses import dataclass
-from typing import List, Optional, Sequence, Tuple
+from typing import TYPE_CHECKING, List, Optional, Sequence, Tuple
 
 import numpy as np
 
+from .actions import fingers_of
 from ..paper.rules import TABLES, RULE_NAMES as PARNCUTT_NAMES
 from ..pig import is_black
+
+if TYPE_CHECKING:  # annotations only; prepare does not need rules at import time
+    from .prepare import Segment
 
 # --------------------------------------------------------------------------------------
 # Hand events
@@ -411,3 +415,20 @@ def crossing(thumb_l: Optional[float], thumb_r: Optional[float], margin: float =
     if thumb_l is None or thumb_r is None:
         return 0.0
     return w_cross * max(0.0, thumb_l - thumb_r - margin)
+
+
+# --------------------------------------------------------------------------------------
+# Scoring a fingering of a segment: per visited event (hand, global finger set)
+# --------------------------------------------------------------------------------------
+def as_stream(seg: Segment, order: Sequence[int], fing: Sequence[Tuple[str, int]]):
+    """[(hand, pitches, fingers)] for the visited events, from per-event (hand, global set)."""
+    return [(h, seg.events[i].pitches, fingers_of(int(s), h)) for i, (h, s) in zip(order, fing)]
+
+
+def rule_points(seg: Segment, order: Sequence[int], fing: Sequence[Tuple[str, int]], model: CostModel) -> float:
+    """Total rule points (each hand's own history, next-note parts charged immediately)."""
+    return float(merged_cost(model, as_stream(seg, order, fing)).sum())
+
+
+def rule_breakdown(seg: Segment, order, fing, model: CostModel) -> np.ndarray:
+    return merged_cost(model, as_stream(seg, order, fing))
