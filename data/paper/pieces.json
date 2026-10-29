@@ -1,0 +1,41 @@
+{
+  "V1": {
+    "pig_id": "025",
+    "composer": "Chopin",
+    "title": "Waltz Op. 64 No. 1",
+    "right_hand_notes": 215,
+    "chord_onsets": 0,
+    "overlaps": 52,
+    "annotators": [
+      "025-1",
+      "025-3",
+      "025-4",
+      "025-5",
+      "025-6"
+    ]
+  },
+  "V2": {
+    "pig_id": "061",
+    "composer": "Beethoven",
+    "title": "For Elise",
+    "right_hand_notes": 136,
+    "chord_onsets": 0,
+    "overlaps": 2,
+    "annotators": [
+      "061-1",
+      "061-2"
+    ]
+  },
+  "V3": {
+    "pig_id": "140",
+    "composer": "Scarlatti",
+    "title": "Sonata in A major K 208",
+    "right_hand_notes": 68,
+    "chord_onsets": 0,
+    "overlaps": 0,
+    "annotators": [
+      "140-1",
+      "140-2"
+    ]
+  }
+}
