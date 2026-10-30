@@ -363,7 +363,8 @@ def main():
         run_jobs(round3(p, best_name, best_args, best_lam), args.jobs, args.gpu_jobs, args.min_free_gb)
     if 4 in args.rounds:
         log("final: E11 robustness, main evaluation, sensitivity evaluation, figures and tables")
-        run_jobs(final(p, best_name, best_lam), 2, 0, args.min_free_gb)
+        # one evaluation at a time: two pools of eval workers together exhausted Windows commit memory (WinError 1450)
+        run_jobs(final(p, best_name, best_lam), 1, 0, args.min_free_gb)
         plots(p, best_name)
     log(f"run_twohand finished in {(time.time() - t0) / 3600:.2f} h")
 

@@ -172,6 +172,7 @@ def twohand_eval_parser() -> argparse.ArgumentParser:
                     help="tempo=0.75,1.5 transpose=-5,-2,-1,1,2,5 jitter=0.01,0.02 span=0.85,1.15 era stress")
     ap.add_argument("--no-baselines", action="store_true")
     ap.add_argument("--workers", type=int, default=6)
+    ap.add_argument("--job-timeout", type=float, default=3600, help="exit with an error if no run finishes in this time (s)")
     ap.add_argument("--device", default="cpu")
     ap.add_argument("--out", required=True)
     return ap
@@ -259,7 +260,12 @@ def _m0(pool, beam, reference, tag):
         f.parent.mkdir(parents=True, exist_ok=True)
         tmp = f.with_suffix(f".{os.getpid()}.tmp")
         tmp.write_text(json.dumps({f"{a}|{b}": v for (a, b), v in m.items()}))
-        os.replace(tmp, f)
+        try:
+            os.replace(tmp, f)
+        except PermissionError:  # Windows: another worker wrote the same file and has it open; same content
+            if not f.exists():
+                raise
+            tmp.unlink(missing_ok=True)
     _M0[key] = m
     return m
 
@@ -396,6 +402,29 @@ def _eval_one(job) -> dict:
     if a["robustness"] is not None and job.get("robust"):
         res["robustness"] = _robustness(pol, ecfg, ctx, prep_d, a, res)
     return res
+
+
+def _result_file(job) -> Path:
+    """Disk cache for one run's result: keyed by the checkpoint (path and mtime) and the evaluation settings."""
+    import hashlib
+
+    p = Path(job["path"])
+    stamp = max((f.stat().st_mtime for f in p.glob("*.json")), default=0) if p.is_dir() else p.stat().st_mtime
+    sig = json.dumps(dict(job, stamp=stamp), sort_keys=True, default=str)
+    return Path("cache/twohand/eval") / f"{p.parent.name if p.is_file() else p.name}_{hashlib.sha1(sig.encode()).hexdigest()[:16]}.json"
+
+
+def _eval_cached(job) -> str:
+    """Worker entry: evaluate one run unless cached, write its result to disk and return the file path, so only a
+    short string crosses the process pipe (large results through the pipe failed with WinError 1450)."""
+    f = _result_file(job)
+    if not f.exists():
+        res = _eval_one(job)
+        f.parent.mkdir(parents=True, exist_ok=True)
+        tmp = f.with_suffix(f".{os.getpid()}.tmp")
+        tmp.write_text(json.dumps(res, default=float))
+        os.replace(tmp, f)
+    return str(f)
 
 
 def _r4_curves(folder: Path, human) -> dict:
@@ -583,26 +612,47 @@ def _aggregate(runs: list, a) -> dict:
 
 def twohand_eval_main(argv=None):
     import sys
-    from concurrent.futures import ProcessPoolExecutor
+    from concurrent.futures import FIRST_COMPLETED, ProcessPoolExecutor, wait
 
     sys.stdout.reconfigure(encoding="utf-8")
     args = twohand_eval_parser().parse_args(argv)
     paths = sorted({Path(p) for pat in args.ckpt for p in glob.glob(pat)})
-    paths += sorted({Path(p) for pat in args.fingerings for p in glob.glob(pat) if Path(p).is_dir()})
+    # Part C runs have an "env" section in config.json; skip others a glob catches (Part B's runs/rh_ddqn_s0)
+    paths = [p for p in paths if p.suffix == ".zip" or "env" in json.loads((p.parent / "config.json").read_text())]
+    paths +=sorted({Path(p) for pat in args.fingerings for p in glob.glob(pat) if Path(p).is_dir()})
     a = dict(pig_dir=args.pig_dir, split=args.split, cost=args.cost, reference=args.reference, m0_beam=args.m0_beam,
              success_gap=args.success_gap, seen_unseen=args.seen_unseen, robustness=args.robustness,
              device=args.device, bootstrap=args.bootstrap)
     jobs = [dict(path=str(p), args=a, robust=args.robustness is not None) for p in paths]
     print(f"evaluating {len(jobs)} runs on {args.split} with {args.workers} workers", flush=True)
+    files = {i: str(_result_file(j)) for i, j in enumerate(jobs) if _result_file(j).exists()}
+    if files:
+        print(f"  {len(files)} runs already evaluated (cache/twohand/eval)", flush=True)
+    todo = [i for i in range(len(jobs)) if i not in files]
+    if todo:
+        ex = ProcessPoolExecutor(max(1, min(args.workers, len(todo))), max_tasks_per_child=8)
+        futs = {ex.submit(_eval_cached, jobs[i]): i for i in todo}
+        pending = set(futs)
+        while pending:
+            # a dead pool manager thread (seen on Windows: WinError 1450) leaves futures pending forever, so wait
+            # with a timeout and exit with an error instead; the runner retries and the cache keeps finished runs
+            done, pending = wait(pending, timeout=args.job_timeout, return_when=FIRST_COMPLETED)
+            if not done:
+                print(f"no run finished in {args.job_timeout} s; the worker pool looks stuck, exiting", flush=True)
+                for proc in list(getattr(ex, "_processes", {}).values()):
+                    proc.terminate()
+                os._exit(3)
+            for fu in done:
+                files[futs[fu]] = fu.result()
+        ex.shutdown()
     runs = []
-    if jobs:
-        with ProcessPoolExecutor(max(1, min(args.workers, len(jobs)))) as ex:
-            for r in ex.map(_eval_one, jobs):
-                s = r["summary"]
-                print(f"  {r['method']:<30} seed {r.get('seed')}: Mgen {s.get('Mgen', float('nan')):.4f} "
-                      f"d_rel {s.get('d_rel_balliauw15', float('nan')):.3f} gap {s.get('gap', float('nan')):.3f} "
-                      f"infeasible {s['infeasible_rate']:.4f}", flush=True)
-                runs.append(r)
+    for i in range(len(jobs)):
+        r = json.loads(Path(files[i]).read_text())
+        s = r["summary"]
+        print(f"  {r['method']:<30} seed {r.get('seed')}: Mgen {s.get('Mgen', float('nan')):.4f} "
+              f"d_rel {s.get('d_rel_balliauw15', float('nan')):.3f} gap {s.get('gap', float('nan')):.3f} "
+              f"infeasible {s['infeasible_rate']:.4f}", flush=True)
+        runs.append(r)
     methods = _aggregate(runs, a)
     if not args.no_baselines:
         for name, r in _baselines(a, args.mode).items():

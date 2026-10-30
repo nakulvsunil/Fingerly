@@ -162,3 +162,8 @@ Each entry says what the README leaves open, what we chose (the simplest option)
     points (19 runs of 500k steps, 1 seed).
 49. **Concurrency:** 6 jobs at once, at most 4 on the GPU; a job starts only when at least 2.5 GB of
     RAM is free.
+50. **Early stopping** (patience 50k steps, validation every 25k, §C.9.4) is only allowed after the
+    ε-decay phase (the first 20% of steps), so no run stops while still exploring. With
+    evaluations every 25k, two evaluations without improvement end a run. The first R1 run stopped
+    at 275k of 1M steps, while its validation return was still rising slowly. This is the README's
+    setting and is kept; the final report says when it may have cut learning short.

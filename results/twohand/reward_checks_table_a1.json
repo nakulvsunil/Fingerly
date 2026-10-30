@@ -1,0 +1,56 @@
+{
+ "table_a1": {
+  "all": {
+   "whole piece": 0,
+   "right hand": 0,
+   "left hand": 0,
+   "max(hand)": 0,
+   "whole piece / notes \u00d7 100": 0,
+   "ratio_total_over_paper": [
+    141.66036024774877,
+    24.2990148316553,
+    974.3962091103639
+   ],
+   "diagnostics": {
+    "whole piece": {
+     "corr": 0.33667462743939824,
+     "paper_over_ours_median": 0.0070727254613052485,
+     "cv": 0.8665194937718907,
+     "within5_after_scaling": 2
+    },
+    "per note": {
+     "corr": 0.9527256287331924,
+     "paper_over_ours_median": 2.421095162030766,
+     "cv": 0.3410837734441058,
+     "within5_after_scaling": 4
+    }
+   }
+  },
+  "extremes": {
+   "whole piece": 0,
+   "right hand": 0,
+   "left hand": 0,
+   "max(hand)": 0,
+   "whole piece / notes \u00d7 100": 0,
+   "ratio_total_over_paper": [
+    114.68086979503707,
+    13.451337014182092,
+    650.7511901122418
+   ],
+   "diagnostics": {
+    "whole piece": {
+     "corr": 0.25579735578206564,
+     "paper_over_ours_median": 0.008756703929114207,
+     "cv": 1.046729387092833,
+     "within5_after_scaling": 0
+    },
+    "per note": {
+     "corr": 0.8783229558377456,
+     "paper_over_ours_median": 3.1910819833708324,
+     "cv": 0.525718300313803,
+     "within5_after_scaling": 5
+    }
+   }
+  }
+ }
+}
