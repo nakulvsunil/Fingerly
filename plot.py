@@ -440,7 +440,10 @@ def write_tables(main_json, robust_json, out):
     # ablations
     abl = {k: v for k, v in M.items() if k.startswith("abl_")}
     if abl:
-        full = next((k for k in main if k.startswith("r3_")), None)
+        # the ablations are trained from R3 at the best λ: pick the R3 entry whose λ matches theirs
+        lam = next(iter(abl.values())).get("lam")
+        full = next((k for k in main if k.startswith("r3_") and M[k].get("lam") == lam),
+                    next((k for k in main if k.startswith("r3_")), None))
         L += ["", "## Ablations (one component removed from the full method)", "",
               f"Full method: {full}. Wilcoxon over test pieces against the full method (p < 0.05 marked *).", "",
               "| Variant | Mgen | d_rel | Diff./note p12 | Infeasible | Time-leap | Crossing | Hand acc. | Gap | p (Mgen) | p (d_rel) |",
