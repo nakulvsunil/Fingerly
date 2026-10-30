@@ -57,9 +57,61 @@ def make_fingerer(args):
     return model.predict, {"dp": "optimal-cost (DP)", "greedy": "greedy"}[args.policy], hand, args.min_len, cfg
 
 
+def twohand_data(args) -> dict:
+    """Part C (README §C.13): finger a whole PIG piece, both hands and chords, with a two-hand checkpoint and
+    return the player's JSON. Onsets and hands come from annotator 1, as in training; `human` is
+    annotator 1's finger when they used the same hand, else null."""
+    from fingerly.dqn import Agent
+    from fingerly.export import note_name
+    from fingerly.metrics import rollout
+    from fingerly.twohand.actions import fingers_of
+    from fingerly.twohand.env import SegmentPool
+    from fingerly.twohand.prepare import Context, PrepConfig
+    from evaluate import _env_cfg
+
+    if not args.ckpt:
+        raise SystemExit("--mode needs --ckpt (a Part C checkpoint)")
+    agent = Agent.load(args.ckpt)
+    meta = agent.extra
+    if meta.get("mode") != args.mode:
+        raise SystemExit(f"{args.ckpt} was trained in mode {meta.get('mode')}, not {args.mode}")
+    ctx = Context(args.pig_dir, PrepConfig(**meta.get("prep", {})))
+    piece = Path(args.input).name.split("-")[0]
+    segs = sorted((s for split in ("train", "val", "test") for s in ctx.segments(split) if s.piece == piece),
+                  key=lambda s: s.index)
+    if not segs:
+        raise SystemExit(f"piece {piece} has no segments")
+    split = next(n for n in ("train", "val", "test") if any(s.piece == piece for s in ctx.segments(n)))
+    if args.passage is not None:
+        segs = [segs[args.passage]]
+    pool = SegmentPool(segs, _env_cfg(meta["env"], ctx.v_max), bonus=False)
+    notes, shift, prev_end = [], 0.0, None
+    for ep in sorted(rollout(pool, agent.greedy()), key=lambda e: e.info.seg.index):
+        seg = ep.info.seg
+        if prev_end is not None:  # shorten long pauses between segments
+            shift += max(0.0, seg.events[ep.records[0].event].onset - shift - prev_end - args.max_gap)
+        for r in ep.records:
+            e = seg.events[r.event]
+            lab = e.labels[0] if e.labels else ()
+            cost = r.rules + r.extra + r.penalty
+            for j, (p, f) in enumerate(zip(e.pitches, fingers_of(r.set, r.hand))):
+                human = lab[j][1] if j < len(lab) and lab[j][0] == r.hand and lab[j][1] else None
+                notes.append(dict(name=note_name(p), pitch=p, onset=e.onset - shift, offset=e.orig_offset[j] - shift,
+                                  hand=r.hand, finger=f, human=human, passage=seg.index, cost=cost if j == 0 else 0.0,
+                                  breakdown={"rules": round(r.rules, 2), "time/shift/cross": round(r.extra, 2)}
+                                  if j == 0 else {}))
+        prev_end = max(n["offset"] for n in notes)
+    notes.sort(key=lambda n: (n["onset"], n["hand"] != "L", n["pitch"]))
+    label = f"{Path(args.ckpt).parent.name} ({args.mode})"
+    return dict(piece=Path(args.input).name.split("_")[0], policy=label, hand="LR", split=split, notes=notes,
+                total_cost=sum(n["cost"] for n in notes), n_passages=len(segs))
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--input", required=True, help="PIG-format fingering file")
+    ap.add_argument("--mode", choices=["given", "assign"], help="Part C: both hands with a two-hand checkpoint")
+    ap.add_argument("--pig-dir", default="data/PianoFingeringDataset_v1.2", help="for --mode")
     ap.add_argument("--policy", choices=["agent", "dp", "greedy", "human"], default="agent")
     ap.add_argument("--ckpt", help="trained agent (for --policy agent)")
     ap.add_argument("--hand", choices=["R", "L"], help="default: the agent's hand, else R")
@@ -74,12 +126,19 @@ def main():
     ap.add_argument("--at", type=float, default=0.0)
     args = ap.parse_args()
 
-    fingerer, label, hand, min_len, cfg = make_fingerer(args)
-    try:
-        data = export_fingering(args.input, fingerer, label, hand=hand, min_len=min_len, cfg=cfg,
-                                passage=args.passage, max_gap=args.max_gap)
-    except ValueError as e:
-        raise SystemExit(str(e))
+    if args.mode:
+        data = twohand_data(args)
+        label, hand = data["policy"], "L+R"
+        lab = [m for m in data["notes"] if m["human"]]
+        print(f"{data['piece']} ({data['split']} split): agrees with annotator 1 on "
+              f"{sum(m['human'] == m['finger'] for m in lab)}/{len(lab)} notes")
+    else:
+        fingerer, label, hand, min_len, cfg = make_fingerer(args)
+        try:
+            data = export_fingering(args.input, fingerer, label, hand=hand, min_len=min_len, cfg=cfg,
+                                    passage=args.passage, max_gap=args.max_gap)
+        except ValueError as e:
+            raise SystemExit(str(e))
     n = len(data["notes"])
     print(f"{data['piece']}: {label}, hand {hand}, {n} notes in "
           f"{1 if args.passage is not None else data['n_passages']} of {data['n_passages']} passages, "

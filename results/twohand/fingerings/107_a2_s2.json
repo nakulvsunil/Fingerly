@@ -1,0 +1,4318 @@
+{
+ "piece": "107-1",
+ "policy": "a2_s2 (given)",
+ "hand": "LR",
+ "split": "test",
+ "notes": [
+  {
+   "name": "E2",
+   "pitch": 40,
+   "onset": 0.00563702,
+   "offset": 0.131343,
+   "hand": "L",
+   "finger": 5,
+   "human": 5,
+   "passage": 0,
+   "cost": 1.0,
+   "breakdown": {
+    "rules": 1.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "B2",
+   "pitch": 47,
+   "onset": 0.120632,
+   "offset": 0.224917,
+   "hand": "L",
+   "finger": 1,
+   "human": 2,
+   "passage": 0,
+   "cost": 0.0,
+   "breakdown": {
+    "rules": 0.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "G3",
+   "pitch": 55,
+   "onset": 0.214207,
+   "offset": 0.318492,
+   "hand": "L",
+   "finger": 1,
+   "human": 1,
+   "passage": 0,
+   "cost": 31.35668182373047,
+   "breakdown": {
+    "rules": 27.0,
+    "time/shift/cross": 4.36
+   }
+  },
+  {
+   "name": "F#3",
+   "pitch": 54,
+   "onset": 0.307781,
+   "offset": 0.412066,
+   "hand": "L",
+   "finger": 2,
+   "human": 2,
+   "passage": 0,
+   "cost": 5.0,
+   "breakdown": {
+    "rules": 5.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "G3",
+   "pitch": 55,
+   "onset": 0.401356,
+   "offset": 0.505641,
+   "hand": "L",
+   "finger": 1,
+   "human": 1,
+   "passage": 0,
+   "cost": 0.0,
+   "breakdown": {
+    "rules": 0.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "E3",
+   "pitch": 52,
+   "onset": 0.49493,
+   "offset": 0.604852,
+   "hand": "L",
+   "finger": 4,
+   "human": 2,
+   "passage": 0,
+   "cost": 3.0,
+   "breakdown": {
+    "rules": 3.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "G3",
+   "pitch": 55,
+   "onset": 0.594142,
+   "offset": 0.7035,
+   "hand": "L",
+   "finger": 1,
+   "human": 1,
+   "passage": 0,
+   "cost": 2.0,
+   "breakdown": {
+    "rules": 2.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "E3",
+   "pitch": 52,
+   "onset": 0.69279,
+   "offset": 0.797075,
+   "hand": "L",
+   "finger": 4,
+   "human": 2,
+   "passage": 0,
+   "cost": 3.0,
+   "breakdown": {
+    "rules": 3.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "D#3",
+   "pitch": 51,
+   "onset": 0.786364,
+   "offset": 0.889522,
+   "hand": "L",
+   "finger": 4,
+   "human": 3,
+   "passage": 0,
+   "cost": 5.0,
+   "breakdown": {
+    "rules": 5.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "G3",
+   "pitch": 55,
+   "onset": 0.878812,
+   "offset": 0.982533,
+   "hand": "L",
+   "finger": 1,
+   "human": 1,
+   "passage": 0,
+   "cost": 1.0,
+   "breakdown": {
+    "rules": 1.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "D#3",
+   "pitch": 51,
+   "onset": 0.971823,
+   "offset": 1.07611,
+   "hand": "L",
+   "finger": 5,
+   "human": 2,
+   "passage": 0,
+   "cost": 10.0,
+   "breakdown": {
+    "rules": 10.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "D3",
+   "pitch": 50,
+   "onset": 1.0654,
+   "offset": 1.17701,
+   "hand": "L",
+   "finger": 5,
+   "human": 3,
+   "passage": 0,
+   "cost": 5.0,
+   "breakdown": {
+    "rules": 5.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "E3",
+   "pitch": 52,
+   "onset": 1.1663,
+   "offset": 1.27848,
+   "hand": "L",
+   "finger": 4,
+   "human": 1,
+   "passage": 0,
+   "cost": 1.0,
+   "breakdown": {
+    "rules": 1.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "D3",
+   "pitch": 50,
+   "onset": 1.26777,
+   "offset": 1.37205,
+   "hand": "L",
+   "finger": 5,
+   "human": 2,
+   "passage": 0,
+   "cost": 1.0,
+   "breakdown": {
+    "rules": 1.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "C#3",
+   "pitch": 49,
+   "onset": 1.36134,
+   "offset": 1.4645,
+   "hand": "L",
+   "finger": 5,
+   "human": 3,
+   "passage": 0,
+   "cost": 9.0,
+   "breakdown": {
+    "rules": 9.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "E3",
+   "pitch": 52,
+   "onset": 1.45379,
+   "offset": 1.55751,
+   "hand": "L",
+   "finger": 3,
+   "human": 1,
+   "passage": 0,
+   "cost": 0.0,
+   "breakdown": {
+    "rules": 0.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "C#3",
+   "pitch": 49,
+   "onset": 1.5468,
+   "offset": 1.65108,
+   "hand": "L",
+   "finger": 5,
+   "human": 2,
+   "passage": 0,
+   "cost": 5.0,
+   "breakdown": {
+    "rules": 5.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "C3",
+   "pitch": 48,
+   "onset": 1.64037,
+   "offset": 1.74917,
+   "hand": "L",
+   "finger": 5,
+   "human": 3,
+   "passage": 0,
+   "cost": 5.0,
+   "breakdown": {
+    "rules": 5.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "C#3",
+   "pitch": 49,
+   "onset": 1.73846,
+   "offset": 1.84725,
+   "hand": "L",
+   "finger": 4,
+   "human": 2,
+   "passage": 0,
+   "cost": 3.0,
+   "breakdown": {
+    "rules": 3.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "C3",
+   "pitch": 48,
+   "onset": 1.83654,
+   "offset": 1.94083,
+   "hand": "L",
+   "finger": 5,
+   "human": 3,
+   "passage": 0,
+   "cost": 1.0,
+   "breakdown": {
+    "rules": 1.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "B2",
+   "pitch": 47,
+   "onset": 1.93012,
+   "offset": 2.03384,
+   "hand": "L",
+   "finger": 5,
+   "human": 4,
+   "passage": 0,
+   "cost": 5.0,
+   "breakdown": {
+    "rules": 5.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "C3",
+   "pitch": 48,
+   "onset": 2.02313,
+   "offset": 2.12685,
+   "hand": "L",
+   "finger": 4,
+   "human": 2,
+   "passage": 0,
+   "cost": 3.0,
+   "breakdown": {
+    "rules": 3.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "A#2",
+   "pitch": 46,
+   "onset": 2.11614,
+   "offset": 2.22042,
+   "hand": "L",
+   "finger": 5,
+   "human": 4,
+   "passage": 0,
+   "cost": 7.0,
+   "breakdown": {
+    "rules": 7.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "B2",
+   "pitch": 47,
+   "onset": 2.20971,
+   "offset": 2.29032,
+   "hand": "L",
+   "finger": 3,
+   "human": 3,
+   "passage": 0,
+   "cost": 8.0,
+   "breakdown": {
+    "rules": 8.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "E2",
+   "pitch": 40,
+   "onset": 2.31118,
+   "offset": 2.44027,
+   "hand": "L",
+   "finger": 5,
+   "human": 5,
+   "passage": 0,
+   "cost": 18.049291610717773,
+   "breakdown": {
+    "rules": 18.0,
+    "time/shift/cross": 0.05
+   }
+  },
+  {
+   "name": "B2",
+   "pitch": 47,
+   "onset": 2.42956,
+   "offset": 2.53384,
+   "hand": "L",
+   "finger": 3,
+   "human": 2,
+   "passage": 0,
+   "cost": 10.0,
+   "breakdown": {
+    "rules": 10.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "G3",
+   "pitch": 55,
+   "onset": 2.52313,
+   "offset": 2.62742,
+   "hand": "L",
+   "finger": 1,
+   "human": 1,
+   "passage": 0,
+   "cost": 4.356875896453857,
+   "breakdown": {
+    "rules": 4.0,
+    "time/shift/cross": 0.36
+   }
+  },
+  {
+   "name": "F#3",
+   "pitch": 54,
+   "onset": 2.61671,
+   "offset": 2.72099,
+   "hand": "L",
+   "finger": 2,
+   "human": 2,
+   "passage": 0,
+   "cost": 5.0,
+   "breakdown": {
+    "rules": 5.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "G3",
+   "pitch": 55,
+   "onset": 2.71028,
+   "offset": 2.81456,
+   "hand": "L",
+   "finger": 1,
+   "human": 1,
+   "passage": 0,
+   "cost": 0.0,
+   "breakdown": {
+    "rules": 0.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "E3",
+   "pitch": 52,
+   "onset": 2.80385,
+   "offset": 2.91378,
+   "hand": "L",
+   "finger": 4,
+   "human": 2,
+   "passage": 0,
+   "cost": 3.0,
+   "breakdown": {
+    "rules": 3.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "G3",
+   "pitch": 55,
+   "onset": 2.90307,
+   "offset": 3.01242,
+   "hand": "L",
+   "finger": 1,
+   "human": 1,
+   "passage": 0,
+   "cost": 2.0,
+   "breakdown": {
+    "rules": 2.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "E3",
+   "pitch": 52,
+   "onset": 3.00171,
+   "offset": 3.106,
+   "hand": "L",
+   "finger": 4,
+   "human": 2,
+   "passage": 0,
+   "cost": 3.0,
+   "breakdown": {
+    "rules": 3.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "D#3",
+   "pitch": 51,
+   "onset": 3.09529,
+   "offset": 3.19845,
+   "hand": "L",
+   "finger": 4,
+   "human": 3,
+   "passage": 0,
+   "cost": 5.0,
+   "breakdown": {
+    "rules": 5.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "G3",
+   "pitch": 55,
+   "onset": 3.18774,
+   "offset": 3.29146,
+   "hand": "L",
+   "finger": 1,
+   "human": 1,
+   "passage": 0,
+   "cost": 1.0,
+   "breakdown": {
+    "rules": 1.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "D#3",
+   "pitch": 51,
+   "onset": 3.28075,
+   "offset": 3.38503,
+   "hand": "L",
+   "finger": 5,
+   "human": 2,
+   "passage": 0,
+   "cost": 10.0,
+   "breakdown": {
+    "rules": 10.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "D3",
+   "pitch": 50,
+   "onset": 3.37432,
+   "offset": 3.48593,
+   "hand": "L",
+   "finger": 5,
+   "human": 3,
+   "passage": 0,
+   "cost": 5.0,
+   "breakdown": {
+    "rules": 5.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "E3",
+   "pitch": 52,
+   "onset": 3.47522,
+   "offset": 3.5874,
+   "hand": "L",
+   "finger": 4,
+   "human": 1,
+   "passage": 0,
+   "cost": 1.0,
+   "breakdown": {
+    "rules": 1.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "D3",
+   "pitch": 50,
+   "onset": 3.57669,
+   "offset": 3.68098,
+   "hand": "L",
+   "finger": 5,
+   "human": 2,
+   "passage": 0,
+   "cost": 1.0,
+   "breakdown": {
+    "rules": 1.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "C#3",
+   "pitch": 49,
+   "onset": 3.67026,
+   "offset": 3.77342,
+   "hand": "L",
+   "finger": 5,
+   "human": 3,
+   "passage": 0,
+   "cost": 9.0,
+   "breakdown": {
+    "rules": 9.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "E3",
+   "pitch": 52,
+   "onset": 3.76271,
+   "offset": 3.86643,
+   "hand": "L",
+   "finger": 3,
+   "human": 1,
+   "passage": 0,
+   "cost": 0.0,
+   "breakdown": {
+    "rules": 0.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "C#3",
+   "pitch": 49,
+   "onset": 3.85572,
+   "offset": 3.96001,
+   "hand": "L",
+   "finger": 5,
+   "human": 2,
+   "passage": 0,
+   "cost": 5.0,
+   "breakdown": {
+    "rules": 5.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "C3",
+   "pitch": 48,
+   "onset": 3.9493,
+   "offset": 4.05809,
+   "hand": "L",
+   "finger": 5,
+   "human": 3,
+   "passage": 0,
+   "cost": 5.0,
+   "breakdown": {
+    "rules": 5.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "C#3",
+   "pitch": 49,
+   "onset": 4.04738,
+   "offset": 4.15618,
+   "hand": "L",
+   "finger": 4,
+   "human": 2,
+   "passage": 0,
+   "cost": 3.0,
+   "breakdown": {
+    "rules": 3.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "C3",
+   "pitch": 48,
+   "onset": 4.14547,
+   "offset": 4.24975,
+   "hand": "L",
+   "finger": 5,
+   "human": 3,
+   "passage": 0,
+   "cost": 1.0,
+   "breakdown": {
+    "rules": 1.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "B2",
+   "pitch": 47,
+   "onset": 4.23904,
+   "offset": 4.34276,
+   "hand": "L",
+   "finger": 5,
+   "human": 4,
+   "passage": 0,
+   "cost": 5.0,
+   "breakdown": {
+    "rules": 5.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "C3",
+   "pitch": 48,
+   "onset": 4.33205,
+   "offset": 4.43577,
+   "hand": "L",
+   "finger": 4,
+   "human": 2,
+   "passage": 0,
+   "cost": 3.0,
+   "breakdown": {
+    "rules": 3.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "A#2",
+   "pitch": 46,
+   "onset": 4.42506,
+   "offset": 4.52935,
+   "hand": "L",
+   "finger": 4,
+   "human": 4,
+   "passage": 0,
+   "cost": 12.0,
+   "breakdown": {
+    "rules": 12.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "B3",
+   "pitch": 59,
+   "onset": 4.47185,
+   "offset": 4.60883,
+   "hand": "R",
+   "finger": 1,
+   "human": 1,
+   "passage": 0,
+   "cost": 0.0,
+   "breakdown": {
+    "rules": 0.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "B2",
+   "pitch": 47,
+   "onset": 4.51864,
+   "offset": 4.59925,
+   "hand": "L",
+   "finger": 3,
+   "human": 3,
+   "passage": 0,
+   "cost": 4.0,
+   "breakdown": {
+    "rules": 4.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "E2",
+   "pitch": 40,
+   "onset": 4.6201,
+   "offset": 4.74919,
+   "hand": "L",
+   "finger": 5,
+   "human": 5,
+   "passage": 0,
+   "cost": 16.049680709838867,
+   "breakdown": {
+    "rules": 16.0,
+    "time/shift/cross": 0.05
+   }
+  },
+  {
+   "name": "E4",
+   "pitch": 64,
+   "onset": 4.6201,
+   "offset": 6.64041,
+   "hand": "R",
+   "finger": 2,
+   "human": 2,
+   "passage": 0,
+   "cost": 0.0,
+   "breakdown": {
+    "rules": 0.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "G4",
+   "pitch": 67,
+   "onset": 4.6201,
+   "offset": 6.64041,
+   "hand": "R",
+   "finger": 4,
+   "human": 4,
+   "passage": 0,
+   "cost": 0.0,
+   "breakdown": {}
+  },
+  {
+   "name": "B2",
+   "pitch": 47,
+   "onset": 4.73848,
+   "offset": 4.84277,
+   "hand": "L",
+   "finger": 3,
+   "human": 2,
+   "passage": 0,
+   "cost": 10.0,
+   "breakdown": {
+    "rules": 10.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "G3",
+   "pitch": 55,
+   "onset": 4.83205,
+   "offset": 4.93634,
+   "hand": "L",
+   "finger": 1,
+   "human": 1,
+   "passage": 0,
+   "cost": 4.356875896453857,
+   "breakdown": {
+    "rules": 4.0,
+    "time/shift/cross": 0.36
+   }
+  },
+  {
+   "name": "F#3",
+   "pitch": 54,
+   "onset": 4.92563,
+   "offset": 5.02991,
+   "hand": "L",
+   "finger": 2,
+   "human": 2,
+   "passage": 0,
+   "cost": 5.0,
+   "breakdown": {
+    "rules": 5.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "G3",
+   "pitch": 55,
+   "onset": 5.0192,
+   "offset": 5.12349,
+   "hand": "L",
+   "finger": 1,
+   "human": 1,
+   "passage": 0,
+   "cost": 0.0,
+   "breakdown": {
+    "rules": 0.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "E3",
+   "pitch": 52,
+   "onset": 5.11278,
+   "offset": 5.2227,
+   "hand": "L",
+   "finger": 2,
+   "human": 2,
+   "passage": 0,
+   "cost": 3.0,
+   "breakdown": {
+    "rules": 3.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "G3",
+   "pitch": 55,
+   "onset": 5.21199,
+   "offset": 5.32135,
+   "hand": "L",
+   "finger": 1,
+   "human": 1,
+   "passage": 0,
+   "cost": 0.0,
+   "breakdown": {
+    "rules": 0.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "E3",
+   "pitch": 52,
+   "onset": 5.31064,
+   "offset": 5.41492,
+   "hand": "L",
+   "finger": 2,
+   "human": 2,
+   "passage": 0,
+   "cost": 0.0,
+   "breakdown": {
+    "rules": 0.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "D#3",
+   "pitch": 51,
+   "onset": 5.40421,
+   "offset": 5.50737,
+   "hand": "L",
+   "finger": 3,
+   "human": 3,
+   "passage": 0,
+   "cost": 0.0,
+   "breakdown": {
+    "rules": 0.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "G3",
+   "pitch": 55,
+   "onset": 5.49666,
+   "offset": 5.60038,
+   "hand": "L",
+   "finger": 1,
+   "human": 1,
+   "passage": 0,
+   "cost": 0.0,
+   "breakdown": {
+    "rules": 0.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "D#3",
+   "pitch": 51,
+   "onset": 5.58967,
+   "offset": 5.69396,
+   "hand": "L",
+   "finger": 3,
+   "human": 2,
+   "passage": 0,
+   "cost": 0.0,
+   "breakdown": {
+    "rules": 0.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "D3",
+   "pitch": 50,
+   "onset": 5.68325,
+   "offset": 5.79486,
+   "hand": "L",
+   "finger": 3,
+   "human": 3,
+   "passage": 0,
+   "cost": 4.0,
+   "breakdown": {
+    "rules": 4.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "E3",
+   "pitch": 52,
+   "onset": 5.78415,
+   "offset": 5.89632,
+   "hand": "L",
+   "finger": 1,
+   "human": 1,
+   "passage": 0,
+   "cost": 1.0,
+   "breakdown": {
+    "rules": 1.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "D3",
+   "pitch": 50,
+   "onset": 5.88561,
+   "offset": 5.9899,
+   "hand": "L",
+   "finger": 3,
+   "human": 2,
+   "passage": 0,
+   "cost": 1.0,
+   "breakdown": {
+    "rules": 1.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "C#3",
+   "pitch": 49,
+   "onset": 5.97919,
+   "offset": 6.08235,
+   "hand": "L",
+   "finger": 3,
+   "human": 3,
+   "passage": 0,
+   "cost": 4.0,
+   "breakdown": {
+    "rules": 4.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "E3",
+   "pitch": 52,
+   "onset": 6.07164,
+   "offset": 6.17536,
+   "hand": "L",
+   "finger": 1,
+   "human": 1,
+   "passage": 0,
+   "cost": 0.0,
+   "breakdown": {
+    "rules": 0.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "C#3",
+   "pitch": 49,
+   "onset": 6.16465,
+   "offset": 6.26893,
+   "hand": "L",
+   "finger": 3,
+   "human": 2,
+   "passage": 0,
+   "cost": 0.0,
+   "breakdown": {
+    "rules": 0.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "C3",
+   "pitch": 48,
+   "onset": 6.25822,
+   "offset": 6.36702,
+   "hand": "L",
+   "finger": 3,
+   "human": 3,
+   "passage": 0,
+   "cost": 4.0,
+   "breakdown": {
+    "rules": 4.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "C#3",
+   "pitch": 49,
+   "onset": 6.35631,
+   "offset": 6.4651,
+   "hand": "L",
+   "finger": 2,
+   "human": 2,
+   "passage": 0,
+   "cost": 2.0,
+   "breakdown": {
+    "rules": 2.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "C3",
+   "pitch": 48,
+   "onset": 6.45439,
+   "offset": 6.55867,
+   "hand": "L",
+   "finger": 3,
+   "human": 3,
+   "passage": 0,
+   "cost": 0.0,
+   "breakdown": {
+    "rules": 0.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "B2",
+   "pitch": 47,
+   "onset": 6.54796,
+   "offset": 6.65169,
+   "hand": "L",
+   "finger": 3,
+   "human": 4,
+   "passage": 0,
+   "cost": 4.0,
+   "breakdown": {
+    "rules": 4.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "C3",
+   "pitch": 48,
+   "onset": 6.64098,
+   "offset": 6.7447,
+   "hand": "L",
+   "finger": 1,
+   "human": 2,
+   "passage": 0,
+   "cost": 2.0,
+   "breakdown": {
+    "rules": 2.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "A#2",
+   "pitch": 46,
+   "onset": 6.73399,
+   "offset": 6.83827,
+   "hand": "L",
+   "finger": 2,
+   "human": 4,
+   "passage": 0,
+   "cost": 3.0,
+   "breakdown": {
+    "rules": 3.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "B3",
+   "pitch": 59,
+   "onset": 6.78077,
+   "offset": 6.91775,
+   "hand": "R",
+   "finger": 1,
+   "human": 1,
+   "passage": 0,
+   "cost": 0.0,
+   "breakdown": {
+    "rules": 0.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "B2",
+   "pitch": 47,
+   "onset": 6.82756,
+   "offset": 6.90817,
+   "hand": "L",
+   "finger": 1,
+   "human": 3,
+   "passage": 0,
+   "cost": 2.0,
+   "breakdown": {
+    "rules": 2.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "E2",
+   "pitch": 40,
+   "onset": 6.92903,
+   "offset": 7.05811,
+   "hand": "L",
+   "finger": 5,
+   "human": 5,
+   "passage": 0,
+   "cost": 1.0,
+   "breakdown": {
+    "rules": 1.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "E4",
+   "pitch": 64,
+   "onset": 6.92903,
+   "offset": 8.94934,
+   "hand": "R",
+   "finger": 2,
+   "human": 2,
+   "passage": 0,
+   "cost": 0.0,
+   "breakdown": {
+    "rules": 0.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "G4",
+   "pitch": 67,
+   "onset": 6.92903,
+   "offset": 8.94934,
+   "hand": "R",
+   "finger": 4,
+   "human": 4,
+   "passage": 0,
+   "cost": 0.0,
+   "breakdown": {}
+  },
+  {
+   "name": "B2",
+   "pitch": 47,
+   "onset": 7.0474,
+   "offset": 7.15169,
+   "hand": "L",
+   "finger": 3,
+   "human": 2,
+   "passage": 0,
+   "cost": 10.0,
+   "breakdown": {
+    "rules": 10.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "G3",
+   "pitch": 55,
+   "onset": 7.14098,
+   "offset": 7.24526,
+   "hand": "L",
+   "finger": 1,
+   "human": 1,
+   "passage": 0,
+   "cost": 4.3564863204956055,
+   "breakdown": {
+    "rules": 4.0,
+    "time/shift/cross": 0.36
+   }
+  },
+  {
+   "name": "F#3",
+   "pitch": 54,
+   "onset": 7.23455,
+   "offset": 7.33884,
+   "hand": "L",
+   "finger": 2,
+   "human": 2,
+   "passage": 0,
+   "cost": 5.0,
+   "breakdown": {
+    "rules": 5.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "G3",
+   "pitch": 55,
+   "onset": 7.32813,
+   "offset": 7.43241,
+   "hand": "L",
+   "finger": 1,
+   "human": 1,
+   "passage": 0,
+   "cost": 0.0,
+   "breakdown": {
+    "rules": 0.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "E3",
+   "pitch": 52,
+   "onset": 7.4217,
+   "offset": 7.53162,
+   "hand": "L",
+   "finger": 2,
+   "human": 3,
+   "passage": 0,
+   "cost": 3.0,
+   "breakdown": {
+    "rules": 3.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "G3",
+   "pitch": 55,
+   "onset": 7.52091,
+   "offset": 7.63027,
+   "hand": "L",
+   "finger": 1,
+   "human": 1,
+   "passage": 0,
+   "cost": 0.0,
+   "breakdown": {
+    "rules": 0.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "E3",
+   "pitch": 52,
+   "onset": 7.61956,
+   "offset": 7.72385,
+   "hand": "L",
+   "finger": 2,
+   "human": 2,
+   "passage": 0,
+   "cost": 0.0,
+   "breakdown": {
+    "rules": 0.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "D#3",
+   "pitch": 51,
+   "onset": 7.71314,
+   "offset": 7.81629,
+   "hand": "L",
+   "finger": 3,
+   "human": 3,
+   "passage": 0,
+   "cost": 0.0,
+   "breakdown": {
+    "rules": 0.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "G3",
+   "pitch": 55,
+   "onset": 7.80558,
+   "offset": 7.9093,
+   "hand": "L",
+   "finger": 1,
+   "human": 1,
+   "passage": 0,
+   "cost": 0.0,
+   "breakdown": {
+    "rules": 0.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "D#3",
+   "pitch": 51,
+   "onset": 7.89859,
+   "offset": 8.00288,
+   "hand": "L",
+   "finger": 3,
+   "human": 2,
+   "passage": 0,
+   "cost": 0.0,
+   "breakdown": {
+    "rules": 0.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "D3",
+   "pitch": 50,
+   "onset": 7.99217,
+   "offset": 8.10378,
+   "hand": "L",
+   "finger": 3,
+   "human": 3,
+   "passage": 0,
+   "cost": 4.0,
+   "breakdown": {
+    "rules": 4.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "E3",
+   "pitch": 52,
+   "onset": 8.09307,
+   "offset": 8.20525,
+   "hand": "L",
+   "finger": 1,
+   "human": 1,
+   "passage": 0,
+   "cost": 1.0,
+   "breakdown": {
+    "rules": 1.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "D3",
+   "pitch": 50,
+   "onset": 8.19454,
+   "offset": 8.29882,
+   "hand": "L",
+   "finger": 3,
+   "human": 2,
+   "passage": 0,
+   "cost": 1.0,
+   "breakdown": {
+    "rules": 1.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "C#3",
+   "pitch": 49,
+   "onset": 8.28811,
+   "offset": 8.39127,
+   "hand": "L",
+   "finger": 3,
+   "human": 3,
+   "passage": 0,
+   "cost": 4.0,
+   "breakdown": {
+    "rules": 4.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "E3",
+   "pitch": 52,
+   "onset": 8.38056,
+   "offset": 8.48428,
+   "hand": "L",
+   "finger": 1,
+   "human": 1,
+   "passage": 0,
+   "cost": 0.0,
+   "breakdown": {
+    "rules": 0.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "C#3",
+   "pitch": 49,
+   "onset": 8.47357,
+   "offset": 8.57786,
+   "hand": "L",
+   "finger": 3,
+   "human": 2,
+   "passage": 0,
+   "cost": 0.0,
+   "breakdown": {
+    "rules": 0.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "C3",
+   "pitch": 48,
+   "onset": 8.56715,
+   "offset": 8.67594,
+   "hand": "L",
+   "finger": 3,
+   "human": 3,
+   "passage": 0,
+   "cost": 4.0,
+   "breakdown": {
+    "rules": 4.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "C#3",
+   "pitch": 49,
+   "onset": 8.66523,
+   "offset": 8.77402,
+   "hand": "L",
+   "finger": 2,
+   "human": 2,
+   "passage": 0,
+   "cost": 2.0,
+   "breakdown": {
+    "rules": 2.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "C3",
+   "pitch": 48,
+   "onset": 8.76331,
+   "offset": 8.8676,
+   "hand": "L",
+   "finger": 3,
+   "human": 3,
+   "passage": 0,
+   "cost": 0.0,
+   "breakdown": {
+    "rules": 0.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "B2",
+   "pitch": 47,
+   "onset": 8.85689,
+   "offset": 8.96061,
+   "hand": "L",
+   "finger": 3,
+   "human": 4,
+   "passage": 0,
+   "cost": 4.0,
+   "breakdown": {
+    "rules": 4.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "C3",
+   "pitch": 48,
+   "onset": 8.9499,
+   "offset": 9.05362,
+   "hand": "L",
+   "finger": 1,
+   "human": 2,
+   "passage": 0,
+   "cost": 2.0,
+   "breakdown": {
+    "rules": 2.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "A#2",
+   "pitch": 46,
+   "onset": 9.04291,
+   "offset": 9.14719,
+   "hand": "L",
+   "finger": 2,
+   "human": 4,
+   "passage": 0,
+   "cost": 3.0,
+   "breakdown": {
+    "rules": 3.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "B3",
+   "pitch": 59,
+   "onset": 9.0897,
+   "offset": 9.22668,
+   "hand": "R",
+   "finger": 1,
+   "human": 1,
+   "passage": 0,
+   "cost": 0.0,
+   "breakdown": {
+    "rules": 0.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "B2",
+   "pitch": 47,
+   "onset": 9.13648,
+   "offset": 9.21709,
+   "hand": "L",
+   "finger": 1,
+   "human": 3,
+   "passage": 0,
+   "cost": 2.0,
+   "breakdown": {
+    "rules": 2.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "E2",
+   "pitch": 40,
+   "onset": 9.23795,
+   "offset": 9.36704,
+   "hand": "L",
+   "finger": 5,
+   "human": 5,
+   "passage": 0,
+   "cost": 1.0,
+   "breakdown": {
+    "rules": 1.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "E4",
+   "pitch": 64,
+   "onset": 9.23795,
+   "offset": 10.2537,
+   "hand": "R",
+   "finger": 2,
+   "human": 2,
+   "passage": 0,
+   "cost": 0.0,
+   "breakdown": {
+    "rules": 0.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "G4",
+   "pitch": 67,
+   "onset": 9.23795,
+   "offset": 10.2537,
+   "hand": "R",
+   "finger": 4,
+   "human": 4,
+   "passage": 0,
+   "cost": 0.0,
+   "breakdown": {}
+  },
+  {
+   "name": "B2",
+   "pitch": 47,
+   "onset": 9.35633,
+   "offset": 9.46061,
+   "hand": "L",
+   "finger": 3,
+   "human": 2,
+   "passage": 0,
+   "cost": 10.0,
+   "breakdown": {
+    "rules": 10.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "G3",
+   "pitch": 55,
+   "onset": 9.4499,
+   "offset": 9.55419,
+   "hand": "L",
+   "finger": 1,
+   "human": 1,
+   "passage": 0,
+   "cost": 4.356875896453857,
+   "breakdown": {
+    "rules": 4.0,
+    "time/shift/cross": 0.36
+   }
+  },
+  {
+   "name": "F#3",
+   "pitch": 54,
+   "onset": 9.54348,
+   "offset": 9.64776,
+   "hand": "L",
+   "finger": 2,
+   "human": 2,
+   "passage": 0,
+   "cost": 5.0,
+   "breakdown": {
+    "rules": 5.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "G3",
+   "pitch": 55,
+   "onset": 9.63705,
+   "offset": 9.74134,
+   "hand": "L",
+   "finger": 1,
+   "human": 1,
+   "passage": 0,
+   "cost": 0.0,
+   "breakdown": {
+    "rules": 0.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "E3",
+   "pitch": 52,
+   "onset": 9.73063,
+   "offset": 9.81124,
+   "hand": "L",
+   "finger": 2,
+   "human": 3,
+   "passage": 0,
+   "cost": 3.0,
+   "breakdown": {
+    "rules": 3.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "G3",
+   "pitch": 55,
+   "onset": 9.82984,
+   "offset": 9.9392,
+   "hand": "L",
+   "finger": 1,
+   "human": 1,
+   "passage": 0,
+   "cost": 0.0,
+   "breakdown": {
+    "rules": 0.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "C#3",
+   "pitch": 49,
+   "onset": 9.92849,
+   "offset": 10.0328,
+   "hand": "L",
+   "finger": 4,
+   "human": 2,
+   "passage": 0,
+   "cost": 1.0,
+   "breakdown": {
+    "rules": 1.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "C3",
+   "pitch": 48,
+   "onset": 10.0221,
+   "offset": 10.1252,
+   "hand": "L",
+   "finger": 4,
+   "human": 3,
+   "passage": 0,
+   "cost": 5.0,
+   "breakdown": {
+    "rules": 5.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "G3",
+   "pitch": 55,
+   "onset": 10.1145,
+   "offset": 10.2182,
+   "hand": "L",
+   "finger": 1,
+   "human": 1,
+   "passage": 0,
+   "cost": 0.0,
+   "breakdown": {
+    "rules": 0.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "C3",
+   "pitch": 48,
+   "onset": 10.2075,
+   "offset": 10.3118,
+   "hand": "L",
+   "finger": 2,
+   "human": 2,
+   "passage": 0,
+   "cost": 5.379068851470947,
+   "breakdown": {
+    "rules": 4.0,
+    "time/shift/cross": 1.38
+   }
+  },
+  {
+   "name": "F#4",
+   "pitch": 66,
+   "onset": 10.2543,
+   "offset": 10.393,
+   "hand": "R",
+   "finger": 3,
+   "human": 1,
+   "passage": 0,
+   "cost": 0.0,
+   "breakdown": {
+    "rules": 0.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "A4",
+   "pitch": 69,
+   "onset": 10.2543,
+   "offset": 10.4014,
+   "hand": "R",
+   "finger": 5,
+   "human": 3,
+   "passage": 0,
+   "cost": 0.0,
+   "breakdown": {}
+  },
+  {
+   "name": "B2",
+   "pitch": 47,
+   "onset": 10.3011,
+   "offset": 10.3834,
+   "hand": "L",
+   "finger": 1,
+   "human": 3,
+   "passage": 0,
+   "cost": 12.0,
+   "breakdown": {
+    "rules": 12.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "E2",
+   "pitch": 40,
+   "onset": 10.402,
+   "offset": 10.5142,
+   "hand": "L",
+   "finger": 5,
+   "human": 5,
+   "passage": 0,
+   "cost": 1.0,
+   "breakdown": {
+    "rules": 1.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "G4",
+   "pitch": 67,
+   "onset": 10.402,
+   "offset": 10.9736,
+   "hand": "R",
+   "finger": 2,
+   "human": 2,
+   "passage": 0,
+   "cost": 38.0,
+   "breakdown": {
+    "rules": 38.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "B4",
+   "pitch": 71,
+   "onset": 10.402,
+   "offset": 10.9736,
+   "hand": "R",
+   "finger": 4,
+   "human": 4,
+   "passage": 0,
+   "cost": 0.0,
+   "breakdown": {}
+  },
+  {
+   "name": "B2",
+   "pitch": 47,
+   "onset": 10.5035,
+   "offset": 10.6077,
+   "hand": "L",
+   "finger": 1,
+   "human": 2,
+   "passage": 0,
+   "cost": 0.0,
+   "breakdown": {
+    "rules": 0.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "G3",
+   "pitch": 55,
+   "onset": 10.597,
+   "offset": 10.7002,
+   "hand": "L",
+   "finger": 1,
+   "human": 1,
+   "passage": 0,
+   "cost": 31.359601974487305,
+   "breakdown": {
+    "rules": 27.0,
+    "time/shift/cross": 4.36
+   }
+  },
+  {
+   "name": "F#3",
+   "pitch": 54,
+   "onset": 10.6895,
+   "offset": 10.7932,
+   "hand": "L",
+   "finger": 2,
+   "human": 2,
+   "passage": 0,
+   "cost": 5.0,
+   "breakdown": {
+    "rules": 5.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "G3",
+   "pitch": 55,
+   "onset": 10.7825,
+   "offset": 10.8868,
+   "hand": "L",
+   "finger": 1,
+   "human": 1,
+   "passage": 0,
+   "cost": 0.0,
+   "breakdown": {
+    "rules": 0.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "E3",
+   "pitch": 52,
+   "onset": 10.8761,
+   "offset": 10.9556,
+   "hand": "L",
+   "finger": 2,
+   "human": 3,
+   "passage": 0,
+   "cost": 3.0,
+   "breakdown": {
+    "rules": 3.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "A2",
+   "pitch": 45,
+   "onset": 10.9742,
+   "offset": 11.0829,
+   "hand": "L",
+   "finger": 5,
+   "human": 5,
+   "passage": 0,
+   "cost": 3.0,
+   "breakdown": {
+    "rules": 3.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "F#4",
+   "pitch": 66,
+   "onset": 10.9742,
+   "offset": 11.154,
+   "hand": "R",
+   "finger": 1,
+   "human": 1,
+   "passage": 0,
+   "cost": 0.0,
+   "breakdown": {
+    "rules": 0.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "A4",
+   "pitch": 69,
+   "onset": 10.9742,
+   "offset": 11.1652,
+   "hand": "R",
+   "finger": 3,
+   "human": 3,
+   "passage": 0,
+   "cost": 0.0,
+   "breakdown": {}
+  },
+  {
+   "name": "E3",
+   "pitch": 52,
+   "onset": 11.0722,
+   "offset": 11.1765,
+   "hand": "L",
+   "finger": 2,
+   "human": 2,
+   "passage": 0,
+   "cost": 2.0,
+   "breakdown": {
+    "rules": 2.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "C4",
+   "pitch": 60,
+   "onset": 11.1658,
+   "offset": 11.2695,
+   "hand": "L",
+   "finger": 1,
+   "human": 1,
+   "passage": 0,
+   "cost": 8.355708122253418,
+   "breakdown": {
+    "rules": 6.0,
+    "time/shift/cross": 2.36
+   }
+  },
+  {
+   "name": "E4",
+   "pitch": 64,
+   "onset": 11.1658,
+   "offset": 11.34,
+   "hand": "R",
+   "finger": 1,
+   "human": 2,
+   "passage": 0,
+   "cost": 26.0,
+   "breakdown": {
+    "rules": 26.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "G4",
+   "pitch": 67,
+   "onset": 11.1658,
+   "offset": 11.3513,
+   "hand": "R",
+   "finger": 4,
+   "human": 4,
+   "passage": 0,
+   "cost": 0.0,
+   "breakdown": {}
+  },
+  {
+   "name": "B3",
+   "pitch": 59,
+   "onset": 11.2588,
+   "offset": 11.3625,
+   "hand": "L",
+   "finger": 2,
+   "human": 2,
+   "passage": 0,
+   "cost": 8.0,
+   "breakdown": {
+    "rules": 8.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "C4",
+   "pitch": 60,
+   "onset": 11.3518,
+   "offset": 11.4561,
+   "hand": "L",
+   "finger": 1,
+   "human": 1,
+   "passage": 0,
+   "cost": 0.0,
+   "breakdown": {
+    "rules": 0.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "F#4",
+   "pitch": 66,
+   "onset": 11.3518,
+   "offset": 11.5328,
+   "hand": "R",
+   "finger": 1,
+   "human": 1,
+   "passage": 0,
+   "cost": 22.0,
+   "breakdown": {
+    "rules": 22.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "A4",
+   "pitch": 69,
+   "onset": 11.3518,
+   "offset": 11.5441,
+   "hand": "R",
+   "finger": 3,
+   "human": 3,
+   "passage": 0,
+   "cost": 0.0,
+   "breakdown": {}
+  },
+  {
+   "name": "A3",
+   "pitch": 57,
+   "onset": 11.4454,
+   "offset": 11.526,
+   "hand": "L",
+   "finger": 2,
+   "human": 3,
+   "passage": 0,
+   "cost": 3.0,
+   "breakdown": {
+    "rules": 3.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "E2",
+   "pitch": 40,
+   "onset": 11.5469,
+   "offset": 11.676,
+   "hand": "L",
+   "finger": 2,
+   "human": 5,
+   "passage": 0,
+   "cost": 94.04812622070312,
+   "breakdown": {
+    "rules": 81.0,
+    "time/shift/cross": 13.05
+   }
+  },
+  {
+   "name": "G4",
+   "pitch": 67,
+   "onset": 11.5469,
+   "offset": 12.9823,
+   "hand": "R",
+   "finger": 2,
+   "human": 2,
+   "passage": 0,
+   "cost": 0.0,
+   "breakdown": {
+    "rules": 0.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "B4",
+   "pitch": 71,
+   "onset": 11.5469,
+   "offset": 12.9823,
+   "hand": "R",
+   "finger": 4,
+   "human": 4,
+   "passage": 0,
+   "cost": 0.0,
+   "breakdown": {}
+  },
+  {
+   "name": "B2",
+   "pitch": 47,
+   "onset": 11.6653,
+   "offset": 11.7695,
+   "hand": "L",
+   "finger": 1,
+   "human": 2,
+   "passage": 0,
+   "cost": 10.39012622833252,
+   "breakdown": {
+    "rules": 10.0,
+    "time/shift/cross": 0.39
+   }
+  },
+  {
+   "name": "G3",
+   "pitch": 55,
+   "onset": 11.7588,
+   "offset": 11.8631,
+   "hand": "L",
+   "finger": 1,
+   "human": 1,
+   "passage": 0,
+   "cost": 37.35960006713867,
+   "breakdown": {
+    "rules": 33.0,
+    "time/shift/cross": 4.36
+   }
+  },
+  {
+   "name": "F#3",
+   "pitch": 54,
+   "onset": 11.8524,
+   "offset": 11.9567,
+   "hand": "L",
+   "finger": 2,
+   "human": 2,
+   "passage": 0,
+   "cost": 5.0,
+   "breakdown": {
+    "rules": 5.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "G3",
+   "pitch": 55,
+   "onset": 11.946,
+   "offset": 12.0503,
+   "hand": "L",
+   "finger": 1,
+   "human": 1,
+   "passage": 0,
+   "cost": 0.0,
+   "breakdown": {
+    "rules": 0.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "E3",
+   "pitch": 52,
+   "onset": 12.0396,
+   "offset": 12.1495,
+   "hand": "L",
+   "finger": 2,
+   "human": 3,
+   "passage": 0,
+   "cost": 3.0,
+   "breakdown": {
+    "rules": 3.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "G3",
+   "pitch": 55,
+   "onset": 12.1388,
+   "offset": 12.2481,
+   "hand": "L",
+   "finger": 1,
+   "human": 1,
+   "passage": 0,
+   "cost": 0.0,
+   "breakdown": {
+    "rules": 0.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "E3",
+   "pitch": 52,
+   "onset": 12.2374,
+   "offset": 12.3417,
+   "hand": "L",
+   "finger": 2,
+   "human": 2,
+   "passage": 0,
+   "cost": 0.0,
+   "breakdown": {
+    "rules": 0.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "D#3",
+   "pitch": 51,
+   "onset": 12.331,
+   "offset": 12.4341,
+   "hand": "L",
+   "finger": 3,
+   "human": 3,
+   "passage": 0,
+   "cost": 0.0,
+   "breakdown": {
+    "rules": 0.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "G3",
+   "pitch": 55,
+   "onset": 12.4234,
+   "offset": 12.5272,
+   "hand": "L",
+   "finger": 1,
+   "human": 1,
+   "passage": 0,
+   "cost": 0.0,
+   "breakdown": {
+    "rules": 0.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "D#3",
+   "pitch": 51,
+   "onset": 12.5164,
+   "offset": 12.6207,
+   "hand": "L",
+   "finger": 2,
+   "human": 2,
+   "passage": 0,
+   "cost": 2.0,
+   "breakdown": {
+    "rules": 2.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "D3",
+   "pitch": 50,
+   "onset": 12.61,
+   "offset": 12.7216,
+   "hand": "L",
+   "finger": 3,
+   "human": 3,
+   "passage": 0,
+   "cost": 0.0,
+   "breakdown": {
+    "rules": 0.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "E3",
+   "pitch": 52,
+   "onset": 12.7109,
+   "offset": 12.8231,
+   "hand": "L",
+   "finger": 1,
+   "human": 1,
+   "passage": 0,
+   "cost": 1.0,
+   "breakdown": {
+    "rules": 1.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "D3",
+   "pitch": 50,
+   "onset": 12.8124,
+   "offset": 12.9174,
+   "hand": "L",
+   "finger": 2,
+   "human": 2,
+   "passage": 0,
+   "cost": 2.0,
+   "breakdown": {
+    "rules": 2.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "C#3",
+   "pitch": 49,
+   "onset": 12.9066,
+   "offset": 13.0108,
+   "hand": "L",
+   "finger": 3,
+   "human": 3,
+   "passage": 0,
+   "cost": 0.0,
+   "breakdown": {
+    "rules": 0.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "E3",
+   "pitch": 52,
+   "onset": 13.0,
+   "offset": 13.1052,
+   "hand": "L",
+   "finger": 1,
+   "human": 1,
+   "passage": 0,
+   "cost": 0.0,
+   "breakdown": {
+    "rules": 0.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "C#3",
+   "pitch": 49,
+   "onset": 13.0943,
+   "offset": 13.2004,
+   "hand": "L",
+   "finger": 2,
+   "human": 2,
+   "passage": 0,
+   "cost": 2.0,
+   "breakdown": {
+    "rules": 2.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "C3",
+   "pitch": 48,
+   "onset": 13.1895,
+   "offset": 13.3005,
+   "hand": "L",
+   "finger": 1,
+   "human": 3,
+   "passage": 0,
+   "cost": 7.0,
+   "breakdown": {
+    "rules": 7.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "C#3",
+   "pitch": 49,
+   "onset": 13.2895,
+   "offset": 13.401,
+   "hand": "L",
+   "finger": 2,
+   "human": 1,
+   "passage": 0,
+   "cost": 2.0,
+   "breakdown": {
+    "rules": 2.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "C3",
+   "pitch": 48,
+   "onset": 13.39,
+   "offset": 13.4971,
+   "hand": "L",
+   "finger": 1,
+   "human": 2,
+   "passage": 0,
+   "cost": 2.0,
+   "breakdown": {
+    "rules": 2.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "B2",
+   "pitch": 47,
+   "onset": 13.4861,
+   "offset": 13.593,
+   "hand": "L",
+   "finger": 2,
+   "human": 3,
+   "passage": 0,
+   "cost": 4.0,
+   "breakdown": {
+    "rules": 4.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "C3",
+   "pitch": 48,
+   "onset": 13.5819,
+   "offset": 13.6892,
+   "hand": "L",
+   "finger": 1,
+   "human": 1,
+   "passage": 0,
+   "cost": 0.0,
+   "breakdown": {
+    "rules": 0.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "A#2",
+   "pitch": 46,
+   "onset": 13.6781,
+   "offset": 13.7863,
+   "hand": "L",
+   "finger": 2,
+   "human": 4,
+   "passage": 0,
+   "cost": 2.0,
+   "breakdown": {
+    "rules": 2.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "E4",
+   "pitch": 64,
+   "onset": 13.7265,
+   "offset": 13.8689,
+   "hand": "R",
+   "finger": 1,
+   "human": 3,
+   "passage": 0,
+   "cost": 0.0,
+   "breakdown": {
+    "rules": 0.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "B2",
+   "pitch": 47,
+   "onset": 13.7751,
+   "offset": 13.859,
+   "hand": "L",
+   "finger": 1,
+   "human": 2,
+   "passage": 0,
+   "cost": 2.0,
+   "breakdown": {
+    "rules": 2.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "A1",
+   "pitch": 33,
+   "onset": 13.8807,
+   "offset": 14.0149,
+   "hand": "L",
+   "finger": 5,
+   "human": 5,
+   "passage": 0,
+   "cost": 16.0,
+   "breakdown": {
+    "rules": 16.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "A2",
+   "pitch": 45,
+   "onset": 13.8807,
+   "offset": 14.0032,
+   "hand": "L",
+   "finger": 1,
+   "human": 1,
+   "passage": 0,
+   "cost": 0.0,
+   "breakdown": {}
+  },
+  {
+   "name": "C4",
+   "pitch": 60,
+   "onset": 13.8807,
+   "offset": 14.4782,
+   "hand": "R",
+   "finger": 1,
+   "human": 2,
+   "passage": 0,
+   "cost": 16.0,
+   "breakdown": {
+    "rules": 16.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "G4",
+   "pitch": 67,
+   "onset": 13.8807,
+   "offset": 14.9021,
+   "hand": "R",
+   "finger": 5,
+   "human": 5,
+   "passage": 0,
+   "cost": 0.0,
+   "breakdown": {}
+  },
+  {
+   "name": "E3",
+   "pitch": 52,
+   "onset": 14.0037,
+   "offset": 14.109,
+   "hand": "L",
+   "finger": 2,
+   "human": 2,
+   "passage": 0,
+   "cost": 68.21102905273438,
+   "breakdown": {
+    "rules": 64.0,
+    "time/shift/cross": 4.21
+   }
+  },
+  {
+   "name": "G3",
+   "pitch": 55,
+   "onset": 14.0983,
+   "offset": 14.2025,
+   "hand": "L",
+   "finger": 1,
+   "human": 1,
+   "passage": 0,
+   "cost": 0.0,
+   "breakdown": {
+    "rules": 0.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "F#3",
+   "pitch": 54,
+   "onset": 14.1918,
+   "offset": 14.2961,
+   "hand": "L",
+   "finger": 3,
+   "human": 1,
+   "passage": 0,
+   "cost": 6.0,
+   "breakdown": {
+    "rules": 6.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "G3",
+   "pitch": 55,
+   "onset": 14.2854,
+   "offset": 14.3897,
+   "hand": "L",
+   "finger": 3,
+   "human": 2,
+   "passage": 0,
+   "cost": 4.0,
+   "breakdown": {
+    "rules": 4.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "E3",
+   "pitch": 52,
+   "onset": 14.379,
+   "offset": 14.4889,
+   "hand": "L",
+   "finger": 5,
+   "human": 3,
+   "passage": 0,
+   "cost": 1.0,
+   "breakdown": {
+    "rules": 1.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "C4",
+   "pitch": 60,
+   "onset": 14.4782,
+   "offset": 14.5876,
+   "hand": "L",
+   "finger": 1,
+   "human": 1,
+   "passage": 0,
+   "cost": 0.0,
+   "breakdown": {
+    "rules": 0.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "G3",
+   "pitch": 55,
+   "onset": 14.5768,
+   "offset": 14.6811,
+   "hand": "L",
+   "finger": 2,
+   "human": 2,
+   "passage": 0,
+   "cost": 0.0,
+   "breakdown": {
+    "rules": 0.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "E3",
+   "pitch": 52,
+   "onset": 14.6704,
+   "offset": 14.7736,
+   "hand": "L",
+   "finger": 4,
+   "human": 3,
+   "passage": 0,
+   "cost": 1.0,
+   "breakdown": {
+    "rules": 1.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "F#3",
+   "pitch": 54,
+   "onset": 14.7629,
+   "offset": 14.8666,
+   "hand": "L",
+   "finger": 3,
+   "human": 2,
+   "passage": 0,
+   "cost": 0.0,
+   "breakdown": {
+    "rules": 0.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "G3",
+   "pitch": 55,
+   "onset": 14.8559,
+   "offset": 14.9602,
+   "hand": "L",
+   "finger": 2,
+   "human": 1,
+   "passage": 0,
+   "cost": 0.0,
+   "breakdown": {
+    "rules": 0.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "B3",
+   "pitch": 59,
+   "onset": 14.9027,
+   "offset": 15.0413,
+   "hand": "R",
+   "finger": 1,
+   "human": 1,
+   "passage": 0,
+   "cost": 3.0,
+   "breakdown": {
+    "rules": 3.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "E3",
+   "pitch": 52,
+   "onset": 14.9495,
+   "offset": 15.0318,
+   "hand": "L",
+   "finger": 3,
+   "human": 3,
+   "passage": 0,
+   "cost": 5.0,
+   "breakdown": {
+    "rules": 5.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "B1",
+   "pitch": 35,
+   "onset": 15.0504,
+   "offset": 15.1625,
+   "hand": "L",
+   "finger": 5,
+   "human": 5,
+   "passage": 0,
+   "cost": 73.07148742675781,
+   "breakdown": {
+    "rules": 68.0,
+    "time/shift/cross": 5.07
+   }
+  },
+  {
+   "name": "B2",
+   "pitch": 47,
+   "onset": 15.0504,
+   "offset": 15.1513,
+   "hand": "L",
+   "finger": 1,
+   "human": 1,
+   "passage": 0,
+   "cost": 0.0,
+   "breakdown": {}
+  },
+  {
+   "name": "A3",
+   "pitch": 57,
+   "onset": 15.0504,
+   "offset": 15.2454,
+   "hand": "R",
+   "finger": 1,
+   "human": 1,
+   "passage": 0,
+   "cost": 7.0,
+   "breakdown": {
+    "rules": 7.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "D#4",
+   "pitch": 63,
+   "onset": 15.0504,
+   "offset": 16.0464,
+   "hand": "R",
+   "finger": 4,
+   "human": 4,
+   "passage": 0,
+   "cost": 0.0,
+   "breakdown": {}
+  },
+  {
+   "name": "F#3",
+   "pitch": 54,
+   "onset": 15.1518,
+   "offset": 15.2561,
+   "hand": "L",
+   "finger": 2,
+   "human": 2,
+   "passage": 0,
+   "cost": 69.05201721191406,
+   "breakdown": {
+    "rules": 64.0,
+    "time/shift/cross": 5.05
+   }
+  },
+  {
+   "name": "A3",
+   "pitch": 57,
+   "onset": 15.2454,
+   "offset": 15.3486,
+   "hand": "L",
+   "finger": 1,
+   "human": 1,
+   "passage": 0,
+   "cost": 0.0,
+   "breakdown": {
+    "rules": 0.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "G3",
+   "pitch": 55,
+   "onset": 15.3378,
+   "offset": 15.4416,
+   "hand": "L",
+   "finger": 3,
+   "human": 2,
+   "passage": 0,
+   "cost": 4.0,
+   "breakdown": {
+    "rules": 4.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "A3",
+   "pitch": 57,
+   "onset": 15.4309,
+   "offset": 15.5351,
+   "hand": "L",
+   "finger": 2,
+   "human": 1,
+   "passage": 0,
+   "cost": 0.0,
+   "breakdown": {
+    "rules": 0.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "F#3",
+   "pitch": 54,
+   "onset": 15.5244,
+   "offset": 15.6332,
+   "hand": "L",
+   "finger": 5,
+   "human": 2,
+   "passage": 0,
+   "cost": 9.0,
+   "breakdown": {
+    "rules": 9.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "B3",
+   "pitch": 59,
+   "onset": 15.6225,
+   "offset": 15.7313,
+   "hand": "L",
+   "finger": 1,
+   "human": 1,
+   "passage": 0,
+   "cost": 2.0,
+   "breakdown": {
+    "rules": 2.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "A3",
+   "pitch": 57,
+   "onset": 15.7206,
+   "offset": 15.8249,
+   "hand": "L",
+   "finger": 2,
+   "human": 2,
+   "passage": 0,
+   "cost": 0.0,
+   "breakdown": {
+    "rules": 0.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "F#3",
+   "pitch": 54,
+   "onset": 15.8142,
+   "offset": 15.9179,
+   "hand": "L",
+   "finger": 3,
+   "human": 3,
+   "passage": 0,
+   "cost": 2.0,
+   "breakdown": {
+    "rules": 2.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "G3",
+   "pitch": 55,
+   "onset": 15.9072,
+   "offset": 16.0109,
+   "hand": "L",
+   "finger": 2,
+   "human": 2,
+   "passage": 0,
+   "cost": 3.0,
+   "breakdown": {
+    "rules": 3.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "A3",
+   "pitch": 57,
+   "onset": 16.0002,
+   "offset": 16.0464,
+   "hand": "L",
+   "finger": 1,
+   "human": 1,
+   "passage": 0,
+   "cost": 0.0,
+   "breakdown": {
+    "rules": 0.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "E4",
+   "pitch": 64,
+   "onset": 16.047,
+   "offset": 16.184,
+   "hand": "R",
+   "finger": 3,
+   "human": 3,
+   "passage": 0,
+   "cost": 8.0,
+   "breakdown": {
+    "rules": 8.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "F#3",
+   "pitch": 54,
+   "onset": 16.0938,
+   "offset": 16.1744,
+   "hand": "L",
+   "finger": 2,
+   "human": 2,
+   "passage": 0,
+   "cost": 2.0,
+   "breakdown": {
+    "rules": 2.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "E2",
+   "pitch": 40,
+   "onset": 16.1952,
+   "offset": 16.3243,
+   "hand": "L",
+   "finger": 2,
+   "human": 5,
+   "passage": 0,
+   "cost": 76.05201721191406,
+   "breakdown": {
+    "rules": 66.0,
+    "time/shift/cross": 10.05
+   }
+  },
+  {
+   "name": "G3",
+   "pitch": 55,
+   "onset": 16.1952,
+   "offset": 16.4072,
+   "hand": "R",
+   "finger": 1,
+   "human": 1,
+   "passage": 0,
+   "cost": 18.0,
+   "breakdown": {
+    "rules": 18.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "E4",
+   "pitch": 64,
+   "onset": 16.1952,
+   "offset": 16.8858,
+   "hand": "R",
+   "finger": 2,
+   "human": 3,
+   "passage": 0,
+   "cost": 0.0,
+   "breakdown": {}
+  },
+  {
+   "name": "B2",
+   "pitch": 47,
+   "onset": 16.3136,
+   "offset": 16.4179,
+   "hand": "L",
+   "finger": 1,
+   "human": 2,
+   "passage": 0,
+   "cost": 7.3901262283325195,
+   "breakdown": {
+    "rules": 7.0,
+    "time/shift/cross": 0.39
+   }
+  },
+  {
+   "name": "G3",
+   "pitch": 55,
+   "onset": 16.4072,
+   "offset": 16.5115,
+   "hand": "L",
+   "finger": 1,
+   "human": 1,
+   "passage": 0,
+   "cost": 37.355709075927734,
+   "breakdown": {
+    "rules": 33.0,
+    "time/shift/cross": 4.36
+   }
+  },
+  {
+   "name": "F#3",
+   "pitch": 54,
+   "onset": 16.5008,
+   "offset": 16.605,
+   "hand": "L",
+   "finger": 2,
+   "human": 2,
+   "passage": 0,
+   "cost": 5.0,
+   "breakdown": {
+    "rules": 5.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "G3",
+   "pitch": 55,
+   "onset": 16.5943,
+   "offset": 16.6986,
+   "hand": "L",
+   "finger": 1,
+   "human": 1,
+   "passage": 0,
+   "cost": 0.0,
+   "breakdown": {
+    "rules": 0.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "E3",
+   "pitch": 52,
+   "onset": 16.6879,
+   "offset": 16.7978,
+   "hand": "L",
+   "finger": 3,
+   "human": 2,
+   "passage": 0,
+   "cost": 0.0,
+   "breakdown": {
+    "rules": 0.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "G3",
+   "pitch": 55,
+   "onset": 16.7871,
+   "offset": 16.8965,
+   "hand": "L",
+   "finger": 1,
+   "human": 1,
+   "passage": 0,
+   "cost": 0.0,
+   "breakdown": {
+    "rules": 0.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "G4",
+   "pitch": 67,
+   "onset": 16.7871,
+   "offset": 16.8965,
+   "hand": "R",
+   "finger": 5,
+   "human": 5,
+   "passage": 0,
+   "cost": 7.0,
+   "breakdown": {
+    "rules": 7.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "E3",
+   "pitch": 52,
+   "onset": 16.8858,
+   "offset": 16.9901,
+   "hand": "L",
+   "finger": 2,
+   "human": 2,
+   "passage": 0,
+   "cost": 2.0,
+   "breakdown": {
+    "rules": 2.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "E4",
+   "pitch": 64,
+   "onset": 16.8858,
+   "offset": 16.9901,
+   "hand": "R",
+   "finger": 2,
+   "human": 3,
+   "passage": 0,
+   "cost": 4.0,
+   "breakdown": {
+    "rules": 4.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "D#3",
+   "pitch": 51,
+   "onset": 16.9793,
+   "offset": 17.0825,
+   "hand": "L",
+   "finger": 3,
+   "human": 3,
+   "passage": 0,
+   "cost": 0.0,
+   "breakdown": {
+    "rules": 0.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "D#4",
+   "pitch": 63,
+   "onset": 16.9793,
+   "offset": 17.0825,
+   "hand": "R",
+   "finger": 1,
+   "human": 2,
+   "passage": 0,
+   "cost": 5.0,
+   "breakdown": {
+    "rules": 5.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "G3",
+   "pitch": 55,
+   "onset": 17.0718,
+   "offset": 17.1755,
+   "hand": "L",
+   "finger": 1,
+   "human": 1,
+   "passage": 0,
+   "cost": 0.0,
+   "breakdown": {
+    "rules": 0.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "G4",
+   "pitch": 67,
+   "onset": 17.0718,
+   "offset": 17.1755,
+   "hand": "R",
+   "finger": 3,
+   "human": 5,
+   "passage": 0,
+   "cost": 0.0,
+   "breakdown": {
+    "rules": 0.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "D#3",
+   "pitch": 51,
+   "onset": 17.1648,
+   "offset": 17.2691,
+   "hand": "L",
+   "finger": 2,
+   "human": 2,
+   "passage": 0,
+   "cost": 2.0,
+   "breakdown": {
+    "rules": 2.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "D#4",
+   "pitch": 63,
+   "onset": 17.1648,
+   "offset": 17.2691,
+   "hand": "R",
+   "finger": 2,
+   "human": 2,
+   "passage": 0,
+   "cost": 6.0,
+   "breakdown": {
+    "rules": 6.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "D3",
+   "pitch": 50,
+   "onset": 17.2584,
+   "offset": 17.37,
+   "hand": "L",
+   "finger": 3,
+   "human": 3,
+   "passage": 0,
+   "cost": 0.0,
+   "breakdown": {
+    "rules": 0.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "D4",
+   "pitch": 62,
+   "onset": 17.2584,
+   "offset": 17.37,
+   "hand": "R",
+   "finger": 1,
+   "human": 1,
+   "passage": 0,
+   "cost": 0.0,
+   "breakdown": {
+    "rules": 0.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "E3",
+   "pitch": 52,
+   "onset": 17.3593,
+   "offset": 17.4715,
+   "hand": "L",
+   "finger": 2,
+   "human": 1,
+   "passage": 0,
+   "cost": 2.0,
+   "breakdown": {
+    "rules": 2.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "E4",
+   "pitch": 64,
+   "onset": 17.3593,
+   "offset": 17.4715,
+   "hand": "R",
+   "finger": 3,
+   "human": 3,
+   "passage": 0,
+   "cost": 1.0,
+   "breakdown": {
+    "rules": 1.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "D3",
+   "pitch": 50,
+   "onset": 17.4607,
+   "offset": 17.565,
+   "hand": "L",
+   "finger": 3,
+   "human": 2,
+   "passage": 0,
+   "cost": 0.0,
+   "breakdown": {
+    "rules": 0.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "D4",
+   "pitch": 62,
+   "onset": 17.4607,
+   "offset": 17.565,
+   "hand": "R",
+   "finger": 2,
+   "human": 2,
+   "passage": 0,
+   "cost": 0.0,
+   "breakdown": {
+    "rules": 0.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "C#3",
+   "pitch": 49,
+   "onset": 17.5543,
+   "offset": 17.6575,
+   "hand": "L",
+   "finger": 4,
+   "human": 3,
+   "passage": 0,
+   "cost": 3.0,
+   "breakdown": {
+    "rules": 3.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "C#4",
+   "pitch": 61,
+   "onset": 17.5543,
+   "offset": 17.6575,
+   "hand": "R",
+   "finger": 2,
+   "human": 1,
+   "passage": 0,
+   "cost": 4.0,
+   "breakdown": {
+    "rules": 4.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "E3",
+   "pitch": 52,
+   "onset": 17.6468,
+   "offset": 17.7505,
+   "hand": "L",
+   "finger": 1,
+   "human": 1,
+   "passage": 0,
+   "cost": 2.0,
+   "breakdown": {
+    "rules": 2.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "E4",
+   "pitch": 64,
+   "onset": 17.6468,
+   "offset": 17.7505,
+   "hand": "R",
+   "finger": 4,
+   "human": 4,
+   "passage": 0,
+   "cost": 1.0,
+   "breakdown": {
+    "rules": 1.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "C#3",
+   "pitch": 49,
+   "onset": 17.7398,
+   "offset": 17.8441,
+   "hand": "L",
+   "finger": 2,
+   "human": 2,
+   "passage": 0,
+   "cost": 2.0,
+   "breakdown": {
+    "rules": 2.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "C#4",
+   "pitch": 61,
+   "onset": 17.7398,
+   "offset": 17.8441,
+   "hand": "R",
+   "finger": 2,
+   "human": 2,
+   "passage": 0,
+   "cost": 0.0,
+   "breakdown": {
+    "rules": 0.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "C3",
+   "pitch": 48,
+   "onset": 17.8334,
+   "offset": 17.9422,
+   "hand": "L",
+   "finger": 3,
+   "human": 3,
+   "passage": 0,
+   "cost": 0.0,
+   "breakdown": {
+    "rules": 0.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "C4",
+   "pitch": 60,
+   "onset": 17.8334,
+   "offset": 17.9422,
+   "hand": "R",
+   "finger": 1,
+   "human": 1,
+   "passage": 0,
+   "cost": 0.0,
+   "breakdown": {
+    "rules": 0.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "C#3",
+   "pitch": 49,
+   "onset": 17.9314,
+   "offset": 18.0402,
+   "hand": "L",
+   "finger": 2,
+   "human": 2,
+   "passage": 0,
+   "cost": 0.0,
+   "breakdown": {
+    "rules": 0.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "C#4",
+   "pitch": 61,
+   "onset": 17.9314,
+   "offset": 18.0402,
+   "hand": "R",
+   "finger": 2,
+   "human": 3,
+   "passage": 0,
+   "cost": 0.0,
+   "breakdown": {
+    "rules": 0.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "C3",
+   "pitch": 48,
+   "onset": 18.0295,
+   "offset": 18.1338,
+   "hand": "L",
+   "finger": 3,
+   "human": 3,
+   "passage": 0,
+   "cost": 0.0,
+   "breakdown": {
+    "rules": 0.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "C4",
+   "pitch": 60,
+   "onset": 18.0295,
+   "offset": 18.1338,
+   "hand": "R",
+   "finger": 1,
+   "human": 2,
+   "passage": 0,
+   "cost": 0.0,
+   "breakdown": {
+    "rules": 0.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "B2",
+   "pitch": 47,
+   "onset": 18.1231,
+   "offset": 18.2268,
+   "hand": "L",
+   "finger": 3,
+   "human": 4,
+   "passage": 0,
+   "cost": 4.0,
+   "breakdown": {
+    "rules": 4.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "B3",
+   "pitch": 59,
+   "onset": 18.1231,
+   "offset": 18.2268,
+   "hand": "R",
+   "finger": 2,
+   "human": 1,
+   "passage": 0,
+   "cost": 7.0,
+   "breakdown": {
+    "rules": 7.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "C3",
+   "pitch": 48,
+   "onset": 18.2161,
+   "offset": 18.3198,
+   "hand": "L",
+   "finger": 2,
+   "human": 2,
+   "passage": 0,
+   "cost": 2.0,
+   "breakdown": {
+    "rules": 2.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "C4",
+   "pitch": 60,
+   "onset": 18.2161,
+   "offset": 18.3198,
+   "hand": "R",
+   "finger": 3,
+   "human": 4,
+   "passage": 0,
+   "cost": 0.0,
+   "breakdown": {
+    "rules": 0.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "A#2",
+   "pitch": 46,
+   "onset": 18.3091,
+   "offset": 18.4134,
+   "hand": "L",
+   "finger": 3,
+   "human": 4,
+   "passage": 0,
+   "cost": 2.0,
+   "breakdown": {
+    "rules": 2.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "A#3",
+   "pitch": 58,
+   "onset": 18.3091,
+   "offset": 18.4134,
+   "hand": "R",
+   "finger": 2,
+   "human": 2,
+   "passage": 0,
+   "cost": 2.0,
+   "breakdown": {
+    "rules": 2.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "B2",
+   "pitch": 47,
+   "onset": 18.4027,
+   "offset": 18.4833,
+   "hand": "L",
+   "finger": 2,
+   "human": 3,
+   "passage": 0,
+   "cost": 2.0,
+   "breakdown": {
+    "rules": 2.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "B3",
+   "pitch": 59,
+   "onset": 18.4027,
+   "offset": 18.4833,
+   "hand": "R",
+   "finger": 3,
+   "human": 1,
+   "passage": 0,
+   "cost": 2.0,
+   "breakdown": {
+    "rules": 2.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "E2",
+   "pitch": 40,
+   "onset": 18.5042,
+   "offset": 18.6332,
+   "hand": "L",
+   "finger": 5,
+   "human": 5,
+   "passage": 0,
+   "cost": 5.0,
+   "breakdown": {
+    "rules": 5.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "E3",
+   "pitch": 52,
+   "onset": 18.5042,
+   "offset": 18.6332,
+   "hand": "R",
+   "finger": 1,
+   "human": 1,
+   "passage": 0,
+   "cost": 0.0,
+   "breakdown": {
+    "rules": 0.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "B2",
+   "pitch": 47,
+   "onset": 18.6225,
+   "offset": 18.7268,
+   "hand": "L",
+   "finger": 2,
+   "human": 2,
+   "passage": 0,
+   "cost": 2.0,
+   "breakdown": {
+    "rules": 2.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "B3",
+   "pitch": 59,
+   "onset": 18.6225,
+   "offset": 18.7268,
+   "hand": "R",
+   "finger": 2,
+   "human": 2,
+   "passage": 0,
+   "cost": 4.394019603729248,
+   "breakdown": {
+    "rules": 4.0,
+    "time/shift/cross": 0.39
+   }
+  },
+  {
+   "name": "G3",
+   "pitch": 55,
+   "onset": 18.7161,
+   "offset": 18.8204,
+   "hand": "L",
+   "finger": 1,
+   "human": 1,
+   "passage": 0,
+   "cost": 8.355708122253418,
+   "breakdown": {
+    "rules": 6.0,
+    "time/shift/cross": 2.36
+   }
+  },
+  {
+   "name": "G4",
+   "pitch": 67,
+   "onset": 18.7161,
+   "offset": 18.8204,
+   "hand": "R",
+   "finger": 5,
+   "human": 5,
+   "passage": 0,
+   "cost": 8.0,
+   "breakdown": {
+    "rules": 8.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "F#3",
+   "pitch": 54,
+   "onset": 18.8097,
+   "offset": 18.914,
+   "hand": "L",
+   "finger": 2,
+   "human": 2,
+   "passage": 0,
+   "cost": 8.0,
+   "breakdown": {
+    "rules": 8.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "F#4",
+   "pitch": 66,
+   "onset": 18.8097,
+   "offset": 18.914,
+   "hand": "R",
+   "finger": 4,
+   "human": 4,
+   "passage": 0,
+   "cost": 4.0,
+   "breakdown": {
+    "rules": 4.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "G3",
+   "pitch": 55,
+   "onset": 18.9033,
+   "offset": 19.0075,
+   "hand": "L",
+   "finger": 1,
+   "human": 1,
+   "passage": 0,
+   "cost": 0.0,
+   "breakdown": {
+    "rules": 0.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "G4",
+   "pitch": 67,
+   "onset": 18.9033,
+   "offset": 19.0075,
+   "hand": "R",
+   "finger": 5,
+   "human": 5,
+   "passage": 0,
+   "cost": 1.0,
+   "breakdown": {
+    "rules": 1.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "E3",
+   "pitch": 52,
+   "onset": 18.9968,
+   "offset": 19.1068,
+   "hand": "L",
+   "finger": 2,
+   "human": 2,
+   "passage": 0,
+   "cost": 3.0,
+   "breakdown": {
+    "rules": 3.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "E4",
+   "pitch": 64,
+   "onset": 18.9968,
+   "offset": 19.1068,
+   "hand": "R",
+   "finger": 2,
+   "human": 3,
+   "passage": 0,
+   "cost": 4.0,
+   "breakdown": {
+    "rules": 4.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "G3",
+   "pitch": 55,
+   "onset": 19.096,
+   "offset": 19.2054,
+   "hand": "L",
+   "finger": 1,
+   "human": 1,
+   "passage": 0,
+   "cost": 0.0,
+   "breakdown": {
+    "rules": 0.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "G4",
+   "pitch": 67,
+   "onset": 19.096,
+   "offset": 19.2054,
+   "hand": "R",
+   "finger": 4,
+   "human": 5,
+   "passage": 0,
+   "cost": 3.0,
+   "breakdown": {
+    "rules": 3.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "E3",
+   "pitch": 52,
+   "onset": 19.1947,
+   "offset": 19.299,
+   "hand": "L",
+   "finger": 2,
+   "human": 2,
+   "passage": 0,
+   "cost": 0.0,
+   "breakdown": {
+    "rules": 0.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "E4",
+   "pitch": 64,
+   "onset": 19.1947,
+   "offset": 19.299,
+   "hand": "R",
+   "finger": 1,
+   "human": 3,
+   "passage": 0,
+   "cost": 2.0,
+   "breakdown": {
+    "rules": 2.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "D#3",
+   "pitch": 51,
+   "onset": 19.2883,
+   "offset": 19.3914,
+   "hand": "L",
+   "finger": 3,
+   "human": 3,
+   "passage": 0,
+   "cost": 0.0,
+   "breakdown": {
+    "rules": 0.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "D#4",
+   "pitch": 63,
+   "onset": 19.2883,
+   "offset": 19.3914,
+   "hand": "R",
+   "finger": 2,
+   "human": 2,
+   "passage": 0,
+   "cost": 2.0,
+   "breakdown": {
+    "rules": 2.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "G3",
+   "pitch": 55,
+   "onset": 19.3807,
+   "offset": 19.4844,
+   "hand": "L",
+   "finger": 1,
+   "human": 1,
+   "passage": 0,
+   "cost": 0.0,
+   "breakdown": {
+    "rules": 0.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "G4",
+   "pitch": 67,
+   "onset": 19.3807,
+   "offset": 19.4844,
+   "hand": "R",
+   "finger": 4,
+   "human": 5,
+   "passage": 0,
+   "cost": 1.0,
+   "breakdown": {
+    "rules": 1.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "D#3",
+   "pitch": 51,
+   "onset": 19.4737,
+   "offset": 19.578,
+   "hand": "L",
+   "finger": 2,
+   "human": 2,
+   "passage": 0,
+   "cost": 2.0,
+   "breakdown": {
+    "rules": 2.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "D#4",
+   "pitch": 63,
+   "onset": 19.4737,
+   "offset": 19.578,
+   "hand": "R",
+   "finger": 2,
+   "human": 2,
+   "passage": 0,
+   "cost": 0.0,
+   "breakdown": {
+    "rules": 0.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "D3",
+   "pitch": 50,
+   "onset": 19.5673,
+   "offset": 19.6789,
+   "hand": "L",
+   "finger": 3,
+   "human": 3,
+   "passage": 0,
+   "cost": 0.0,
+   "breakdown": {
+    "rules": 0.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "D4",
+   "pitch": 62,
+   "onset": 19.5673,
+   "offset": 19.6789,
+   "hand": "R",
+   "finger": 1,
+   "human": 1,
+   "passage": 0,
+   "cost": 0.0,
+   "breakdown": {
+    "rules": 0.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "E3",
+   "pitch": 52,
+   "onset": 19.6682,
+   "offset": 19.7804,
+   "hand": "L",
+   "finger": 2,
+   "human": 1,
+   "passage": 0,
+   "cost": 2.0,
+   "breakdown": {
+    "rules": 2.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "E4",
+   "pitch": 64,
+   "onset": 19.6682,
+   "offset": 19.7804,
+   "hand": "R",
+   "finger": 2,
+   "human": 3,
+   "passage": 0,
+   "cost": 2.0,
+   "breakdown": {
+    "rules": 2.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "D3",
+   "pitch": 50,
+   "onset": 19.7697,
+   "offset": 19.874,
+   "hand": "L",
+   "finger": 1,
+   "human": 2,
+   "passage": 0,
+   "cost": 4.048123359680176,
+   "breakdown": {
+    "rules": 4.0,
+    "time/shift/cross": 0.05
+   }
+  },
+  {
+   "name": "D4",
+   "pitch": 62,
+   "onset": 19.7697,
+   "offset": 19.874,
+   "hand": "R",
+   "finger": 1,
+   "human": 2,
+   "passage": 0,
+   "cost": 0.0,
+   "breakdown": {
+    "rules": 0.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "C#3",
+   "pitch": 49,
+   "onset": 19.8632,
+   "offset": 19.9664,
+   "hand": "L",
+   "finger": 3,
+   "human": 3,
+   "passage": 1,
+   "cost": 0.0,
+   "breakdown": {
+    "rules": 0.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "C#4",
+   "pitch": 61,
+   "onset": 19.8632,
+   "offset": 19.9664,
+   "hand": "R",
+   "finger": 2,
+   "human": 1,
+   "passage": 1,
+   "cost": 0.0,
+   "breakdown": {
+    "rules": 0.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "E3",
+   "pitch": 52,
+   "onset": 19.9557,
+   "offset": 20.0594,
+   "hand": "L",
+   "finger": 1,
+   "human": 1,
+   "passage": 1,
+   "cost": 0.0,
+   "breakdown": {
+    "rules": 0.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "E4",
+   "pitch": 64,
+   "onset": 19.9557,
+   "offset": 20.0594,
+   "hand": "R",
+   "finger": 3,
+   "human": 4,
+   "passage": 1,
+   "cost": 2.0,
+   "breakdown": {
+    "rules": 2.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "C#3",
+   "pitch": 49,
+   "onset": 20.0487,
+   "offset": 20.153,
+   "hand": "L",
+   "finger": 2,
+   "human": 2,
+   "passage": 1,
+   "cost": 2.0,
+   "breakdown": {
+    "rules": 2.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "C#4",
+   "pitch": 61,
+   "onset": 20.0487,
+   "offset": 20.153,
+   "hand": "R",
+   "finger": 2,
+   "human": 2,
+   "passage": 1,
+   "cost": 2.0,
+   "breakdown": {
+    "rules": 2.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "C3",
+   "pitch": 48,
+   "onset": 20.1423,
+   "offset": 20.2511,
+   "hand": "L",
+   "finger": 3,
+   "human": 3,
+   "passage": 1,
+   "cost": 0.0,
+   "breakdown": {
+    "rules": 0.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "C4",
+   "pitch": 60,
+   "onset": 20.1423,
+   "offset": 20.2511,
+   "hand": "R",
+   "finger": 1,
+   "human": 1,
+   "passage": 1,
+   "cost": 0.0,
+   "breakdown": {
+    "rules": 0.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "C#3",
+   "pitch": 49,
+   "onset": 20.2404,
+   "offset": 20.3492,
+   "hand": "L",
+   "finger": 2,
+   "human": 2,
+   "passage": 1,
+   "cost": 0.0,
+   "breakdown": {
+    "rules": 0.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "C#4",
+   "pitch": 61,
+   "onset": 20.2404,
+   "offset": 20.3492,
+   "hand": "R",
+   "finger": 2,
+   "human": 3,
+   "passage": 1,
+   "cost": 0.0,
+   "breakdown": {
+    "rules": 0.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "C3",
+   "pitch": 48,
+   "onset": 20.3384,
+   "offset": 20.4427,
+   "hand": "L",
+   "finger": 3,
+   "human": 3,
+   "passage": 1,
+   "cost": 0.0,
+   "breakdown": {
+    "rules": 0.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "C4",
+   "pitch": 60,
+   "onset": 20.3384,
+   "offset": 20.4427,
+   "hand": "R",
+   "finger": 1,
+   "human": 2,
+   "passage": 1,
+   "cost": 0.0,
+   "breakdown": {
+    "rules": 0.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "B2",
+   "pitch": 47,
+   "onset": 20.432,
+   "offset": 20.5357,
+   "hand": "L",
+   "finger": 3,
+   "human": 4,
+   "passage": 1,
+   "cost": 4.0,
+   "breakdown": {
+    "rules": 4.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "B3",
+   "pitch": 59,
+   "onset": 20.432,
+   "offset": 20.5357,
+   "hand": "R",
+   "finger": 2,
+   "human": 1,
+   "passage": 1,
+   "cost": 7.0,
+   "breakdown": {
+    "rules": 7.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "C3",
+   "pitch": 48,
+   "onset": 20.525,
+   "offset": 20.6288,
+   "hand": "L",
+   "finger": 2,
+   "human": 2,
+   "passage": 1,
+   "cost": 2.0,
+   "breakdown": {
+    "rules": 2.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "C4",
+   "pitch": 60,
+   "onset": 20.525,
+   "offset": 20.6288,
+   "hand": "R",
+   "finger": 3,
+   "human": 4,
+   "passage": 1,
+   "cost": 0.0,
+   "breakdown": {
+    "rules": 0.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "A#2",
+   "pitch": 46,
+   "onset": 20.618,
+   "offset": 20.7223,
+   "hand": "L",
+   "finger": 3,
+   "human": 4,
+   "passage": 1,
+   "cost": 2.0,
+   "breakdown": {
+    "rules": 2.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "A#3",
+   "pitch": 58,
+   "onset": 20.618,
+   "offset": 20.7223,
+   "hand": "R",
+   "finger": 2,
+   "human": 2,
+   "passage": 1,
+   "cost": 2.0,
+   "breakdown": {
+    "rules": 2.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "B2",
+   "pitch": 47,
+   "onset": 20.7116,
+   "offset": 20.7922,
+   "hand": "L",
+   "finger": 2,
+   "human": 3,
+   "passage": 1,
+   "cost": 2.0,
+   "breakdown": {
+    "rules": 2.0,
+    "time/shift/cross": 0.0
+   }
+  },
+  {
+   "name": "B3",
+   "pitch": 59,
+   "onset": 20.7116,
+   "offset": 20.7922,
+   "hand": "R",
+   "finger": 3,
+   "human": 1,
+   "passage": 1,
+   "cost": 2.0,
+   "breakdown": {
+    "rules": 2.0,
+    "time/shift/cross": 0.0
+   }
+  }
+ ],
+ "total_cost": 1316.7052369117737,
+ "n_passages": 2
+}

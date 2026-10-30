@@ -65,19 +65,23 @@ def run(data, speed, loop, screenshot=None, at=0.0):
             kind, i = key_of(n)
             (piano.white_sounds if kind == "white" else piano.black_sounds)[i].play(0, 1000)
             (aw if kind == "white" else ab).append([i, max(8, int(fps * (n["offset"] - n["onset"]) / speed))])
-            last[n["hand"]] = (kind, i, n["finger"])
+            prev = last.get(n["hand"])  # notes of one hand starting together form a chord: keep them all
+            same = prev and prev[0] == n["onset"]
+            last[n["hand"]] = (n["onset"], (prev[1] if same else []) + [(kind, i, n["finger"])])
             total += n["cost"]
             current, nxt = n, nxt + 1
         done = nxt == len(notes)
 
         piano.screen.fill("gray")
         white_rects, black_rects, aw, ab = piano.draw_piano(aw, ab)
-        for hand, (kind, i, finger) in last.items():
-            rect, target = key_box(kind, i, white_rects, black_rects)
-            pygame.draw.rect(piano.screen, COLORS[hand], rect, 4)
-            draw_2d_hand(piano.screen, piano.HEIGHT, [], [], white_rects, black_rects,
-                         active_finger=finger, side=1 if hand == "R" else -1, target=target)
-            piano.screen.blit(piano.medium_font.render(str(finger), True, COLORS[hand]), (rect.centerx - 6, 70))
+        for hand, (_, keys) in last.items():
+            for j, (kind, i, finger) in enumerate(keys):
+                rect, target = key_box(kind, i, white_rects, black_rects)
+                pygame.draw.rect(piano.screen, COLORS[hand], rect, 4)
+                if j == 0:  # one hand drawing per hand, on the chord's first note
+                    draw_2d_hand(piano.screen, piano.HEIGHT, [], [], white_rects, black_rects,
+                                 active_finger=finger, side=1 if hand == "R" else -1, target=target)
+                piano.screen.blit(piano.medium_font.render(str(finger), True, COLORS[hand]), (rect.centerx - 6, 70))
         if current:
             info = (f"{data['policy']} | {current['name']} | hand {current['hand']} | finger {current['finger']}"
                     f" | cost {current['cost']:.1f} | total {total:.1f}")
